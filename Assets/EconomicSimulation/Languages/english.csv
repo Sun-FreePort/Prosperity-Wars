@@ -1,0 +1,82 @@
+map_generating,"Generating map, please wait"
+loading,Loading...
+next_step,Step
+pause,Pause
+military,Military
+finance,Finance
+politics,Politics
+inventions,Inventions
+population,Population
+enterprises,Enterprises
+trade,Trade
+ok,OK
+none,none
+bottom_panel/statistics,Statistics
+bottom_panel/wiki,Wiki
+bottom_panel/credits,Credits
+bottom_panel/exit,Exit
+bottom_panel/political_map,Political map
+bottom_panel/culture_map,Culture map
+bottom_panel/core_map,Core map
+bottom_panel/resource_map,Resource map
+bottom_panel/population_changes,Population changes
+bottom_panel/population_density,Population density
+bottom_panel/prosperity,Prosperity
+province_panel/detail_province,Province name: 
+province_panel/detail_population,"
+Population (with families): "
+province_panel/detail_loyalty_avg,"
+Average loyalty: "
+province_panel/detail_resource,"
+Resource: "
+province_panel/detail_cores,"
+Cores: "
+province_panel/detail_cultures,"
+Cultures: "
+province_panel/detail_classes,"
+Classes: "
+province_panel/detail_modifiers,"
+Modifiers: "
+province_panel/owner,Owner: {SelectedProvinceCountry}
+province_panel/population,Population details
+province_panel/mobilize,Mobilize
+province_panel/enterprises,Enterprises
+province_panel/build,Build
+province_panel/grant_independence,Grant Independence
+map_options/title,Map options
+map_options/random_map,Random map
+map_options/map_from_file,Map from file (experimental)
+map_options/industrial_start,Industrial start
+map_options/industrial_tips,Adds factories to each country, techs and more workforce. Gives faster market formation.
+map_options/load_image_png,Load png image
+map_options/generate_map,Generate map
+map_options/notes,"Notes for generating map from a file:
+ 
+  - each province is coded with unique color
+  - should be in png format
+  - not exactly compatible with Vic 2 map format
+  - don't use antialiasing
+  - size 200x200 pixels (average lags), 800x600 - huge lags, more - wouldn't work
+  - province will count as sea if province color is green + blue >= 400 && red < 96"
+map_options/map_examples,Click here to see map examples
+tutorial/title,Tutorial
+tutorial/content,"Hi, this is VERY early demo of game-like economy simulator called 'Prosperity Wars'
+
+Currently there is: 
+	population agents \ factories \ countries \ national banks
+	basic trade \ production \ consumption 
+	basic warfare 
+	basic inventions
+	basic reforms (population can vote for reforms)
+	population demotion \ promotion to other classes 
+	migration \ immigration \ assimilation
+	political \ culture \ core \ resource \ population \ prosperity map mode
+	movements and rebellions
+
+You play as {PlayerFullName} You can try to growth economy or conquer the world.
+ 
+Or, You can give control to AI and watch it
+ 
+Try arrows or WASD for scrolling map and mouse wheel for scale
+'Enter' key to close top window, space - to pause \ unpause, left alt - to add command or unit
+Also we would be thankful if you will share info about this project"

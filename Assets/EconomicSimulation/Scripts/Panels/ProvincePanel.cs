@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using Nashet.GameplayControllers;
 using Nashet.Map.GameplayControllers;
 using Nashet.Map.Utils;
@@ -159,39 +160,49 @@ namespace Nashet.EconomicSimulation
 
         public override void Refresh()
         {
-            var sb = new StringBuilder("Province name: ").Append(provinceSelectionHelper.selectedProvince);
+            var sb = new StringBuilder(LeanLocalization.GetTranslationText("province_panel/detail_province"))
+                .Append(provinceSelectionHelper.selectedProvince);
             if (Game.devMode)
             {
                 sb.Append("\nID: ").Append(provinceSelectionHelper.selectedProvince);
                 sb.Append("\nNeighbors: ").Append(provinceSelectionHelper.selectedProvince.AllNeighbors().ToString(", "));
                 sb.Append($", isCoastal {provinceSelectionHelper.selectedProvince.IsCoastal}, terrain - {provinceSelectionHelper.selectedProvince.Terrain} ");
 			}
-            sb.Append("\nPopulation (with families): ").Append(provinceSelectionHelper.selectedProvince.getFamilyPopulation());
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_population"))
+                .Append(provinceSelectionHelper.selectedProvince.getFamilyPopulation());
 
-            sb.Append("\nAverage loyalty: ").Append(provinceSelectionHelper.selectedProvince.AllPops.GetAverageProcent(x => x.loyalty));
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_loyalty_avg"))
+                .Append(provinceSelectionHelper.selectedProvince.AllPops.GetAverageProcent(x => x.loyalty));
             //sb.Append("\nMajor culture: ").Append(Game.selectedProvince.getMajorCulture());
             //sb.Append("\nGDP: ").Append(Game.selectedProvince.getGDP());
-            sb.Append("\nResource: ");
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_resource"));
             if (provinceSelectionHelper.selectedProvince.getResource() == null)
-                sb.Append("none ");
+                sb.Append(LeanLocalization.GetTranslationText("none"));
             else
                 sb.Append(provinceSelectionHelper.selectedProvince.getResource());
             //sb.Append("\nTerrain: ").Append(Game.selectedProvince.getTerrain());
             //sb.Append("\nRural overpopulation: ").Append(Game.selectedProvince.GetOverpopulation());
-            sb.Append("\nCores: ").Append(provinceSelectionHelper.selectedProvince.getCoresDescription());
-            
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_cores"))
+                .Append(provinceSelectionHelper.selectedProvince.getCoresDescription());
 
-            sb.Append("\nCultures: ").Append(provinceSelectionHelper.selectedProvince.AllPops.Group(x => x.culture, y => y.population.Get())
-                .OrderByDescending(x => x.Value.get()).ToString(", ", 2));
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_cultures"))
+                .Append(provinceSelectionHelper.selectedProvince.AllPops.Group(x => x.culture, y => y.population.Get())
+                .OrderByDescending(x => x.Value.get())
+                .ToString(", ", 2));
 
-            sb.Append("\nClasses: ").Append(provinceSelectionHelper.selectedProvince.AllPops.Group(x => x.Type, y => y.population.Get())
-                .OrderByDescending(x => x.Value.get()).ToString(", ", 0));
+            sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_classes"))
+                .Append(provinceSelectionHelper.selectedProvince.AllPops
+                    .Group(x => x.Type, y => y.population.Get())
+                    .OrderByDescending(x => x.Value.get())
+                    .ToString(", ", 0));
 
             if (provinceSelectionHelper.selectedProvince.getModifiers().Count > 0)
-                sb.Append("\nModifiers: ").Append(ToStringExtensions.ToString(provinceSelectionHelper.selectedProvince.getModifiers()));
+                sb.Append(LeanLocalization.GetTranslationText("province_panel/detail_modifiers"))
+                    .Append(ToStringExtensions.ToString(provinceSelectionHelper.selectedProvince.getModifiers()));
 
             Text text = btnOwner.GetComponentInChildren<Text>();
-            text.text = "Owner: " + provinceSelectionHelper.selectedProvince.Country;
+            LeanLocalization.CurrentTokens["SelectedProvinceCountry"].SetValue(provinceSelectionHelper.selectedProvince.Country.FullName);
+            text.text = LeanLocalization.GetTranslationText("province_panel/owner");
 
             btnBuild.interactable = ProductionType.allowsForeignInvestments.checkIftrue(Game.Player, provinceSelectionHelper.selectedProvince, out btnBuild.GetComponent<ToolTipHandler>().text);
             btnBuild.GetComponent<ToolTipHandler>().AddText("\nHotkey is B button");

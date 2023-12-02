@@ -1,0 +1,82 @@
+map_generating,生成地图中，请稍等……
+loading,加载中……
+next_step,下回合
+pause,暂停
+military,军事
+finance,金融
+politics,政治
+inventions,科技
+population,人口
+enterprises,企业
+trade,贸易
+ok,确定
+none,无
+bottom_panel/statistics,统计
+bottom_panel/wiki,百科
+bottom_panel/credits,致谢
+bottom_panel/exit,退出
+bottom_panel/political_map,政治地图
+bottom_panel/culture_map,文化地图
+bottom_panel/core_map,核心地图
+bottom_panel/resource_map,资源地图
+bottom_panel/population_changes,人口变化
+bottom_panel/population_density,人口密度
+bottom_panel/prosperity,繁荣
+province_panel/detail_province,省份：
+province_panel/detail_population,"
+人口 (with families)："
+province_panel/detail_loyalty_avg,"
+平均忠诚度："
+province_panel/detail_resource,"
+资源："
+province_panel/detail_cores,"
+Cores："
+province_panel/detail_cultures,"
+文化："
+province_panel/detail_classes,"
+阶级："
+province_panel/detail_modifiers,"
+Modifiers："
+province_panel/owner,属于：{SelectedProvinceCountry}
+province_panel/population,人口详情
+province_panel/mobilize,动员
+province_panel/enterprises,企业
+province_panel/build,建设
+province_panel/grant_independence,给予独立
+map_options/title,地图设置
+map_options/random_map,随机地图
+map_options/map_from_file,从文件生成地图 (实验性)
+map_options/industrial_start,工业开局
+map_options/industrial_tips,为每个国家增加工厂、技术和更多劳动力，以加快资本市场的形成。
+map_options/load_image_png,加载 PNG 图片
+map_options/generate_map,生成图片
+map_options/notes,"从文件生成地图的说明：
+ 
+  - 每块颜色区域都被是为一块省份
+  - 应为 png 格式
+  - not exactly compatible with Vic 2 map format
+  - 不使用抗锯齿
+  - 图片尺寸为 200x200 像素 (average lags)，800x600 - huge lags，暂不支持更大的尺寸
+  - 如果省份颜色为绿色 + 蓝色 >= 400 && 红色 < 96，则该省份将被视为海域"
+map_options/map_examples,点我查看地图文件样例
+tutorial/title,教程
+tutorial/content,"你好呀，“Prosperity Wars”是一款经济模拟游戏，这是“超级”早期的演示版本。
+
+目前我们实现了：
+   人口 agents \ 工厂 \ 国家 \ 国有银行
+   基本的贸易 \ 生产 \ 消费 
+   基本的战乱
+   基本的科研
+   基本的改革 (民众通过投票来决定改革)
+   民众社会阶层的下降 \ 晋升 
+   移民 \ 迁徙 \ 同化
+   政治 \ 文化 \ core \ 资源 \ 人口 \ 丰富的地图模式
+   政治运动、暴动与叛乱
+
+你的国家是{PlayerFullName}，你可以自由的发展经济或征服世界。
+
+或者，你也可以将控制权交予 AI 并观察它的行为和影响。
+
+用方向键或 WASD 键，你能移动地图；鼠标滚轮可以控制地图比例尺。
+'Enter' 键可以关闭顶部看板，'Space' 键则可以暂停/继续，左 'Alt' 键用于添加命令或单位。
+如果您愿意分享：游玩本游戏的感受、您对于改进游戏的设想，我们将不胜感激！"

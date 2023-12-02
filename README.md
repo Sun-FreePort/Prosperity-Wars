@@ -10,7 +10,7 @@ There is also a standalone windows edition under [releases](https://github.com/N
 
 ## Description
 I'm a huge fan of the game Victoria 2, but I was disappointed in the economy mechanics of the game. Unable to find a strategy simulation game with a better economy, I decided to make my own.
-Main simulation principles in PosperityWars include:
+Main simulation principles in ProsperityWars include:
 * Agent based simulation with real population units, fabrics, countries
 * Prices determined by supply / demand balance (currently with one market and one currency - gold)
 * No price limits (except 0.001 and 999), allowing realistic inflation

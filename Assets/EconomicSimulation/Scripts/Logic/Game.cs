@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Lean.Localization;
 
 namespace Nashet.EconomicSimulation
 {    
@@ -30,7 +31,6 @@ namespace Nashet.EconomicSimulation
 		public static List<Army> selectedArmies = new List<Army>();
 		public static List<Province> playerVisibleProvinces = new List<Province>();
 		public static bool isInSendArmyMode { get; private set; }
-
 
 		public static Action<bool> OnIsInSendArmyModeChanged;
     
@@ -311,21 +311,12 @@ namespace Nashet.EconomicSimulation
 
         private static void makeHelloMessage()
         {
-            MessageSystem.Instance.NewMessage("Tutorial", "Hi, this is VERY early demo of game-like economy simulator called 'Prosperity wars'" +
-                "\n\nCurrently there is: "
-                + "\n\tpopulation agents \\ factories \\ countries \\ national banks"
-                + "\n\tbasic trade \\ production \\ consumption \n\tbasic warfare \n\tbasic inventions"
-                + "\n\tbasic reforms (population can vote for reforms)"
-                + "\n\tpopulation demotion \\ promotion to other classes \n\tmigration \\ immigration \\ assimilation"
-                + "\n\tpolitical \\ culture \\ core \\ resource \\ population \\ prosperity map mode"
-                + "\n\tmovements and rebellions"
-                + "\n\nYou play as " + Player.FullName + " You can try to growth economy or conquer the world."
-                + "\n\nOr, You can give control to AI and watch it"
-                + "\n\nTry arrows or WASD for scrolling map and mouse wheel for scale"
-                + "\n'Enter' key to close top window, space - to pause \\ unpause, left alt - to add command or unit"
-                //  + "\n\n\nI have now Patreon page where I post about that game development. Try red button below!"
-                + "\nAlso I would be thankful if you will share info about this project"
-                , "Ok", false, OnClosed
+	        LeanLocalization.CurrentTokens["PlayerFullName"].SetValue(Player.FullName);
+	        var title = LeanLocalization.GetTranslationText("tutorial/title");
+	        var content = LeanLocalization.GetTranslationText("tutorial/content");
+	        var ok = LeanLocalization.GetTranslationText("ok");
+            MessageSystem.Instance.NewMessage(title, content
+                , ok, false, OnClosed
                 );
             //, Game.Player.Capital.getPosition()
         }

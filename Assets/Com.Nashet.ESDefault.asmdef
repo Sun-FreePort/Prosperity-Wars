@@ -2,7 +2,8 @@
     "name": "Com.Nashet.ESDefault",
     "rootNamespace": "",
     "references": [
-        "GUID:56ca18880c5e553409056edb82abd183"
+        "GUID:56ca18880c5e553409056edb82abd183",
+        "GUID:218c8d088c76f5f45b9b3de347da2c05"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
