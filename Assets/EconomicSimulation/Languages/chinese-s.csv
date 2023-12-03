@@ -25,6 +25,38 @@ common/profit,利润
 common/profitability,盈利能力
 common/salary,薪资
 common/build,建设
+product/grain,Grain
+product/liquor,Liquor
+product/cattle,Cattle
+product/wood,木材
+product/lumber,Lumber
+product/furniture,Furniture
+product/cotton,棉花
+product/clothes,服装
+product/stone,石料
+product/cement,Cement
+product/metal_ore,Metal ore
+product/metal,Metal
+product/cold_arms,Cold arms
+product/ammunition,Ammunition
+product/firearms,Firearms
+product/artillery,Artillery
+product/oil,石油
+product/motor_fuel,Motor Fuel
+product/machinery,Machinery
+product/rubber,Rubber
+product/cars,汽车
+product/tanks,坦克
+product/,Airplanes
+product/,Coal
+product/,Tobacco
+product/,Electronics
+product/,Gold
+product/,Education
+product/,食物
+product/,Sugar
+product/,Fibers
+product/,Fuel
 ok,确定
 close,关闭
 close_window,关闭窗口
@@ -71,6 +103,8 @@ inventions_panel/invention,发明
 inventions_panel/status,状态
 inventions_panel/science_points,科学点数
 inventions_panel/already_invented,已经研发
+inventions_panel/invented,已研发
+inventions_panel/uninvented,未研发
 inventions_panel/not_enough_point,科学点数不足以研发
 inventions_panel/invent,研发
 inventions_panel/points,科学点数：

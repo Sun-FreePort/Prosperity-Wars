@@ -4,6 +4,7 @@ using Nashet.Utils;
 using Nashet.ValueSpace;
 using System.Collections.Generic;
 using Lean.Localization;
+using UnityEngine;
 
 namespace Nashet.EconomicSimulation
 {
@@ -57,7 +58,7 @@ namespace Nashet.EconomicSimulation
                 "inventions/welfare_tips",
                 new Value(90f)),
             Gunpowder = new Invention("inventions/gunpowder_tips",
-                "inventions/gunpowder_tips_tips",
+                "inventions/gunpowder_tips",
                 new Value(100f), Metal),
             Firearms = new Invention("inventions/hand_cannons",
                 "inventions/hand_cannons_tips",
@@ -89,7 +90,7 @@ namespace Nashet.EconomicSimulation
             //Coal = new Invention("inventions/coal",
             //"inventions/coal_tips",
             //new Value(100f), Metal),
-            Universities = new Invention("inventions/universities",
+            Universities = new Invention("Universities",
                 "inventions/universities_tips",
                 new Value(150f));
 
@@ -97,7 +98,7 @@ namespace Nashet.EconomicSimulation
 
         protected Invention(string name, string description, Value cost, params Invention[] requiredInventions) : base(name)
         {
-            this.description = LeanLocalization.GetTranslationText(description);
+            this.description = description;
             this.Cost = cost;
             allInventions.Add(this);
             if (requiredInventions != null)
@@ -126,7 +127,7 @@ namespace Nashet.EconomicSimulation
 
         public override string FullName
         {
-            get { return description; }
+            get { return LeanLocalization.GetTranslationText(description); }
         }
 
         public void OnClicked()

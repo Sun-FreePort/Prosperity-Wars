@@ -18,9 +18,9 @@ namespace Nashet.EconomicSimulation
             AddCell(invention.Key.ToString(), invention.Key);
             ////Adding possibleStatues
             if (invention.Value)
-                AddCell("Invented", invention.Key);
+                AddCell(LeanLocalization.GetTranslationText("inventions_panel/invented"), invention.Key);
             else
-                AddCell("Uninvented", invention.Key);
+                AddCell(LeanLocalization.GetTranslationText("inventions_panel/uninvented"), invention.Key);
             ////Adding invention price
             AddCell(invention.Key.Cost.ToString(), invention.Key);
         }

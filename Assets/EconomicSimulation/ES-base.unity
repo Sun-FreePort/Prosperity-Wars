@@ -382,6 +382,121 @@ MonoBehaviour:
     Text: "\u7ED9\u4E88\u72EC\u7ACB"
   - Name: goods_panel/title
     Text: "\u4EF7\u683C\u5386\u53F2"
+  - Name: inventions_panel/title
+    Text: "\u79D1\u7814\u9762\u677F"
+  - Name: inventions_panel/invention
+    Text: "\u53D1\u660E"
+  - Name: inventions_panel/status
+    Text: "\u72B6\u6001"
+  - Name: inventions_panel/science_points
+    Text: "\u79D1\u5B66\u70B9\u6570"
+  - Name: inventions_panel/already_invented
+    Text: "\u5DF2\u7ECF\u7814\u53D1"
+  - Name: inventions_panel/invented
+    Text: "\u5DF2\u7814\u53D1"
+  - Name: inventions_panel/uninvented
+    Text: "\u672A\u7814\u53D1"
+  - Name: inventions_panel/not_enough_point
+    Text: "\u79D1\u5B66\u70B9\u6570\u4E0D\u8DB3\u4EE5\u7814\u53D1"
+  - Name: inventions_panel/invent
+    Text: "\u7814\u53D1"
+  - Name: inventions_panel/points
+    Text: "\u79D1\u5B66\u70B9\u6570\uFF1A"
+  - Name: inventions_panel/select_left_invention
+    Text: "\n\n\u4ECE\u5DE6\u4FA7\u9009\u62E9\u53D1\u660E"
+  - Name: inventions_panel/select_left
+    Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9"
+  - Name: inventions/farming
+    Text: "\u519C\u4E1A"
+  - Name: inventions/farming_tips
+    Text: "\u5141\u8BB8\u519C\u4E1A\u548C\u519C\u6C11"
+  - Name: inventions/banking
+    Text: "\u94F6\u884C\u4E1A"
+  - Name: inventions/banking_tips
+    Text: "\u5141\u8BB8\u56FD\u5BB6\u94F6\u884C\u3001\u4FE1\u8D37\u548C\u5B58\u6B3E\u3002\u8FD8\u5141\u8BB8\u5E9F\u9664\u519C\u5974\u5236\uFF0C\u5E76\u5BF9\u8D35\u65CF\u7ED9\u4E88\u8865\u507F"
+  - Name: inventions/manufactures
+    Text: "\u5236\u9020\u4E1A"
+  - Name: inventions/manufactures_tips
+    Text: "\u5141\u8BB8\u5EFA\u7B51\u5236\u9020\u4E1A\u52A0\u5DE5\u539F\u6750\u6599\u4EA7\u54C1"
+  - Name: inventions/flying_shuttle
+    Text: "\u7EA6\u7FF0\xB7\u51EF\u4F0A\u7684\u98DE\u68AD"
+  - Name: inventions/flying_shuttle_tips
+    Text: "\u5141\u8BB8\u5EFA\u7ACB\u7EC7\u5E03\u5382"
+  - Name: inventions/mining
+    Text: "\u91C7\u77FF"
+  - Name: inventions/mining_tips
+    Text: "\u5141\u8BB8\u4ECE\u5730\u6D1E\u4E2D\u91C7\u96C6\u8D44\u6E90\uFF0C\u589E\u5F3A\u5176
+      50% \u7684\u6548\u7387"
+  - Name: inventions/metal
+    Text: "\u51B6\u91D1"
+  - Name: inventions/metal_tips
+    Text: "\u5141\u8BB8\u91D1\u5C5E\u77FF\u77F3\u548C\u51B6\u70BC\u3002\u5141\u8BB8\u51B7\u5175\u5668\u3002"
+  - Name: inventions/classical_liberalism
+    Text: "\u53E4\u5178\u81EA\u7531\u4E3B\u4E49"
+  - Name: inventions/classical_liberalism_tips
+    Text: "\u5141\u8BB8\u81EA\u7531\u653E\u4EFB\u653F\u7B56\u3001\u8D44\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u63A8\u884C\u666E\u904D\u6C11\u4E3B\u3002"
+  - Name: inventions/keynesianism
+    Text: "\u51EF\u6069\u65AF\u4E3B\u4E49"
+  - Name: inventions/keynesianism_tips
+    Text: "\u5141\u8BB8\u5BF9\u7ECF\u6D4E\u8FDB\u884C\u6709\u9650\u5E72\u9884"
+  - Name: inventions/collectivism
+    Text: "\u96C6\u4F53\u4E3B\u4E49"
+  - Name: inventions/collectivism_tips
+    Text: "\u5141\u8BB8\u65E0\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u8BA1\u5212\u7ECF\u6D4E"
+  - Name: inventions/steam_power
+    Text: "\u84B8\u6C7D\u52A8\u529B"
+  - Name: inventions/steam_power_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u673A\u68B0\u548C\u6C34\u6CE5\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
+      25%"
+  - Name: inventions/welfare
+    Text: "\u798F\u5229"
+  - Name: inventions/welfare_tips
+    Text: "\u5141\u8BB8\u5931\u4E1A\u6551\u6D4E\u548C\u5168\u6C11\u8865\u8D34"
+  - Name: inventions/gunpowder
+    Text: "\u706B\u836F"
+  - Name: inventions/gunpowder_tips
+    Text: "\u5141\u8BB8\u70AE\u5175\u4F7F\u7528\u706B\u70AE"
+  - Name: inventions/hand_cannons
+    Text: "\u4FBF\u643A\u706B\u5668"
+  - Name: inventions/hand_cannons_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u706B\u5668\uFF0C\u5728\u6218\u6597\u4E2D\u975E\u5E38\u6709\u6548"
+  - Name: inventions/combustion_engine
+    Text: "\u5185\u71C3\u673A"
+  - Name: inventions/combustion_engine_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u77F3\u6CB9\u3001\u71C3\u6599\u3001\u6C7D\u8F66\u3001\u6A61\u80F6\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
+      25%"
+  - Name: inventions/tanks
+    Text: "\u5766\u514B"
+  - Name: inventions/tanks_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u5766\u514B"
+  - Name: inventions/airplanes
+    Text: "\u98DE\u673A"
+  - Name: inventions/airplanes_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u98DE\u673A"
+  - Name: inventions/professional_army
+    Text: "\u804C\u4E1A\u519B\u961F"
+  - Name: inventions/professional_army_tips
+    Text: "\u5141\u8BB8\u58EB\u5175"
+  - Name: inventions/domestication
+    Text: "\u755C\u7267\u4E1A"
+  - Name: inventions/domestication_tips
+    Text: "\u5141\u8BB8\u5728\u755C\u680F\u4E2D\u517B\u725B\u3002\u8FD8\u5141\u8BB8\u5728\u519B\u961F\u4E2D\u4F7F\u7528\u9A6C\u5339"
+  - Name: inventions/electronics
+    Text: "\u7535\u5B50\u5316"
+  - Name: inventions/electronics_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u7535\u5B50\u4EA7\u54C1"
+  - Name: inventions/tobacco
+    Text: "\u70DF\u8349"
+  - Name: inventions/tobacco_tips
+    Text: "\u5141\u8BB8\u79CD\u690D\u70DF\u8349"
+  - Name: inventions/coal
+    Text: "\u7164\u70AD"
+  - Name: inventions/coal_tips
+    Text: "\u5141\u8BB8\u7164\u70AD"
+  - Name: inventions/universities
+    Text: "\u5927\u5B66"
+  - Name: inventions/universities_tips
+    Text: "\u5141\u8BB8\u5EFA\u7ACB\u5927\u5B66"
   - Name: factory_panel/title
     Text: "\u4F01\u4E1A\u4FE1\u606F"
   - Name: factory_panel/nationalize
@@ -406,7 +521,7 @@ MonoBehaviour:
     Text: "\u9009\u62E9\u5EFA\u8BBE\u7701\u4EFD"
   - Name: build_panel/select_building
     Text: "\u9009\u62E9\u5EFA\u7B51"
-  - Name: build_panel/select_building_left
+  - Name: build_panel/select_left_building
     Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9\u5EFA\u7B51"
   - Name: build_panel/name
     Text: "\u540D\u79F0"
@@ -790,6 +905,124 @@ MonoBehaviour:
     Text: Grant Independence
   - Name: goods_panel/title
     Text: Price history
+  - Name: inventions_panel/title
+    Text: Inventions
+  - Name: inventions_panel/invention
+    Text: Invention
+  - Name: inventions_panel/status
+    Text: Status
+  - Name: inventions_panel/science_points
+    Text: Science points
+  - Name: inventions_panel/already_invented
+    Text: 'Already invented '
+  - Name: inventions_panel/invented
+    Text: Invented
+  - Name: inventions_panel/uninvented
+    Text: Uninvented
+  - Name: inventions_panel/not_enough_point
+    Text: 'Not enough Science points to invent '
+  - Name: inventions_panel/invent
+    Text: 'Invent '
+  - Name: inventions_panel/points
+    Text: 'Science points: '
+  - Name: inventions_panel/select_left_invention
+    Text: '
+
+
+      Select invention from left panel'
+  - Name: inventions_panel/select_left
+    Text: Select from left
+  - Name: inventions/farming
+    Text: Farming
+  - Name: inventions/farming_tips
+    Text: Allows farming and farmers
+  - Name: inventions/banking
+    Text: Banking
+  - Name: inventions/banking_tips
+    Text: Allows national bank, credits and deposits. Also allows serfdom abolishment
+      with compensation for aristocrats
+  - Name: inventions/manufactures
+    Text: Manufactures
+  - Name: inventions/manufactures_tips
+    Text: Allows building manufactures to process raw product
+  - Name: inventions/flying_shuttle
+    Text: John Kay's Flying shuttle
+  - Name: inventions/flying_shuttle_tips
+    Text: Allows Weaver factory
+  - Name: inventions/mining
+    Text: Mining
+  - Name: inventions/mining_tips
+    Text: Allows resource gathering from holes in ground, increasing it's efficiency
+      by 50%
+  - Name: inventions/metal
+    Text: Metal
+  - Name: inventions/metal_tips
+    Text: Allows metal ore and smelting. Allows Cold arms
+  - Name: inventions/classical_liberalism
+    Text: Classical liberalism
+  - Name: inventions/classical_liberalism_tips
+    Text: Allows Laissez faire policy, Universal Democracy, Bourgeois dictatorship
+  - Name: inventions/keynesianism
+    Text: Keynesianism
+  - Name: inventions/keynesianism_tips
+    Text: Allows Limited Interventionism in economy
+  - Name: inventions/collectivism
+    Text: Collectivism
+  - Name: inventions/collectivism_tips
+    Text: Allows Proletarian dictatorship & Planned Economy
+  - Name: inventions/steam_power
+    Text: Steam Power
+  - Name: inventions/steam_power_tips
+    Text: Allows Machinery & Cement, Increases efficiency of all enterprises by 25%
+  - Name: inventions/welfare
+    Text: Welfare
+  - Name: inventions/welfare_tips
+    Text: Allows Unemployment Benefits and UBI
+  - Name: inventions/gunpowder
+    Text: Gunpowder
+  - Name: inventions/gunpowder_tips
+    Text: Allows Artillery & Ammunition
+  - Name: inventions/hand_cannons
+    Text: Hand-held cannons
+  - Name: inventions/hand_cannons_tips
+    Text: Allows Firearms, very efficient in battles
+  - Name: inventions/combustion_engine
+    Text: Combustion engine
+  - Name: inventions/combustion_engine_tips
+    Text: Allows Oil, Fuel, Cars, Rubber, Increases efficiency of all enterprises
+      by 25%
+  - Name: inventions/tanks
+    Text: Tanks
+  - Name: inventions/tanks_tips
+    Text: Allows Tanks
+  - Name: inventions/airplanes
+    Text: Airplanes
+  - Name: inventions/airplanes_tips
+    Text: Allows Airplanes
+  - Name: inventions/professional_army
+    Text: Professional Army
+  - Name: inventions/professional_army_tips
+    Text: Allows soldiers
+  - Name: inventions/domestication
+    Text: Domestication
+  - Name: inventions/domestication_tips
+    Text: Allows barnyard producing cattle. Also allows using horses in army
+  - Name: inventions/electronics
+    Text: Electronics
+  - Name: inventions/electronics_tips
+    Text: Allows Electronics
+  - Name: inventions/tobacco
+    Text: Tobacco
+  - Name: inventions/tobacco_tips
+    Text: Allows Tobacco
+  - Name: inventions/coal
+    Text: Coal
+  - Name: inventions/coal_tips
+    Text: Allows coal
+  - Name: inventions/universities
+    Text: Universities
+  - Name: inventions/universities_tips
+    Text: Allows building of Universities
   - Name: factory_panel/title
     Text: Enterprise info
   - Name: factory_panel/nationalize
@@ -814,7 +1047,7 @@ MonoBehaviour:
     Text: Select province where to build
   - Name: build_panel/select_building
     Text: Select building
-  - Name: build_panel/select_building_left
+  - Name: build_panel/select_left_building
     Text: Select building from left
   - Name: build_panel/name
     Text: Name

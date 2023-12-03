@@ -39,7 +39,7 @@ namespace Nashet.Utils
 
         public override string ToString()
         {
-            return name;
+            return LeanLocalization.GetTranslationText(name) ?? name;
         }
     }
 }

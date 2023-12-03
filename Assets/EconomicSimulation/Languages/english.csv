@@ -25,6 +25,38 @@ common/profit,Profit
 common/profitability,Profitability
 common/salary,Salary
 common/build,Build
+product/grain,Grain
+product/cattle,Cattle
+product/liquor,Liquor
+product/wood,Wood
+product/lumber,Lumber
+product/furniture,Furniture
+product/cotton,Cotton
+product/clothes,Clothes
+product/stone,Stone
+product/cement,Cement
+product/metal_ore,Metal ore
+product/metal,Metal
+product/cold_arms,Cold arms
+product/ammunition,Ammunition
+product/firearms,Firearms
+product/artillery,Artillery
+product/oil,Oil
+product/motor_fuel,Motor Fuel
+product/machinery,Machinery
+product/rubber,Rubber
+product/cars,Cars
+product/tanks,Tanks
+product/,Airplanes
+product/,Coal
+product/,Tobacco
+product/,Electronics
+product/,Gold
+product/,Education
+product/,Food
+product/,Sugar
+product/,Fibers
+product/,Fuel
 ok,OK
 close,Close
 close_window,Close window
@@ -71,6 +103,8 @@ inventions_panel/invention,Invention
 inventions_panel/status,Status
 inventions_panel/science_points,Science points
 inventions_panel/already_invented,"Already invented "
+inventions_panel/invented,Invented
+inventions_panel/uninvented,Uninvented
 inventions_panel/not_enough_point,"Not enough Science points to invent "
 inventions_panel/invent,"Invent "
 inventions_panel/points,"Science points: "
