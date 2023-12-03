@@ -6,11 +6,33 @@ military,Military
 finance,Finance
 politics,Politics
 inventions,Inventions
-population,Population
 enterprises,Enterprises
 trade,Trade
+common/type,Type
+common/province,Province
+common/population,Population
+common/culture,Culture
+common/education,Education
+common/cash,Cash
+common/needs_fulfilled,Needs fulfilled
+common/loyalty,Loyalty
+common/seeks_job,Seeks job
+common/movement,Movement
+common/resources,Resources
+common/production,Production
+common/workforce,Workforce
+common/profit,Profit
+common/profitability,Profitability
+common/salary,Salary
+common/build,Build
 ok,OK
+close,Close
+close_window,Close window
 none,none
+sell,Sell
+buy,Buy
+show_all,Show all
+hide_all,Hide all
 bottom_panel/statistics,Statistics
 bottom_panel/wiki,Wiki
 bottom_panel/credits,Credits
@@ -43,6 +65,95 @@ province_panel/mobilize,Mobilize
 province_panel/enterprises,Enterprises
 province_panel/build,Build
 province_panel/grant_independence,Grant Independence
+goods_panel/title,Price history
+inventions_panel/title,Inventions
+inventions_panel/invention,Invention
+inventions_panel/status,Status
+inventions_panel/science_points,Science points
+inventions_panel/already_invented,"Already invented "
+inventions_panel/not_enough_point,"Not enough Science points to invent "
+inventions_panel/invent,"Invent "
+inventions_panel/points,"Science points: "
+inventions_panel/select_left_invention,"
+
+Select invention from left panel"
+inventions_panel/select_left,Select from left
+inventions/farming,Farming
+inventions/farming_tips,Allows farming and farmers
+inventions/banking,Banking
+inventions/banking_tips,"Allows national bank, credits and deposits. Also allows serfdom abolishment with compensation for aristocrats"
+inventions/manufactures,Manufactures
+inventions/manufactures_tips,"Allows building manufactures to process raw product"
+inventions/flying_shuttle,"John Kay's Flying shuttle"
+inventions/flying_shuttle_tips,"Allows Weaver factory"
+inventions/mining,Mining
+inventions/mining_tips,"Allows resource gathering from holes in ground, increasing it's efficiency by 50%"
+inventions/metal,Metal
+inventions/metal_tips,"Allows metal ore and smelting. Allows Cold arms"
+inventions/classical_liberalism,Classical liberalism
+inventions/classical_liberalism_tips,"Allows Laissez faire policy, Universal Democracy, Bourgeois dictatorship"
+inventions/keynesianism,Keynesianism
+inventions/keynesianism_tips,"Allows Limited Interventionism in economy"
+inventions/collectivism,Collectivism
+inventions/collectivism_tips,"Allows Proletarian dictatorship & Planned Economy"
+inventions/steam_power,Steam Power
+inventions/steam_power_tips,"Allows Machinery & Cement, Increases efficiency of all enterprises by 25%"
+inventions/welfare,Welfare
+inventions/welfare_tips,"Allows Unemployment Benefits and UBI"
+inventions/gunpowder,Gunpowder
+inventions/gunpowder_tips,"Allows Artillery & Ammunition"
+inventions/hand_cannons,Hand-held cannons
+inventions/hand_cannons_tips,"Allows Firearms, very efficient in battles"
+inventions/combustion_engine,Combustion engine
+inventions/combustion_engine_tips,"Allows Oil, Fuel, Cars, Rubber, Increases efficiency of all enterprises by 25%"
+inventions/tanks,Tanks
+inventions/tanks_tips,"Allows Tanks"
+inventions/airplanes,Airplanes
+inventions/airplanes_tips,"Allows Airplanes"
+inventions/professional_army,Professional Army
+inventions/professional_army_tips,"Allows soldiers"
+inventions/domestication,Domestication
+inventions/domestication_tips,"Allows barnyard producing cattle. Also allows using horses in army"
+inventions/electronics,Electronics
+inventions/electronics_tips,"Allows Electronics"
+inventions/tobacco,Tobacco
+inventions/tobacco_tips,"Allows Tobacco"
+inventions/coal,Coal
+inventions/coal_tips,"Allows coal"
+inventions/universities,Universities
+inventions/universities_tips,"Allows building of Universities"
+factory_panel/title,Enterprise info
+factory_panel/nationalize,Nationalize
+factory_panel/upgrade,Upgrade
+factory_panel/reopen,Reopen
+factory_panel/destroy,Destroy
+factory_panel/subsidize,Subsidize
+factory_panel/no_hire_subsidies,Don't hire on subsidies
+statistics_panel/title,Statistics
+build_panel/title,Build new enterprise
+build_panel/no_build_now,Nothing to build now
+build_panel/select_province,Select province where to build
+build_panel/select_building,Select building
+build_panel/select_left_building,Select building from left
+build_panel/name,Name
+build_panel/cost,Cost
+build_panel/output,Output
+build_panel/potential_margin,Potential margin
+build_panel/,
+enterprises_panel/title,Enterprises list
+enterprises_panel/country_scope,Country scope
+enterprises_panel/entire_world,Entire world
+enterprises_panel/private_owned,Private owned
+enterprises_panel/unsubsidized,Unsubsidized
+enterprises_panel/uninvestable,Uninvestable
+population_panel/title,Population list
+population_panel/workers,Workers
+population_panel/artisans,Artisans
+population_panel/farmers,Farmers
+population_panel/tribesmen,Tribesmen
+population_panel/capitalists,Capitalists
+population_panel/aristocrats,Aristocrats
+population_panel/soldiers,Soldiers
 map_options/title,Map options
 map_options/random_map,Random map
 map_options/map_from_file,Map from file (experimental)

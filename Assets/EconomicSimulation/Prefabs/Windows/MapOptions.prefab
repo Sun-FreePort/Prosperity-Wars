@@ -207,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f87c8e4381dd140816922f1be162f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Adds factories to each country, techs and more workforce. Gives faster market
-    formation.
+  text: 
+  textKey: map_options/industrial_tips
   isDynamic: 0
 --- !u!1 &1096109704189548
 GameObject:

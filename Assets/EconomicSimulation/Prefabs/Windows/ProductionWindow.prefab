@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592334834730632}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -112,7 +111,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592334781500849}
   m_Father: {fileID: 1047592335708213785}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -168,6 +166,7 @@ GameObject:
   - component: {fileID: 1047592334554482319}
   - component: {fileID: 1047592334554482317}
   - component: {fileID: 1047592334554482316}
+  - component: {fileID: 8675660843157008741}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -188,7 +187,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592336396270884}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -236,7 +234,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Uninvestable
+  m_Text: "\u4E0D\u53EF\u6295\u8D44"
+--- !u!114 &8675660843157008741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592334554482318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/uninvestable
+  FallbackText: Uninvestable
 --- !u!1 &1047592334623635185
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +283,6 @@ RectTransform:
   - {fileID: 1047592335685260313}
   - {fileID: 1047592335547280705}
   m_Father: {fileID: 1047592335443763602}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -374,7 +385,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592335694444606}
   m_Father: {fileID: 1047592334834730632}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -450,7 +460,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335554656647}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -526,7 +535,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592334485476748}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -605,7 +613,6 @@ RectTransform:
   - {fileID: 1047592334634991439}
   - {fileID: 1047592334473915078}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -716,6 +723,7 @@ GameObject:
   - component: {fileID: 1047592334946263490}
   - component: {fileID: 1047592334946263501}
   - component: {fileID: 1047592334946263491}
+  - component: {fileID: 2360531481982140240}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -736,7 +744,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335708213785}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -784,7 +791,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unsubsidized
+  m_Text: "\u65E0\u8865\u8D34"
 --- !u!114 &1047592334946263491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,7 +805,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Uncheck it if you want to see subsidized enterprises
+  textKey: 
   isDynamic: 0
+--- !u!114 &2360531481982140240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592334946263503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/unsubsidized
+  FallbackText: Unsubsidized
 --- !u!1 &1047592335001496692
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +852,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592336491496469}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -886,6 +907,7 @@ GameObject:
   - component: {fileID: 1047592335131984593}
   - component: {fileID: 1047592335131984599}
   - component: {fileID: 1047592335131984598}
+  - component: {fileID: 3429780667890433516}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -906,7 +928,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335343188294}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -954,7 +975,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Close
+  m_Text: "\u5173\u95ED"
+--- !u!114 &3429780667890433516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592335131984592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: close
+  FallbackText: Close
 --- !u!1 &1047592335263907432
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +1024,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592336278891404}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1136,7 +1170,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592335131984593}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1260,6 +1293,7 @@ GameObject:
   - component: {fileID: 1047592335429342165}
   - component: {fileID: 1047592335429342155}
   - component: {fileID: 1047592335429342154}
+  - component: {fileID: 8283916958076760405}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1280,7 +1314,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335990871827}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1328,7 +1361,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Country scope
+  m_Text: "\u56FD\u5BB6\u8303\u56F4"
+--- !u!114 &8283916958076760405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592335429342164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/country_scope
+  FallbackText: Country scope
 --- !u!1 &1047592335443763613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1411,6 @@ RectTransform:
   - {fileID: 1047592335869931071}
   - {fileID: 1047592334623635190}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1487,7 +1533,6 @@ RectTransform:
   - {fileID: 1047592335708213785}
   - {fileID: 1047592336396270884}
   m_Father: {fileID: 1047592334623635190}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1572,7 +1617,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592334719608997}
   m_Father: {fileID: 1047592336396270884}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1650,7 +1694,6 @@ RectTransform:
   - {fileID: 1047592335842410706}
   - {fileID: 1047592336210535373}
   m_Father: {fileID: 1047592334623635190}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1734,7 +1777,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592334634991439}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1812,7 +1854,6 @@ RectTransform:
   - {fileID: 1047592334485476748}
   - {fileID: 1047592334946263500}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1923,7 +1964,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592336178829300}
   m_Father: {fileID: 1047592335837246107}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2002,7 +2042,6 @@ RectTransform:
   - {fileID: 1047592335830590253}
   - {fileID: 1047592336283673460}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2094,6 +2133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Uncheck it if you want to see government-owned enterprises
+  textKey: 
   isDynamic: 0
 --- !u!1 &1047592335842410718
 GameObject:
@@ -2127,7 +2167,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335685260313}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2230,7 +2269,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592336077741658}
   m_Father: {fileID: 1047592335443763602}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2312,6 +2350,7 @@ GameObject:
   - component: {fileID: 1047592335874455622}
   - component: {fileID: 1047592335874455620}
   - component: {fileID: 1047592335874455623}
+  - component: {fileID: 2494542732863584400}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2332,7 +2371,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335876616525}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2380,7 +2418,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Entire world
+  m_Text: "\u4E16\u754C\u8303\u56F4"
+--- !u!114 &2494542732863584400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592335874455617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/entire_world
+  FallbackText: Entire world
 --- !u!1 &1047592335876616524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2467,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592335874455622}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2562,7 +2613,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592335429342165}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2686,6 +2736,7 @@ GameObject:
   - component: {fileID: 1047592336077741658}
   - component: {fileID: 1047592336077741656}
   - component: {fileID: 1047592336077741659}
+  - component: {fileID: 2010148020000252664}
   m_Layer: 5
   m_Name: CaptionText
   m_TagString: Untagged
@@ -2706,7 +2757,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335869931071}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2754,7 +2804,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enterprises list
+  m_Text: "\u4F01\u4E1A\u540D\u5F55"
+--- !u!114 &2010148020000252664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592336077741733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/title
+  FallbackText: Enterprises list
 --- !u!1 &1047592336178829303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,7 +2850,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335830590253}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2865,7 +2928,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592336491496469}
   m_Father: {fileID: 1047592335685260313}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3003,6 +3065,7 @@ GameObject:
   - component: {fileID: 1047592336278891404}
   - component: {fileID: 1047592336278891394}
   - component: {fileID: 1047592336278891405}
+  - component: {fileID: 5701260554698612605}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -3023,7 +3086,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335263907433}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3071,7 +3133,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hide all
+  m_Text: "\u9690\u85CF\u6240\u6709"
+--- !u!114 &5701260554698612605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592336278891407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: hide_all
+  FallbackText: Hide all
 --- !u!1 &1047592336283673463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,6 +3159,7 @@ GameObject:
   - component: {fileID: 1047592336283673460}
   - component: {fileID: 1047592336283673450}
   - component: {fileID: 1047592336283673461}
+  - component: {fileID: 6700955357325735159}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -3103,7 +3180,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1047592335837246107}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3151,7 +3227,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Private owned
+  m_Text: "\u79C1\u4EBA\u62E5\u6709"
+--- !u!114 &6700955357325735159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047592336283673463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: enterprises_panel/private_owned
+  FallbackText: Private owned
 --- !u!1 &1047592336396270887
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,7 +3276,6 @@ RectTransform:
   - {fileID: 1047592335554656647}
   - {fileID: 1047592334554482319}
   m_Father: {fileID: 1047592335547280705}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3278,6 +3367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Uncheck if you want see where you can invest
+  textKey: 
   isDynamic: 0
 --- !u!1 &1047592336491496468
 GameObject:
@@ -3309,7 +3399,6 @@ RectTransform:
   m_Children:
   - {fileID: 1047592335001496693}
   m_Father: {fileID: 1047592336210535373}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

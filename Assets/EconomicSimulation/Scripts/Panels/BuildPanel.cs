@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using Nashet.EconomicSimulation.Reforms;
 using Nashet.GameplayControllers;
 using Nashet.Map.GameplayControllers;
@@ -123,7 +124,7 @@ namespace Nashet.EconomicSimulation
                 }
                 sb.Append("\nEveryday resource input: ");
                 if (selectedFactoryType.resourceInput == null)
-                    sb.Append("none");
+                    sb.Append(LeanLocalization.GetTranslationText("none"));
                 else
                     sb.Append(selectedFactoryType.resourceInput);
 
@@ -139,13 +140,13 @@ namespace Nashet.EconomicSimulation
             else
             {
                 buildButton.interactable = false;
-                buildButton.GetComponentInChildren<Text>().text = "Select building";
+                buildButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("build_panel/select_building");
                 if (provinceSelectionHelper.selectedProvince == null)
-                    descriptionText.text = "Select province where to build";
+                    descriptionText.text = LeanLocalization.GetTranslationText("build_panel/select_province");
                 else if (ProductionType.getAllInventedFactories(Game.Player).Where(x => x.canBuildNewFactory(provinceSelectionHelper.selectedProvince, Game.Player)).Count() == 0)
-                    descriptionText.text = "Nothing to build now";
+                    descriptionText.text = LeanLocalization.GetTranslationText("build_panel/no_build_now");
                 else
-                    descriptionText.text = "Select building from left";
+                    descriptionText.text = LeanLocalization.GetTranslationText("build_panel/select_left_building");
             }
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using Nashet.UnityUIUtils;
 using Nashet.Utils;
 
@@ -105,36 +106,36 @@ namespace Nashet.EconomicSimulation
 			// AddButton("Number");
 
 			// Adding PopType
-			AddCell("Type" + popTypeOrder.getSymbol(), popTypeOrder);
+			AddCell(LeanLocalization.GetTranslationText("common/type") + popTypeOrder.getSymbol(), popTypeOrder);
 
             ////Adding province
-            AddCell("Province" + provinceOrder.getSymbol(), provinceOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/province") + provinceOrder.getSymbol(), provinceOrder);
 
             ////Adding population
-            AddCell("Population" + populationOrder.getSymbol(), populationOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/population") + populationOrder.getSymbol(), populationOrder);
 
             ////Adding culture
-            AddCell("Culture" + cultureOrder.getSymbol(), cultureOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/culture") + cultureOrder.getSymbol(), cultureOrder);
 
             ////Adding education
-            AddCell("Education" + educationOrder.getSymbol(), educationOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/education") + educationOrder.getSymbol(), educationOrder);
 
             ////Adding storage
             //if (null.storage != null)
-            AddCell("Cash" + cashOrder.getSymbol(), cashOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/cash") + cashOrder.getSymbol(), cashOrder);
             //else AddButton("Administration");
 
             ////Adding needs fulfilling
-            AddCell("Needs fulfilled" + needsFulfillmentOrder.getSymbol(), needsFulfillmentOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/needs_fulfilled") + needsFulfillmentOrder.getSymbol(), needsFulfillmentOrder);
 
             ////Adding loyalty
-            AddCell("Loyalty" + loyaltyOrder.getSymbol(), loyaltyOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/loyalty") + loyaltyOrder.getSymbol(), loyaltyOrder);
 
             ////Adding Unemployment
-            AddCell("Seeks job" + seekingJobOrder.getSymbol(), seekingJobOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/seeks_job") + seekingJobOrder.getSymbol(), seekingJobOrder);
 
             //Adding Movement
-            AddCell("Movement" + movementOrder.getSymbol(), movementOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/movement") + movementOrder.getSymbol(), movementOrder);
         }
     }
 }

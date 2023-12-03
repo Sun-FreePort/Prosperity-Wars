@@ -1,4 +1,5 @@
 ﻿using System;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,7 @@ namespace Nashet.UnityUIUtils
         /// <summary>Has to be public to allow direct write in Condition.isAllTRue()</summary>
         [TextArea]
         public string text;
+        public string textKey;
 
         /// <summary>forces tooltip to update</summary>
         [SerializeField]          
@@ -87,12 +89,14 @@ namespace Nashet.UnityUIUtils
 
         public void Show()
         {
-            if (text != "" || dynamicText != null)
+            if (text != "" || textKey != "" || dynamicText != null)
             {
-                if (dynamicText == null)
-                    TooltipBase.get().SetTooltip(text);
-                else
+                if (dynamicText != null)
                     TooltipBase.get().SetTooltip(dynamicText());
+                else if (textKey != "")
+                    TooltipBase.get().SetTooltip(LeanLocalization.GetTranslationText(textKey));
+                else
+                    TooltipBase.get().SetTooltip(text);
                 inside = true;
             }
         }

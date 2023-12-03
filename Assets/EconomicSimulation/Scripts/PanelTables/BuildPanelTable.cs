@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Lean.Localization;
 using Nashet.EconomicSimulation.Reforms;
 using Nashet.GameplayControllers;
 using Nashet.UnityUIUtils;
@@ -48,19 +49,19 @@ namespace Nashet.EconomicSimulation
         protected override void AddHeader()
         {
             // Adding shownFactory type
-            AddCell("Name");
+            AddCell(LeanLocalization.GetTranslationText("build_panel/name"));
 
             ////Adding cost
-            AddCell("Cost");
+            AddCell(LeanLocalization.GetTranslationText("build_panel/cost"));
 
             ////Adding resource needed
             //AddButton("Input", null);
 
             ////Adding potential output
-            AddCell("Output");
+            AddCell(LeanLocalization.GetTranslationText("build_panel/output"));
 
             ////Adding potential profit
-            AddCell("Potential margin");
+            AddCell(LeanLocalization.GetTranslationText("build_panel/potential_margin"));
         }
     }
 }

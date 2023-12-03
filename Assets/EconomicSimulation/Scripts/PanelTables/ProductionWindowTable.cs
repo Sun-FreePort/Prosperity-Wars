@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Lean.Localization;
 using Nashet.EconomicSimulation.Reforms;
 using Nashet.UnityUIUtils;
 
@@ -109,30 +110,30 @@ namespace Nashet.EconomicSimulation
             if (typeOrder == null)
                 Start();
             // Adding product name
-            AddCell("Type" + typeOrder.getSymbol(), typeOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/type") + typeOrder.getSymbol(), typeOrder);
 
             // Adding province
-            AddCell("Province" + provinceOrder.getSymbol(), provinceOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/province") + provinceOrder.getSymbol(), provinceOrder);
 
             ////Adding production
-            AddCell("Production" + productionOrder.getSymbol(), productionOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/production") + productionOrder.getSymbol(), productionOrder);
 
             ////Adding effective resource income
-            AddCell("Resources" + resourcesOrder.getSymbol(), resourcesOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/resources") + resourcesOrder.getSymbol(), resourcesOrder);
 
             ////Adding workforce
-            AddCell("Workforce" + workForceOrder.getSymbol(), workForceOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/workforce") + workForceOrder.getSymbol(), workForceOrder);
 
             ////Adding money income
-            AddCell("Profit" + profitOrder.getSymbol(), profitOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/profit") + profitOrder.getSymbol(), profitOrder);
 
             ////Adding profit
-            AddCell("Profitability" + profitabilityOrder.getSymbol(), profitabilityOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/profitability") + profitabilityOrder.getSymbol(), profitabilityOrder);
 
             ////Adding salary
-            AddCell("Salary" + salaryOrder.getSymbol(), salaryOrder);
+            AddCell(LeanLocalization.GetTranslationText("common/salary") + salaryOrder.getSymbol(), salaryOrder);
 
-            AddCell("Seeks job" + unemploymentOrder.getSymbol(), unemploymentOrder, () => "How much pops seek for a job in province.\nSome pops might sit on social benefits not willing to work");
+            AddCell(LeanLocalization.GetTranslationText("common/seeks_job") + unemploymentOrder.getSymbol(), unemploymentOrder, () => "How much pops seek for a job in province.\nSome pops might sit on social benefits not willing to work");
         }
     }
 }

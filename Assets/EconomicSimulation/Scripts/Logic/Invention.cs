@@ -3,6 +3,7 @@ using Nashet.UnityUIUtils;
 using Nashet.Utils;
 using Nashet.ValueSpace;
 using System.Collections.Generic;
+using Lean.Localization;
 
 namespace Nashet.EconomicSimulation
 {
@@ -16,57 +17,87 @@ namespace Nashet.EconomicSimulation
         public ConditionsList InventedPreviousTechs { get; protected set; } = new ConditionsList();
         public Condition Invented { get; protected set; }
 
-        public static readonly Invention Farming = new Invention("Farming", "Allows farming and farmers", new Value(100f)),
-            Banking = new Invention("Banking",
-                "Allows national bank, credits and deposits. Also allows serfdom abolishment with compensation for aristocrats",
+        public static readonly Invention
+            Farming = new Invention("inventions/farming",
+                "inventions/farming_tips",
+                new Value(100f)),
+            Banking = new Invention("inventions/banking",
+                "inventions/banking_tips",
                 new Value(100f)),
 
-            Manufactures = new Invention("Manufactures", "Allows building manufactures to process raw product", new Value(80f)),
-            JohnKayFlyingshuttle = new Invention("John Kay's Flying shuttle", "Allows Weaver factory", new Value(60f)),
-            Mining = new Invention("Mining",
-                "Allows resource gathering from holes in ground, increasing it's efficiency by 50%",
+            Manufactures = new Invention("inventions/manufactures",
+                "inventions/manufactures_tips",
+                new Value(80f)),
+            JohnKayFlyingshuttle = new Invention("inventions/flying_shuttle",
+                "inventions/flying_shuttle_tips",
+                new Value(60f)),
+            Mining = new Invention("inventions/mining",
+                "inventions/mining_tips",
                 new Value(100f)),
             //religion = new InventionType("Religion", "Allows clerics, gives loyalty boost", new Value(100f)),
-            Metal = new Invention("Metal", "Allows metal ore and smelting. Allows Cold arms", new Value(100f)),
+            Metal = new Invention("inventions/metal",
+                "inventions/metal_tips",
+                new Value(100f)),
             // Add here capitalism and link it to serfdom
-            IndividualRights = new Invention("Classical liberalism",
-                "Allows Laissez faire policy, Universal Democracy, Bourgeois dictatorship",
+            IndividualRights = new Invention("inventions/classical_liberalism",
+                "inventions/classical_liberalism_tips",
                 new Value(80f)),
-            Keynesianism = new Invention("Keynesianism",
-                "Allows Limited Interventionism in economy",
+            Keynesianism = new Invention("inventions/keynesianism",
+                "inventions/keynesianism_tips",
                 new Value(80f), IndividualRights),
 
-            Collectivism = new Invention("Collectivism", "Allows Proletarian dictatorship & Planned Economy", new Value(100f)),
-            SteamPower = new Invention("Steam Power",
-                "Allows Machinery & Cement, Increases efficiency of all enterprises by 25%",
+            Collectivism = new Invention("inventions/collectivism",
+                "inventions/collectivism_tips",
+                new Value(100f)),
+            SteamPower = new Invention("inventions/steam_power",
+                "inventions/steam_power_tips",
                 new Value(100f), Metal, Manufactures),
 
-            Welfare = new Invention("Welfare", "Allows Unemployment Benefits and UBI", new Value(90f)),
-            Gunpowder = new Invention("Gunpowder", "Allows Artillery & Ammunition", new Value(100f), Metal),
-            Firearms = new Invention("Hand-held cannons",
-                "Allows Firearms, very efficient in battles", new Value(200f), Gunpowder),
+            Welfare = new Invention("inventions/welfare",
+                "inventions/welfare_tips",
+                new Value(90f)),
+            Gunpowder = new Invention("inventions/gunpowder_tips",
+                "inventions/gunpowder_tips_tips",
+                new Value(100f), Metal),
+            Firearms = new Invention("inventions/hand_cannons",
+                "inventions/hand_cannons_tips",
+                new Value(200f), Gunpowder),
 
-            CombustionEngine = new Invention("Combustion engine",
-                "Allows Oil, Fuel, Cars, Rubber, Increases efficiency of all enterprises by 25%",
+            CombustionEngine = new Invention("inventions/combustion_engine",
+                "inventions/combustion_engine_tips",
                 new Value(400f), SteamPower),
 
-            Tanks = new Invention("Tanks", "Allows Tanks", new Value(800f), CombustionEngine),
-            Airplanes = new Invention("Airplanes", "Allows Airplanes", new Value(1200f), CombustionEngine),
-            ProfessionalArmy = new Invention("Professional Army", "Allows soldiers", new Value(200f)),
-            Domestication = new Invention("Domestication",
-                "Allows barnyard producing cattle. Also allows using horses in army",
+            Tanks = new Invention("inventions/tanks",
+                "inventions/tanks_tips",
+                new Value(800f), CombustionEngine),
+            Airplanes = new Invention("inventions/airplanes",
+                "inventions/airplanes_tips",
+                new Value(1200f), CombustionEngine),
+            ProfessionalArmy = new Invention("inventions/professional_army",
+                "inventions/professional_army_tips",
+                new Value(200f)),
+            Domestication = new Invention("inventions/domestication",
+                "inventions/domestication_tips",
                 new Value(100f)),
 
-            Electronics = new Invention("Electronics", "Allows Electronics", new Value(1000f), Airplanes),
-            Tobacco = new Invention("Tobacco", "Allows Tobacco", new Value(100f)),
-            //Coal = new Invention("Coal", "Allows coal", new Value(100f), Metal),
-            Universities = new Invention("Universities", "Allows building of Universities", new Value(150f));
+            Electronics = new Invention("inventions/electronics",
+                "inventions/electronics_tips",
+                new Value(1000f), Airplanes),
+            Tobacco = new Invention("inventions/tobacco",
+                "inventions/tobacco_tips",
+                new Value(100f)),
+            //Coal = new Invention("inventions/coal",
+            //"inventions/coal_tips",
+            //new Value(100f), Metal),
+            Universities = new Invention("inventions/universities",
+                "inventions/universities_tips",
+                new Value(150f));
 
 
 
         protected Invention(string name, string description, Value cost, params Invention[] requiredInventions) : base(name)
         {
-            this.description = description;
+            this.description = LeanLocalization.GetTranslationText(description);
             this.Cost = cost;
             allInventions.Add(this);
             if (requiredInventions != null)

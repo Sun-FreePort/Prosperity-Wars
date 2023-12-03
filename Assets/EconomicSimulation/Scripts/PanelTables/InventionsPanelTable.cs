@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Lean.Localization;
 using Nashet.UnityUIUtils;
 
 namespace Nashet.EconomicSimulation
@@ -27,11 +28,11 @@ namespace Nashet.EconomicSimulation
         protected override void AddHeader()
         {
             // Adding invention name
-            AddCell("Invention");
+            AddCell(LeanLocalization.GetTranslationText("inventions_panel/invention"));
             ////Adding possibleStatues
-            AddCell("Status");
+            AddCell(LeanLocalization.GetTranslationText("inventions_panel/status"));
             ////Adding invention price
-            AddCell("Science points");
+            AddCell(LeanLocalization.GetTranslationText("inventions_panel/science_points"));
         }
     }
 }

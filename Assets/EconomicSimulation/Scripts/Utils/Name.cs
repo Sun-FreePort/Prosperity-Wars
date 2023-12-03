@@ -1,4 +1,7 @@
-﻿namespace Nashet.Utils
+﻿using Lean.Localization;
+using UnityEngine;
+
+namespace Nashet.Utils
 {
     public abstract class Name : INameable, ISortableName
     {

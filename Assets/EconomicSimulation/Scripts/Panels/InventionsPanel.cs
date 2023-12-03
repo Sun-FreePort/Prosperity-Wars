@@ -2,6 +2,7 @@
 using Nashet.UnityUIUtils;
 using System;
 using System.Text;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -70,13 +71,14 @@ namespace Nashet.UISystem
             var sb = new StringBuilder();
             string scienceModifier;
             var spModifier = Science.modSciencePoints.getModifier(Game.Player, out scienceModifier);
-            sb.Append("Science points: ").Append(Game.Player.Science.Points.ToString("F0"));//.Append(" + ");
+            sb.Append(LeanLocalization.GetTranslationText("inventions_panel/points"))
+                .Append(Game.Player.Science.Points.ToString("F0"));//.Append(" + ");
             //sb.Append(Options.defaultSciencePointMultiplier * spModifier).Append(" Modifiers: ").Append(Options.defaultSciencePointMultiplier * scienceModifier);
             if (selectedInvention == null)
             {
                 inventButton.interactable = false;
-                inventButton.GetComponentInChildren<Text>().text = "Select from left";
-                sb.Append("\n\nSelect invention from left panel");
+                inventButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("inventions_panel/select_left");
+                sb.Append(LeanLocalization.GetTranslationText("inventions_panel/select_left_invention"));
             }
             else
             {
@@ -85,16 +87,16 @@ namespace Nashet.UISystem
                 // invention available
                 if (!Game.Player.Science.IsInvented(selectedInvention) && Game.Player.Science.Points >= selectedInvention.Cost.get())
                 {
-                    inventButton.GetComponentInChildren<Text>().text = "Invent " + selectedInvention;
+                    inventButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("inventions_panel/invent") + selectedInvention;
                     inventButton.interactable = true;
                 }
                 else
                 {
                     inventButton.interactable = false;
                     if (Game.Player.Science.IsInvented(selectedInvention))
-                        inventButton.GetComponentInChildren<Text>().text = "Already invented " + selectedInvention;
+                        inventButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("inventions_panel/already_invented") + selectedInvention;
                     else
-                        inventButton.GetComponentInChildren<Text>().text = "Not enough Science points to invent " + selectedInvention;
+                        inventButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("inventions_panel/not_enough_point") + selectedInvention;
                 }
             }
             descriptionText.text = sb.ToString();
