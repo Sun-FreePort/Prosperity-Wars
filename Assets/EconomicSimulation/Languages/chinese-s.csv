@@ -8,6 +8,16 @@ politics,政治
 inventions,科技
 enterprises,企业
 trade,贸易
+ok,确定
+fine,好的
+close,关闭
+close_window,关闭窗口
+none,无
+nothing,无
+sell,出售
+buy,购买
+show_all,展示所有
+hide_all,隐藏所有
 army_select/select_one,"选择 1 支军队 - "
 army_select/select_more,"选择 {ArmiesCount} 支军队 ("
 army_select/send,行军
@@ -15,6 +25,26 @@ army_select/send_choice,选择省份
 army_select/merge,合并
 army_select/split,拆分
 army_select/demobilize,解散
+bottom_panel/statistics,统计
+bottom_panel/wiki,百科
+bottom_panel/credits,致谢
+bottom_panel/exit,退出
+bottom_panel/political_map,政治地图
+bottom_panel/culture_map,文化地图
+bottom_panel/core_map,核心地图
+bottom_panel/resource_map,资源地图
+bottom_panel/population_changes,人口变化
+bottom_panel/population_density,人口密度
+bottom_panel/prosperity,繁荣
+build_panel/title,建立新企业
+build_panel/no_build_now,目前无建设项目
+build_panel/select_province,选择建设省份
+build_panel/select_building,选择建筑
+build_panel/select_left_building,从左侧选择建筑
+build_panel/name,名称
+build_panel/cost,成本
+build_panel/output,产出
+build_panel/potential_margin,潜在利润率
 common/type,类型
 common/province,省份
 common/population,人口
@@ -32,6 +62,95 @@ common/profit,利润
 common/profitability,盈利能力
 common/salary,薪资
 common/build,建设
+enterprises_panel/title,企业名录
+enterprises_panel/country_scope,国家范围
+enterprises_panel/entire_world,世界范围
+enterprises_panel/private_owned,私人拥有
+enterprises_panel/unsubsidized,无补贴
+enterprises_panel/uninvestable,不可投资
+factory_panel/title,企业信息
+factory_panel/nationalize,国有化
+factory_panel/upgrade,升级
+factory_panel/reopen,重新开放
+factory_panel/destroy,摧毁
+factory_panel/subsidize,补贴
+factory_panel/no_hire_subsidies,不雇用补贴人员
+goods_panel/title,价格历史
+inventions_panel/title,科研面板
+inventions_panel/invention,发明
+inventions_panel/status,状态
+inventions_panel/science_points,科学点数
+inventions_panel/already_invented,已经研发
+inventions_panel/invented,已研发
+inventions_panel/uninvented,未研发
+inventions_panel/not_enough_point,科学点数不足以研发
+inventions_panel/invent,研发
+inventions_panel/points,科学点数：
+inventions_panel/select_left_invention,"
+
+从左侧选择发明"
+inventions_panel/select_left,从左侧选择
+inventions/farming,农业
+inventions/farming_tips,允许农业和农民
+inventions/banking,银行业
+inventions/banking_tips,"允许国家银行、信贷和存款。还允许废除农奴制，并对贵族给予补偿"
+inventions/manufactures,制造业
+inventions/manufactures_tips,允许建筑制造业加工原材料产品
+inventions/flying_shuttle,约翰·凯伊的飞梭
+inventions/flying_shuttle_tips,允许建立织布厂
+inventions/mining,采矿
+inventions/mining_tips,允许从地洞中采集资源，增强其 50% 的效率
+inventions/metal,冶金
+inventions/metal_tips,允许金属矿石和冶炼。允许冷兵器。
+inventions/classical_liberalism,古典自由主义
+inventions/classical_liberalism_tips,允许自由放任政策、资产阶级专政、推行普遍民主。
+inventions/keynesianism,凯恩斯主义
+inventions/keynesianism_tips,允许对经济进行有限干预
+inventions/collectivism,集体主义
+inventions/collectivism_tips,允许无产阶级专政、计划经济
+inventions/steam_power,蒸汽动力
+inventions/steam_power_tips,允许使用机械和水泥，将所有企业的效率提高 25%
+inventions/welfare,福利
+inventions/welfare_tips,允许失业救济和全民补贴
+inventions/gunpowder,火药
+inventions/gunpowder_tips,允许炮兵使用火炮
+inventions/hand_cannons,便携火器
+inventions/hand_cannons_tips,允许使用火器，在战斗中非常有效
+inventions/combustion_engine,内燃机
+inventions/combustion_engine_tips,允许使用石油、燃料、汽车、橡胶，将所有企业的效率提高 25%
+inventions/tanks,坦克
+inventions/tanks_tips,允许使用坦克
+inventions/airplanes,飞机
+inventions/airplanes_tips,允许使用飞机
+inventions/professional_army,职业军队
+inventions/professional_army_tips,允许士兵
+inventions/domestication,畜牧业
+inventions/domestication_tips,允许在畜栏中养牛。还允许在军队中使用马匹
+inventions/electronics,电子化
+inventions/electronics_tips,允许使用电子产品
+inventions/tobacco,烟草
+inventions/tobacco_tips,允许种植烟草
+inventions/coal,煤炭
+inventions/coal_tips,允许煤炭
+inventions/universities,大学
+inventions/universities_tips,允许建立大学
+map_options/title,地图设置
+map_options/random_map,随机地图
+map_options/map_from_file,从文件生成地图 (实验性)
+map_options/industrial_start,工业开局
+map_options/industrial_tips,为每个国家增加工厂、技术和更多劳动力，以加快资本市场的形成。
+map_options/load_image_png,加载 PNG 图片
+map_options/generate_map,生成图片
+map_options/notes,"从文件生成地图的说明：
+ 
+  - 每块颜色区域都被是为一块省份
+  - 应为 png 格式
+  - not exactly compatible with Vic 2 map format
+  - 不使用抗锯齿
+  - 图片尺寸为 200x200 像素 (average lags)，800x600 - huge lags，暂不支持更大的尺寸
+  - 如果省份颜色为绿色 + 蓝色 >= 400 && 红色 < 96，则该省份将被视为海域"
+map_options/map_examples,点我查看地图文件样例
+other/gold_suffix," 黄金"
 product/grain,谷物
 product/cattle,牛
 product/liquor,酒类
@@ -96,27 +215,7 @@ population/tribesmen,部落成员
 population/capitalists,资本家
 population/aristocrats,贵族
 population/soldiers,士兵
-ok,确定
-fine,好的
-close,关闭
-close_window,关闭窗口
-none,无
-nothing,无
-sell,出售
-buy,购买
-show_all,展示所有
-hide_all,隐藏所有
-bottom_panel/statistics,统计
-bottom_panel/wiki,百科
-bottom_panel/credits,致谢
-bottom_panel/exit,退出
-bottom_panel/political_map,政治地图
-bottom_panel/culture_map,文化地图
-bottom_panel/core_map,核心地图
-bottom_panel/resource_map,资源地图
-bottom_panel/population_changes,人口变化
-bottom_panel/population_density,人口密度
-bottom_panel/prosperity,繁荣
+population_panel/title,社会群体
 province_panel/detail_province,省份：
 province_panel/detail_population,"
 人口 (with families)："
@@ -138,7 +237,6 @@ province_panel/mobilize,动员
 province_panel/enterprises,企业
 province_panel/build,建设
 province_panel/grant_independence,给予独立
-goods_panel/title,价格历史
 pop_unit_panel/title,
 pop_unit_panel/,"人口: "
 pop_unit_panel/unemployment,", 失业: "
@@ -187,81 +285,6 @@ pop_unit_panel/life_needs,"生活需求: "
 pop_unit_panel/day_need,"日常需求: "
 pop_unit_panel/luxury_need,"奢侈品需求: "
 pop_unit_panel/balance,"余额: "
-inventions_panel/title,科研面板
-inventions_panel/invention,发明
-inventions_panel/status,状态
-inventions_panel/science_points,科学点数
-inventions_panel/already_invented,已经研发
-inventions_panel/invented,已研发
-inventions_panel/uninvented,未研发
-inventions_panel/not_enough_point,科学点数不足以研发
-inventions_panel/invent,研发
-inventions_panel/points,科学点数：
-inventions_panel/select_left_invention,"
-
-从左侧选择发明"
-inventions_panel/select_left,从左侧选择
-inventions/farming,农业
-inventions/farming_tips,允许农业和农民
-inventions/banking,银行业
-inventions/banking_tips,"允许国家银行、信贷和存款。还允许废除农奴制，并对贵族给予补偿"
-inventions/manufactures,制造业
-inventions/manufactures_tips,允许建筑制造业加工原材料产品
-inventions/flying_shuttle,约翰·凯伊的飞梭
-inventions/flying_shuttle_tips,允许建立织布厂
-inventions/mining,采矿
-inventions/mining_tips,允许从地洞中采集资源，增强其 50% 的效率
-inventions/metal,冶金
-inventions/metal_tips,允许金属矿石和冶炼。允许冷兵器。
-inventions/classical_liberalism,古典自由主义
-inventions/classical_liberalism_tips,允许自由放任政策、资产阶级专政、推行普遍民主。
-inventions/keynesianism,凯恩斯主义
-inventions/keynesianism_tips,允许对经济进行有限干预
-inventions/collectivism,集体主义
-inventions/collectivism_tips,允许无产阶级专政、计划经济
-inventions/steam_power,蒸汽动力
-inventions/steam_power_tips,允许使用机械和水泥，将所有企业的效率提高 25%
-inventions/welfare,福利
-inventions/welfare_tips,允许失业救济和全民补贴
-inventions/gunpowder,火药
-inventions/gunpowder_tips,允许炮兵使用火炮
-inventions/hand_cannons,便携火器
-inventions/hand_cannons_tips,允许使用火器，在战斗中非常有效
-inventions/combustion_engine,内燃机
-inventions/combustion_engine_tips,允许使用石油、燃料、汽车、橡胶，将所有企业的效率提高 25%
-inventions/tanks,坦克
-inventions/tanks_tips,允许使用坦克
-inventions/airplanes,飞机
-inventions/airplanes_tips,允许使用飞机
-inventions/professional_army,职业军队
-inventions/professional_army_tips,允许士兵
-inventions/domestication,畜牧业
-inventions/domestication_tips,允许在畜栏中养牛。还允许在军队中使用马匹
-inventions/electronics,电子化
-inventions/electronics_tips,允许使用电子产品
-inventions/tobacco,烟草
-inventions/tobacco_tips,允许种植烟草
-inventions/coal,煤炭
-inventions/coal_tips,允许煤炭
-inventions/universities,大学
-inventions/universities_tips,允许建立大学
-factory_panel/title,企业信息
-factory_panel/nationalize,国有化
-factory_panel/upgrade,升级
-factory_panel/reopen,重新开放
-factory_panel/destroy,摧毁
-factory_panel/subsidize,补贴
-factory_panel/no_hire_subsidies,不雇用补贴人员
-statistics_panel/title,统计
-build_panel/title,建立新企业
-build_panel/no_build_now,目前无建设项目
-build_panel/select_province,选择建设省份
-build_panel/select_building,选择建筑
-build_panel/select_left_building,从左侧选择建筑
-build_panel/name,名称
-build_panel/cost,成本
-build_panel/output,产出
-build_panel/potential_margin,潜在利润率
 top_panel/rule,"你掌控着: "
 top_panel/tips," (被敌人摧毁，但仍能复辟)"
 top_panel/time,"    年份: "
@@ -271,30 +294,7 @@ top_panel/money,"
 top_panel/tech_point,"   技术点: "
 top_panel/loyalty,"   忠诚: "
 top_panel/education,"   教育: "
-other/gold_suffix," 黄金"
-enterprises_panel/title,企业名录
-enterprises_panel/country_scope,国家范围
-enterprises_panel/entire_world,世界范围
-enterprises_panel/private_owned,私人拥有
-enterprises_panel/unsubsidized,无补贴
-enterprises_panel/uninvestable,不可投资
-population_panel/title,社会群体
-map_options/title,地图设置
-map_options/random_map,随机地图
-map_options/map_from_file,从文件生成地图 (实验性)
-map_options/industrial_start,工业开局
-map_options/industrial_tips,为每个国家增加工厂、技术和更多劳动力，以加快资本市场的形成。
-map_options/load_image_png,加载 PNG 图片
-map_options/generate_map,生成图片
-map_options/notes,"从文件生成地图的说明：
- 
-  - 每块颜色区域都被是为一块省份
-  - 应为 png 格式
-  - not exactly compatible with Vic 2 map format
-  - 不使用抗锯齿
-  - 图片尺寸为 200x200 像素 (average lags)，800x600 - huge lags，暂不支持更大的尺寸
-  - 如果省份颜色为绿色 + 蓝色 >= 400 && 红色 < 96，则该省份将被视为海域"
-map_options/map_examples,点我查看地图文件样例
+statistics_panel/title,统计
 tutorial/title,教程
 tutorial/content,"你好呀，“Prosperity Wars”是一款经济模拟游戏，这是“超级”早期的演示版本。
 
