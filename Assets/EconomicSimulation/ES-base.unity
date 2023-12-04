@@ -314,6 +314,70 @@ MonoBehaviour:
     Text: "\u85AA\u8D44"
   - Name: common/build
     Text: "\u5EFA\u8BBE"
+  - Name: product/grain
+    Text: "\u8C37\u7269"
+  - Name: product/cattle
+    Text: "\u725B"
+  - Name: product/liquor
+    Text: "\u9152\u7C7B"
+  - Name: product/wood
+    Text: "\u539F\u6728"
+  - Name: product/lumber
+    Text: "\u6728\u6599"
+  - Name: product/furniture
+    Text: "\u5BB6\u5177"
+  - Name: product/cotton
+    Text: "\u68C9\u82B1"
+  - Name: product/clothes
+    Text: "\u670D\u88C5"
+  - Name: product/stone
+    Text: "\u77F3\u6750"
+  - Name: product/cement
+    Text: "\u6C34\u6CE5"
+  - Name: product/metal_ore
+    Text: "\u91D1\u5C5E\u77FF\u77F3"
+  - Name: product/metal
+    Text: "\u91D1\u5C5E"
+  - Name: product/cold_arms
+    Text: "\u51B7\u5175\u5668"
+  - Name: product/ammunition
+    Text: "\u5F39\u836F"
+  - Name: product/firearms
+    Text: "\u706B\u5668"
+  - Name: product/artillery
+    Text: "\u706B\u70AE"
+  - Name: product/oil
+    Text: "\u77F3\u6CB9"
+  - Name: product/motor_fuel
+    Text: "\u6C7D\u8F66\u71C3\u6599"
+  - Name: product/machinery
+    Text: "\u673A\u68B0"
+  - Name: product/rubber
+    Text: "\u6A61\u80F6"
+  - Name: product/cars
+    Text: "\u6C7D\u8F66"
+  - Name: product/tanks
+    Text: "\u6CB9\u7F50"
+  - Name: product/airplanes
+    Text: "\u98DE\u673A"
+  - Name: product/coal
+    Text: "\u7164\u70AD"
+  - Name: product/tobacco
+    Text: "\u70DF\u8349"
+  - Name: product/electronics
+    Text: "\u7535\u5B50\u4EA7\u54C1"
+  - Name: product/gold
+    Text: "\u9EC4\u91D1"
+  - Name: product/education
+    Text: "\u6559\u80B2"
+  - Name: product/food
+    Text: "\u98DF\u54C1"
+  - Name: product/sugar
+    Text: "\u7CD6\u7C7B"
+  - Name: product/fibers
+    Text: "\u7EA4\u7EF4"
+  - Name: product/fuel
+    Text: "\u71C3\u6599"
   - Name: ok
     Text: "\u786E\u5B9A"
   - Name: close
@@ -823,6 +887,70 @@ MonoBehaviour:
     Text: Salary
   - Name: common/build
     Text: Build
+  - Name: product/grain
+    Text: Grain
+  - Name: product/cattle
+    Text: Cattle
+  - Name: product/liquor
+    Text: Liquor
+  - Name: product/wood
+    Text: Wood
+  - Name: product/lumber
+    Text: Lumber
+  - Name: product/furniture
+    Text: Furniture
+  - Name: product/cotton
+    Text: Cotton
+  - Name: product/clothes
+    Text: Clothes
+  - Name: product/stone
+    Text: Stone
+  - Name: product/cement
+    Text: Cement
+  - Name: product/metal_ore
+    Text: Metal ore
+  - Name: product/metal
+    Text: Metal
+  - Name: product/cold_arms
+    Text: Cold arms
+  - Name: product/ammunition
+    Text: Ammunition
+  - Name: product/firearms
+    Text: Firearms
+  - Name: product/artillery
+    Text: Artillery
+  - Name: product/oil
+    Text: Oil
+  - Name: product/motor_fuel
+    Text: Motor Fuel
+  - Name: product/machinery
+    Text: Machinery
+  - Name: product/rubber
+    Text: Rubber
+  - Name: product/cars
+    Text: Cars
+  - Name: product/tanks
+    Text: Tanks
+  - Name: product/airplanes
+    Text: Airplanes
+  - Name: product/coal
+    Text: Coal
+  - Name: product/tobacco
+    Text: Tobacco
+  - Name: product/electronics
+    Text: Electronics
+  - Name: product/gold
+    Text: Gold
+  - Name: product/education
+    Text: Education
+  - Name: product/food
+    Text: Food
+  - Name: product/sugar
+    Text: Sugar
+  - Name: product/fibers
+    Text: Fibers
+  - Name: product/fuel
+    Text: Fuel
   - Name: ok
     Text: OK
   - Name: close

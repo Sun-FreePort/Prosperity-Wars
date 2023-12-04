@@ -47,16 +47,16 @@ product/machinery,Machinery
 product/rubber,Rubber
 product/cars,Cars
 product/tanks,Tanks
-product/,Airplanes
-product/,Coal
-product/,Tobacco
-product/,Electronics
-product/,Gold
-product/,Education
-product/,Food
-product/,Sugar
-product/,Fibers
-product/,Fuel
+product/airplanes,Airplanes
+product/coal,Coal
+product/tobacco,Tobacco
+product/electronics,Electronics
+product/gold,Gold
+product/education,Education
+product/food,Food
+product/sugar,Sugar
+product/fibers,Fibers
+product/fuel,Fuel
 ok,OK
 close,Close
 close_window,Close window

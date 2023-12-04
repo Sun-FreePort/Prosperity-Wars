@@ -38,48 +38,48 @@ namespace Nashet.EconomicSimulation
             //Cotton, Clothes, Stone, Cement, Fruit, Liquor, ColdArms, Ammunition, Firearms, Artillery,
             //Oil, MotorFuel, Cars, Tanks, Airplanes, Rubber, Machinery,
            // Fish = new Product("Fish", 0.04f, Color.cyan, Type.consumerProduct),
-            Grain = new Product("Grain", 0.04f, new Color(0.57f, 0.75f, 0.2f), Type.industrial),//greenish
-            Cattle = new Product("Cattle", 0.04f, Type.military),
+            Grain = new Product("product/grain", 0.04f, new Color(0.57f, 0.75f, 0.2f), Type.industrial),//greenish
+            Cattle = new Product("product/cattle", 0.04f, Type.military),
 
             //Fruit = new Product("Fruit", 1f, new Color(1f, 0.33f, 0.33f), Type.consumerProduct),//pinkish
-            Liquor = new Product("Liquor", 3f, Type.consumerProduct),
+            Liquor = new Product("product/liquor", 3f, Type.consumerProduct),
 
-            Wood = new Product("Wood", 2.7f, new Color(0.5f, 0.25f, 0f), Type.industrial), // brown
-            Lumber = new Product("Lumber", 8f, Type.industrial),
-            Furniture = new Product("Furniture", 7f, Type.consumerProduct),
+            Wood = new Product("product/wood", 2.7f, new Color(0.5f, 0.25f, 0f), Type.industrial), // brown
+            Lumber = new Product("product/lumber", 8f, Type.industrial),
+            Furniture = new Product("product/furniture", 7f, Type.consumerProduct),
 
-            //Cotton = new Product("Cotton", 1f, Color.white, Type.consumerProduct),
-            Clothes = new Product("Clothes", 6f, Type.consumerProduct),
+            //Cotton = new Product("product/cotton", 1f, Color.white, Type.consumerProduct),
+            Clothes = new Product("product/clothes", 6f, Type.consumerProduct),
 
-            Stone = new Product("Stone", 1f, new Color(0.82f, 0.62f, 0.82f), Type.industrial),
-            //Cement = new Product("Cement", 2f, type.industrial,Invention.SteamPower),
+            Stone = new Product("product/stone", 1f, new Color(0.82f, 0.62f, 0.82f), Type.industrial),
+            //Cement = new Product("product/cement", 2f, type.industrial,Invention.SteamPower),
 
-            MetalOre = new Product("Metal ore", 3f, Color.blue, Type.industrial, Invention.Metal),
-            Metal = new Product("Metal", 6f, Type.industrial, Invention.Metal),
+            MetalOre = new Product("product/metal_ore", 3f, Color.blue, Type.industrial, Invention.Metal),
+            Metal = new Product("product/metal", 6f, Type.industrial, Invention.Metal),
 
-            ColdArms = new Product("Cold arms", 13f, Type.military, Invention.Metal),
-            Ammunition = new Product("Ammunition", 13f, Type.military, Invention.Gunpowder),
-            Firearms = new Product("Firearms", 13f, Type.military, Invention.Firearms),
-            Artillery = new Product("Artillery", 13f, Type.military, Invention.Gunpowder),
+            ColdArms = new Product("product/cold_arms", 13f, Type.military, Invention.Metal),
+            Ammunition = new Product("product/ammunition", 13f, Type.military, Invention.Gunpowder),
+            Firearms = new Product("product/firearms", 13f, Type.military, Invention.Firearms),
+            Artillery = new Product("product/artillery", 13f, Type.military, Invention.Gunpowder),
 
-            Oil = new Product("Oil", 10f, new Color(0.25f, 0.25f, 0.25f), Type.military, Invention.CombustionEngine),
-            MotorFuel = new Product("Motor Fuel", 15f, Type.military, Invention.CombustionEngine),
-            Machinery = new Product("Machinery", 8f, Type.industrial, Invention.SteamPower),
-            Rubber = new Product("Rubber", 10f, new Color(0.67f, 0.67f, 0.47f), Type.industrial, Invention.CombustionEngine), //light grey
-            Cars = new Product("Cars", 15f, Type.military, Invention.CombustionEngine),
-            Tanks = new Product("Tanks", 20f, Type.military, Invention.Tanks),
-            Airplanes = new Product("Airplanes", 20f, Type.military, Invention.Airplanes),
-            //Coal = new Product("Coal", 1f, Color.black, Type.industrial, Invention.Coal),
-            Tobacco = new Product("Tobacco", 1f, Color.green, Type.consumerProduct, Invention.Tobacco),
-            Electronics = new Product("Electronics", 1f, Type.consumerProduct, Invention.Electronics),
-            Gold = new Product("Gold", 4f, Color.yellow, Type.industrial),
-            Education = new Product("Education", 4f, Type.consumerProduct, false, Invention.Universities);
+            Oil = new Product("product/oil", 10f, new Color(0.25f, 0.25f, 0.25f), Type.military, Invention.CombustionEngine),
+            MotorFuel = new Product("product/motor_fuel", 15f, Type.military, Invention.CombustionEngine),
+            Machinery = new Product("product/machinery", 8f, Type.industrial, Invention.SteamPower),
+            Rubber = new Product("product/rubber", 10f, new Color(0.67f, 0.67f, 0.47f), Type.industrial, Invention.CombustionEngine), //light grey
+            Cars = new Product("product/cars", 15f, Type.military, Invention.CombustionEngine),
+            Tanks = new Product("product/tanks", 20f, Type.military, Invention.Tanks),
+            Airplanes = new Product("product/airplanes", 20f, Type.military, Invention.Airplanes),
+            //Coal = new Product("product/coal", 1f, Color.black, Type.industrial, Invention.Coal),
+            Tobacco = new Product("product/tobacco", 1f, Color.green, Type.consumerProduct, Invention.Tobacco),
+            Electronics = new Product("product/electronics", 1f, Type.consumerProduct, Invention.Electronics),
+            Gold = new Product("product/gold", 4f, Color.yellow, Type.industrial),
+            Education = new Product("product/education", 4f, Type.consumerProduct, false, Invention.Universities);
 
         //public static readonly Product //Food, Sugar, Fibers, Fuel;
-        //    Food = new Product("Food", 0.04f, new List<Product> { Fish, Grain, Cattle, Fruit }, Type.consumerProduct),
-        //    Sugar = new Product("Sugar", 0.04f, new List<Product> { Grain, Fruit }, Type.consumerProduct),
-        //    Fibers = new Product("Fibers", 0.04f, new List<Product> { Cattle, Cotton }, Type.consumerProduct),
-        //    Fuel = new Product("Fuel", 0.04f, new List<Product> { Wood, Coal, Oil }, Type.industrial);
+        //    Food = new Product("product/food", 0.04f, new List<Product> { Fish, Grain, Cattle, Fruit }, Type.consumerProduct),
+        //    Sugar = new Product("product/sugar", 0.04f, new List<Product> { Grain, Fruit }, Type.consumerProduct),
+        //    Fibers = new Product("product/fibers", 0.04f, new List<Product> { Cattle, Cotton }, Type.consumerProduct),
+        //    Fuel = new Product("product/fuel", 0.04f, new List<Product> { Wood, Coal, Oil }, Type.industrial);
 
         public static void init()
         { }
