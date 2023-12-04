@@ -37,7 +37,7 @@ namespace Nashet.EconomicSimulation
             var tribemenLifeNeeds = new List<Storage> { new Storage(Product.Grain, 1) };
             var tribemenEveryDayNeeds = new List<Storage> { new Storage(Product.Grain, 2) };
             var tribemenLuxuryNeeds = new List<Storage> { new Storage(Product.Grain, 3) };
-            Tribesmen = new PopType("Tribesmen", new Storage(Product.Cattle, 1.0f), 2f,
+            Tribesmen = new PopType("population/tribesmen", new Storage(Product.Cattle, 1.0f), 2f,
                 militaryNeeds, tribemenLifeNeeds, tribemenEveryDayNeeds, tribemenLuxuryNeeds);
             //***************************************next type***************************
             var aristocratsLifeNeeds = new List<Storage> { new Storage(Product.Grain, 1) };
@@ -54,7 +54,7 @@ namespace Nashet.EconomicSimulation
             new Storage(Product.Cars, 1f),
             new Storage(Product.MotorFuel, 1f),
             new Storage(Product.Airplanes, 1f) };
-            Aristocrats = new PopType("Aristocrats", null, 4f,
+            Aristocrats = new PopType("population/aristocrats", null, 4f,
                 militaryNeeds, aristocratsLifeNeeds, aristocratsEveryDayNeeds, aristocratsLuxuryNeeds);
             //***************************************next type***************************
             var capitalistsLifeNeeds = new List<Storage> { new Storage(Product.Grain, 1) };
@@ -72,7 +72,7 @@ namespace Nashet.EconomicSimulation
             new Storage(Product.Cars, 1f),
             new Storage(Product.MotorFuel, 1f),
             new Storage(Product.Airplanes, 1f)};
-            Capitalists = new PopType("Capitalists", null, 1f,
+            Capitalists = new PopType("population/capitalists", null, 1f,
                 militaryNeeds, capitalistsLifeNeeds, capitalistsEveryDayNeeds, capitalistsLuxuryNeeds);
             //***************************************next type***************************
             {
@@ -90,7 +90,7 @@ namespace Nashet.EconomicSimulation
             new Storage(Product.Electronics, 1f),
             new Storage(Product.Tobacco, 1f)
             };
-                Artisans = new PopType("Artisans", null, 1f,
+                Artisans = new PopType("population/artisans", null, 1f,
                     militaryNeeds, artisansLifeNeeds, artisansEveryDayNeeds, artisansLuxuryNeeds);
             }
             //***************************************next type***************************
@@ -112,7 +112,7 @@ namespace Nashet.EconomicSimulation
             //new Storage(Product.Metal, 1),
             //new Storage(Product.Cement, 0.5f)
                                             };
-            Farmers = new PopType("Farmers", new Storage(Product.Grain, 1.5f), 1f,
+            Farmers = new PopType("population/farmers", new Storage(Product.Grain, 1.5f), 1f,
                 militaryNeeds, farmersLifeNeeds, farmersEveryDayNeeds, farmersLuxuryNeeds);
             //***************************************next type***************************
             var workersLifeNeeds = new List<Storage> { new Storage(Product.Grain, 1) };
@@ -129,7 +129,7 @@ namespace Nashet.EconomicSimulation
             new Storage(Product.Electronics, 1f),
             new Storage(Product.Education, 1f)
             };
-            Workers = new PopType("Workers", null, 1f,
+            Workers = new PopType("population/workers", null, 1f,
                 militaryNeeds, workersLifeNeeds, workersEveryDayNeeds, workersLuxuryNeeds);
             //***************************************next type***************************
             var soldiersLifeNeeds = new List<Storage> { new Storage(Product.Grain, 2) };
@@ -146,7 +146,7 @@ namespace Nashet.EconomicSimulation
             new Storage(Product.MotorFuel, 1f),// temporally
             new Storage(Product.Education, 1f)
             };
-            Soldiers = new PopType("Soldiers", null, 2f,
+            Soldiers = new PopType("population/soldiers", null, 2f,
                 militaryNeeds, soldiersLifeNeeds, soldiersEveryDayNeeds, soldiersLuxuryNeeds);
         }
 

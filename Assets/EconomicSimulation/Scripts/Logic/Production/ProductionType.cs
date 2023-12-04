@@ -5,6 +5,7 @@ using Nashet.Utils;
 using Nashet.ValueSpace;
 using System.Collections.Generic;
 using System.Text;
+using Lean.Localization;
 using UnityEngine;
 
 namespace Nashet.EconomicSimulation
@@ -55,40 +56,40 @@ namespace Nashet.EconomicSimulation
 
         static ProductionType()
         {
-			new ProductionType("Farm", new Storage(Product.Grain, 2f), false, Invention.SteamPower);
-			new ProductionType("Forestry", new Storage(Product.Wood, 2f), false);
-            GoldMine = new ProductionType("Gold pit", new Storage(Product.Gold, 2f * Options.goldToCoinsConvert), true);
-            MetalDigging = new ProductionType("Metal pit", new Storage(Product.MetalOre, 2f), true);
+			new ProductionType(LeanLocalization.GetTranslationText("production/farm"), new Storage(Product.Grain, 2f), false, Invention.SteamPower);
+			new ProductionType(LeanLocalization.GetTranslationText("production/forestry"), new Storage(Product.Wood, 2f), false);
+            GoldMine = new ProductionType(LeanLocalization.GetTranslationText("production/gold"), new Storage(Product.Gold, 2f * Options.goldToCoinsConvert), true);
+            MetalDigging = new ProductionType(LeanLocalization.GetTranslationText("production/metal_pit"), new Storage(Product.MetalOre, 2f), true);
             //new ProductionType("Coal pit", new Storage(Product.Coal, 6f), true);
             //new ProductionType("Cotton farm", new Storage(Product.Cotton, 2f), false);
-            new ProductionType("Quarry", new Storage(Product.Stone, 2f), true);
+            new ProductionType(LeanLocalization.GetTranslationText("production/quarry"), new Storage(Product.Stone, 2f), true);
             //Orchard = new ProductionType("Orchard", new Storage(Product.Fruit, 2f), false);
             //new ProductionType("Fishery", new Storage(Product.Fish, 2f), false);
-            new ProductionType("Tobacco farm", new Storage(Product.Tobacco, 2f), false);
+            new ProductionType(LeanLocalization.GetTranslationText("production/tobacco"), new Storage(Product.Tobacco, 2f), false);
 
-            new ProductionType("Oil rig", new Storage(Product.Oil, 2f), true);
-            new ProductionType("Rubber plantation", new Storage(Product.Rubber, 1f), false);
+            new ProductionType(LeanLocalization.GetTranslationText("production/oil_rig"), new Storage(Product.Oil, 2f), true);
+            new ProductionType(LeanLocalization.GetTranslationText("production/rubber"), new Storage(Product.Rubber, 1f), false);
 
             StorageSet resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Grain, 1f));
-            Barnyard = new ProductionType("Barnyard", new Storage(Product.Cattle, 2f), resourceInput, Invention.Domestication);
+            Barnyard = new ProductionType(LeanLocalization.GetTranslationText("production/barnyard"), new Storage(Product.Cattle, 2f), resourceInput, Invention.Domestication);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Lumber, 1f));
-            Furniture = new ProductionType("Furniture factory", new Storage(Product.Furniture, 4f), resourceInput, Invention.Manufactures);
+            Furniture = new ProductionType(LeanLocalization.GetTranslationText("production/furniture"), new Storage(Product.Furniture, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Wood, 1f));
-            new ProductionType("Sawmill", new Storage(Product.Lumber, 4f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/sawmill"), new Storage(Product.Lumber, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Wood, 0.5f));
             resourceInput.Set(new Storage(Product.MetalOre, 2f));
-            MetalSmelter = new ProductionType("Metal smelter", new Storage(Product.Metal, 8f), resourceInput, Invention.Manufactures);
+            MetalSmelter = new ProductionType(LeanLocalization.GetTranslationText("production/metal_smelter"), new Storage(Product.Metal, 8f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Cattle, 1f));
-            WeaverFactory = new ProductionType("Weaver factory", new Storage(Product.Clothes, 4f), resourceInput, Invention.JohnKayFlyingshuttle);
+            WeaverFactory = new ProductionType(LeanLocalization.GetTranslationText("production/weaver"), new Storage(Product.Clothes, 4f), resourceInput, Invention.JohnKayFlyingshuttle);
 
             //resourceInput = new StorageSet();
             //resourceInput.Set(new Storage(Product.Fuel, 0.5f));
@@ -97,60 +98,60 @@ namespace Nashet.EconomicSimulation
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Grain, 1f));
-            new ProductionType("Distillery", new Storage(Product.Liquor, 4f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/distillery"), new Storage(Product.Liquor, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Metal, 1f));
-            new ProductionType("Smithery", new Storage(Product.ColdArms, 4f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/smithery"), new Storage(Product.ColdArms, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Stone, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
-            new ProductionType("Ammunition factory", new Storage(Product.Ammunition, 8f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/ammunition"), new Storage(Product.Ammunition, 8f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Lumber, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
-            new ProductionType("Firearms factory", new Storage(Product.Firearms, 8f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/firearms"), new Storage(Product.Firearms, 8f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Lumber, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
-            new ProductionType("Artillery factory", new Storage(Product.Artillery, 8f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/artillery"), new Storage(Product.Artillery, 8f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Oil, 1f));
-            new ProductionType("Oil refinery", new Storage(Product.MotorFuel, 4f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/oil_refinery"), new Storage(Product.MotorFuel, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Metal, 1f));
-            new ProductionType("Machinery factory", new Storage(Product.Machinery, 4f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/machinery"), new Storage(Product.Machinery, 4f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Machinery, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
             resourceInput.Set(new Storage(Product.Rubber, 1f));
-            new ProductionType("Car factory", new Storage(Product.Cars, 12f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/car"), new Storage(Product.Cars, 12f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Machinery, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
             resourceInput.Set(new Storage(Product.Artillery, 1f));
-            new ProductionType("Tank factory", new Storage(Product.Tanks, 12f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/tank"), new Storage(Product.Tanks, 12f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Lumber, 1f));
             resourceInput.Set(new Storage(Product.Metal, 1f));
             resourceInput.Set(new Storage(Product.Machinery, 1f));
-            new ProductionType("Airplane factory", new Storage(Product.Airplanes, 12f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/airplane"), new Storage(Product.Airplanes, 12f), resourceInput, Invention.Manufactures);
 
             resourceInput = new StorageSet();
             resourceInput.Set(new Storage(Product.Metal, 1f));
             resourceInput.Set(new Storage(Product.Oil, 1f));
             resourceInput.Set(new Storage(Product.Rubber, 1f));
-            new ProductionType("Electronics factory", new Storage(Product.Electronics, 12f), resourceInput, Invention.Manufactures);
+            new ProductionType(LeanLocalization.GetTranslationText("production/electronics"), new Storage(Product.Electronics, 12f), resourceInput, Invention.Manufactures);
 
-            University = new ProductionType("University", new Storage(Product.Education, 4f), new StorageSet());
+            University = new ProductionType(LeanLocalization.GetTranslationText("production/university"), new Storage(Product.Education, 4f), new StorageSet());
         }
 
         /// <summary>

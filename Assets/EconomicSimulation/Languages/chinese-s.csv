@@ -8,6 +8,13 @@ politics,政治
 inventions,科技
 enterprises,企业
 trade,贸易
+army_select/select_one,"选择 1 支军队 - "
+army_select/select_more,"选择 {ArmiesCount} 支军队 ("
+army_select/send,行军
+army_select/send_choice,选择省份
+army_select/merge,合并
+army_select/split,拆分
+army_select/demobilize,解散
 common/type,类型
 common/province,省份
 common/population,人口
@@ -16,7 +23,7 @@ common/education,教育
 common/cash,现金
 common/needs_fulfilled,需求满足
 common/loyalty,忠诚
-common/seeks_job,失业
+common/seeks_job,求职中
 common/movement,运动
 common/resources,资源
 common/production,生产
@@ -57,10 +64,44 @@ product/food,食品
 product/sugar,糖类
 product/fibers,纤维
 product/fuel,燃料
+production/farm,农场
+production/forestry,林业
+production/gold,金矿
+production/metal_pit,金属矿坑
+production/quarry,采石场
+production/tobacco,烟草农场
+production/oil_rig,石油钻井平台
+production/rubber,橡胶园
+production/barnyard,畜牧场
+production/furniture,家具厂
+production/sawmill,锯木厂
+production/metal_smelter,金属冶炼厂
+production/weaver,织布厂
+production/distillery,酒厂
+production/smithery,铁匠铺
+production/ammunition,弹药厂
+production/firearms,火器厂
+production/artillery,火炮厂
+production/oil_refinery,炼油厂
+production/machinery,机械厂
+production/car,汽车厂
+production/tank,坦克工厂
+production/airplane,飞机制造厂
+production/electronics,电子厂
+production/university,大学
+population/workers,工人
+population/artisans,技工
+population/farmers,农民
+population/tribesmen,部落成员
+population/capitalists,资本家
+population/aristocrats,贵族
+population/soldiers,士兵
 ok,确定
+fine,好的
 close,关闭
 close_window,关闭窗口
 none,无
+nothing,无
 sell,出售
 buy,购买
 show_all,展示所有
@@ -84,7 +125,7 @@ province_panel/detail_loyalty_avg,"
 province_panel/detail_resource,"
 资源："
 province_panel/detail_cores,"
-Cores："
+归属感："
 province_panel/detail_cultures,"
 文化："
 province_panel/detail_classes,"
@@ -98,6 +139,54 @@ province_panel/enterprises,企业
 province_panel/build,建设
 province_panel/grant_independence,给予独立
 goods_panel/title,价格历史
+pop_unit_panel/title,
+pop_unit_panel/,"人口: "
+pop_unit_panel/unemployment,", 失业: "
+pop_unit_panel/neet,", 啃老族: "
+pop_unit_panel/producing,", 生产: "
+pop_unit_panel/gained,"
+获得: "
+pop_unit_panel/produced,"
+已生产: "
+pop_unit_panel/storage,", 存储: "
+pop_unit_panel/unsold,", 未售出: "
+pop_unit_panel/input_required,"
+需求输入: "
+pop_unit_panel/stockpile,"
+储存:  "
+pop_unit_panel/,", Resource availability: "
+pop_unit_panel/to_market,"
+发送至市场: "
+pop_unit_panel/consumed,"
+已消耗: "
+pop_unit_panel/cash,"
+
+现金: "
+pop_unit_panel/,"
+Loan: "
+pop_unit_panel/,"
+Deposit: "
+pop_unit_panel/,"
+
+Needs fulfilled (total): "
+pop_unit_panel/,"
+Loyalty: "
+pop_unit_panel/,"
+Member of "
+pop_unit_panel/seek_job,"
+
+求职中: "
+pop_unit_panel/education,"
+教育水平: "
+pop_unit_panel/culture,"
+文化: "
+pop_unit_panel/,", minority"
+pop_unit_panel/mobilized,"
+已动员: "
+pop_unit_panel/life_needs,"生活需求: "
+pop_unit_panel/day_need,"日常需求: "
+pop_unit_panel/luxury_need,"奢侈品需求: "
+pop_unit_panel/balance,"余额: "
 inventions_panel/title,科研面板
 inventions_panel/invention,发明
 inventions_panel/status,状态
@@ -173,7 +262,16 @@ build_panel/name,名称
 build_panel/cost,成本
 build_panel/output,产出
 build_panel/potential_margin,潜在利润率
-build_panel/,
+top_panel/rule,"你掌控着: "
+top_panel/tips," (被敌人摧毁，但仍能复辟)"
+top_panel/time,"    年份: "
+top_panel/population,"   人口: "
+top_panel/money,"
+国库: "
+top_panel/tech_point,"   技术点: "
+top_panel/loyalty,"   忠诚: "
+top_panel/education,"   教育: "
+other/gold_suffix," 黄金"
 enterprises_panel/title,企业名录
 enterprises_panel/country_scope,国家范围
 enterprises_panel/entire_world,世界范围
@@ -181,13 +279,6 @@ enterprises_panel/private_owned,私人拥有
 enterprises_panel/unsubsidized,无补贴
 enterprises_panel/uninvestable,不可投资
 population_panel/title,社会群体
-population_panel/workers,工人
-population_panel/artisans,工匠
-population_panel/farmers,农民
-population_panel/tribesmen,部落成员
-population_panel/capitalists,资本家
-population_panel/aristocrats,贵族
-population_panel/soldiers,士兵
 map_options/title,地图设置
 map_options/random_map,随机地图
 map_options/map_from_file,从文件生成地图 (实验性)

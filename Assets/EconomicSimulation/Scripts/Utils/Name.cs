@@ -29,7 +29,7 @@ namespace Nashet.Utils
         //}
         public virtual string ShortName
         {
-            get { return name; }
+            get { return LeanLocalization.GetTranslationText(name) ?? name; }
         }
 
         public virtual string FullName

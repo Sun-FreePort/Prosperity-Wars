@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Lean.Localization;
 using Nashet.UnityUIUtils;
 
 namespace Nashet.EconomicSimulation
@@ -48,14 +49,19 @@ namespace Nashet.EconomicSimulation
             if (attacker.IsHuman && isAttackerWon())
             {
                 //.Append(" owned by ").Append(place.Country)
-                sb.Append("Our glorious army attacked ").Append(defender).Append("'s army in ").Append(place)
-                    .Append(" with army of ").Append(attackerArmy).Append(" men.");
+                sb.Append(("Our glorious army attacked ")).Append(defender)
+                    .Append(("'s army in ")).Append(place)
+                    .Append((" with army of ")).Append(attackerArmy)
+                    .Append((" men."));
                 sb.Append(" Modifiers: ").Append(attackerBonus);
-                sb.Append("\n\nWhile enemy had ").Append(defenderArmy).Append(" men. Modifiers:  ").Append(defenderBonus);
-                sb.Append("\n\nWe won, enemy lost all men and we lost ").Append(attackerLoss).Append(" men");
-                sb.Append("\nProvince ").Append(place).Append(" is our now!");
+                sb.Append("\n\nWhile enemy had ").Append(defenderArmy)
+                    .Append(" men. Modifiers:  ").Append(defenderBonus);
+                sb.Append("\n\nWe won, enemy lost all men and we lost ").Append(attackerLoss)
+                    .Append(" men");
+                sb.Append("\nProvince ").Append(place)
+                    .Append(" is our now!");
                 // sb.Append("\nDate is ").Append(Game.date);
-                MessageSystem.Instance.NewMessage("We won a battle!", sb.ToString(), "Fine", false, place.provinceMesh.Position);
+                MessageSystem.Instance.NewMessage("We won a battle!", sb.ToString(), LeanLocalization.GetTranslationText("fine"), false, place.provinceMesh.Position);
             }
             else if (defender.IsHuman && isDefenderWon())
             {

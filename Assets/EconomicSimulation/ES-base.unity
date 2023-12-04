@@ -280,6 +280,18 @@ MonoBehaviour:
     Text: "\u4F01\u4E1A"
   - Name: trade
     Text: "\u8D38\u6613"
+  - Name: army_select/select_one
+    Text: "\u9009\u62E9 1 \u652F\u519B\u961F - "
+  - Name: army_select/select_more
+    Text: "\u9009\u62E9 {ArmiesCount} \u652F\u519B\u961F ("
+  - Name: army_select/send
+    Text: "\u53D1\u9001"
+  - Name: army_select/merge
+    Text: "\u5408\u5E76"
+  - Name: army_select/split
+    Text: "\u62C6\u5206"
+  - Name: army_select/demobilize
+    Text: "\u89E3\u6563"
   - Name: common/type
     Text: "\u7C7B\u578B"
   - Name: common/province
@@ -297,7 +309,7 @@ MonoBehaviour:
   - Name: common/loyalty
     Text: "\u5FE0\u8BDA"
   - Name: common/seeks_job
-    Text: "\u5931\u4E1A"
+    Text: "\u6C42\u804C\u4E2D"
   - Name: common/movement
     Text: "\u8FD0\u52A8"
   - Name: common/resources
@@ -378,6 +390,70 @@ MonoBehaviour:
     Text: "\u7EA4\u7EF4"
   - Name: product/fuel
     Text: "\u71C3\u6599"
+  - Name: production/farm
+    Text: "\u519C\u573A"
+  - Name: production/forestry
+    Text: "\u6797\u4E1A"
+  - Name: production/gold
+    Text: "\u91D1\u77FF"
+  - Name: production/metal_pit
+    Text: "\u91D1\u5C5E\u77FF\u5751"
+  - Name: production/quarry
+    Text: "\u91C7\u77F3\u573A"
+  - Name: production/tobacco
+    Text: "\u70DF\u8349\u519C\u573A"
+  - Name: production/oil_rig
+    Text: "\u77F3\u6CB9\u94BB\u4E95\u5E73\u53F0"
+  - Name: production/rubber
+    Text: "\u6A61\u80F6\u56ED"
+  - Name: production/barnyard
+    Text: "\u755C\u7267\u573A"
+  - Name: production/furniture
+    Text: "\u5BB6\u5177\u5382"
+  - Name: production/sawmill
+    Text: "\u952F\u6728\u5382"
+  - Name: production/metal_smelter
+    Text: "\u91D1\u5C5E\u51B6\u70BC\u5382"
+  - Name: production/weaver
+    Text: "\u7EC7\u5E03\u5382"
+  - Name: production/distillery
+    Text: "\u9152\u5382"
+  - Name: production/smithery
+    Text: "\u94C1\u5320\u94FA"
+  - Name: production/ammunition
+    Text: "\u5F39\u836F\u5382"
+  - Name: production/firearms
+    Text: "\u706B\u5668\u5382"
+  - Name: production/artillery
+    Text: "\u706B\u70AE\u5382"
+  - Name: production/oil_refinery
+    Text: "\u70BC\u6CB9\u5382"
+  - Name: production/machinery
+    Text: "\u673A\u68B0\u5382"
+  - Name: production/car
+    Text: "\u6C7D\u8F66\u5382"
+  - Name: production/tank
+    Text: "\u5766\u514B\u5DE5\u5382"
+  - Name: production/airplane
+    Text: "\u98DE\u673A\u5236\u9020\u5382"
+  - Name: production/electronics
+    Text: "\u7535\u5B50\u5382"
+  - Name: production/university
+    Text: "\u5927\u5B66"
+  - Name: population/workers
+    Text: "\u5DE5\u4EBA"
+  - Name: population/artisans
+    Text: "\u6280\u5DE5"
+  - Name: population/farmers
+    Text: "\u519C\u6C11"
+  - Name: population/tribesmen
+    Text: "\u90E8\u843D\u6210\u5458"
+  - Name: population/capitalists
+    Text: "\u8D44\u672C\u5BB6"
+  - Name: population/aristocrats
+    Text: "\u8D35\u65CF"
+  - Name: population/soldiers
+    Text: "\u58EB\u5175"
   - Name: ok
     Text: "\u786E\u5B9A"
   - Name: close
@@ -385,6 +461,8 @@ MonoBehaviour:
   - Name: close_window
     Text: "\u5173\u95ED\u7A97\u53E3"
   - Name: none
+    Text: "\u65E0"
+  - Name: nothing
     Text: "\u65E0"
   - Name: sell
     Text: "\u51FA\u552E"
@@ -425,7 +503,7 @@ MonoBehaviour:
   - Name: province_panel/detail_resource
     Text: "\n\u8D44\u6E90\uFF1A"
   - Name: province_panel/detail_cores
-    Text: "\nCores\uFF1A"
+    Text: "\n\u5F52\u5C5E\u611F\uFF1A"
   - Name: province_panel/detail_cultures
     Text: "\n\u6587\u5316\uFF1A"
   - Name: province_panel/detail_classes
@@ -446,6 +524,75 @@ MonoBehaviour:
     Text: "\u7ED9\u4E88\u72EC\u7ACB"
   - Name: goods_panel/title
     Text: "\u4EF7\u683C\u5386\u53F2"
+  - Name: pop_unit_panel/title
+    Text: 
+  - Name: pop_unit_panel/
+    Text: "\u4EBA\u53E3: "
+  - Name: pop_unit_panel/unemployment
+    Text: ", \u5931\u4E1A: "
+  - Name: pop_unit_panel/neet
+    Text: ", \u5543\u8001\u65CF: "
+  - Name: pop_unit_panel/producing
+    Text: ", \u751F\u4EA7: "
+  - Name: pop_unit_panel/gained
+    Text: "\n\u83B7\u5F97: "
+  - Name: pop_unit_panel/produced
+    Text: "\n\u5DF2\u751F\u4EA7: "
+  - Name: pop_unit_panel/storage
+    Text: ", \u5B58\u50A8: "
+  - Name: pop_unit_panel/unsold
+    Text: ", \u672A\u552E\u51FA: "
+  - Name: pop_unit_panel/input_required
+    Text: "\n\u9700\u6C42\u8F93\u5165: "
+  - Name: pop_unit_panel/stockpile
+    Text: "\n\u50A8\u5B58:  "
+  - Name: pop_unit_panel/
+    Text: ', Resource availability: '
+  - Name: pop_unit_panel/to_market
+    Text: "\n\u53D1\u9001\u81F3\u5E02\u573A: "
+  - Name: pop_unit_panel/consumed
+    Text: "\n\u5DF2\u6D88\u8017: "
+  - Name: pop_unit_panel/cash
+    Text: "\n\n\u73B0\u91D1: "
+  - Name: pop_unit_panel/
+    Text: '
+
+      Loan: '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Deposit: '
+  - Name: pop_unit_panel/
+    Text: '
+
+
+      Needs fulfilled (total): '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Loyalty: '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Member of '
+  - Name: pop_unit_panel/seek_job
+    Text: "\n\n\u6C42\u804C\u4E2D: "
+  - Name: pop_unit_panel/education
+    Text: "\n\u6559\u80B2\u6C34\u5E73: "
+  - Name: pop_unit_panel/culture
+    Text: "\n\u6587\u5316: "
+  - Name: pop_unit_panel/
+    Text: ', minority'
+  - Name: pop_unit_panel/mobilized
+    Text: "\n\u5DF2\u52A8\u5458: "
+  - Name: pop_unit_panel/life_needs
+    Text: "\u751F\u6D3B\u9700\u6C42: "
+  - Name: pop_unit_panel/day_need
+    Text: "\u65E5\u5E38\u9700\u6C42: "
+  - Name: pop_unit_panel/luxury_need
+    Text: "\u5962\u4F88\u54C1\u9700\u6C42: "
+  - Name: pop_unit_panel/balance
+    Text: "\u4F59\u989D: "
   - Name: inventions_panel/title
     Text: "\u79D1\u7814\u9762\u677F"
   - Name: inventions_panel/invention
@@ -595,8 +742,24 @@ MonoBehaviour:
     Text: "\u4EA7\u51FA"
   - Name: build_panel/potential_margin
     Text: "\u6F5C\u5728\u5229\u6DA6\u7387"
-  - Name: build_panel/
-    Text: 
+  - Name: top_panel/rule
+    Text: "\u4F60\u638C\u63A7\u7740: "
+  - Name: top_panel/tips
+    Text: " (\u88AB\u654C\u4EBA\u6467\u6BC1\uFF0C\u4F46\u4ECD\u80FD\u590D\u8F9F)"
+  - Name: top_panel/time
+    Text: "    \u5E74\u4EFD: "
+  - Name: top_panel/population
+    Text: "   \u4EBA\u53E3: "
+  - Name: top_panel/money
+    Text: "\n\u56FD\u5E93: "
+  - Name: top_panel/tech_point
+    Text: "   \u6280\u672F\u70B9: "
+  - Name: top_panel/loyalty
+    Text: "   \u5FE0\u8BDA: "
+  - Name: top_panel/education
+    Text: "   \u6559\u80B2: "
+  - Name: other/gold_suffix
+    Text: " \u9EC4\u91D1"
   - Name: enterprises_panel/title
     Text: "\u4F01\u4E1A\u540D\u5F55"
   - Name: enterprises_panel/country_scope
@@ -611,20 +774,6 @@ MonoBehaviour:
     Text: "\u4E0D\u53EF\u6295\u8D44"
   - Name: population_panel/title
     Text: "\u793E\u4F1A\u7FA4\u4F53"
-  - Name: population_panel/workers
-    Text: "\u5DE5\u4EBA"
-  - Name: population_panel/artisans
-    Text: "\u5DE5\u5320"
-  - Name: population_panel/farmers
-    Text: "\u519C\u6C11"
-  - Name: population_panel/tribesmen
-    Text: "\u90E8\u843D\u6210\u5458"
-  - Name: population_panel/capitalists
-    Text: "\u8D44\u672C\u5BB6"
-  - Name: population_panel/aristocrats
-    Text: "\u8D35\u65CF"
-  - Name: population_panel/soldiers
-    Text: "\u58EB\u5175"
   - Name: map_options/title
     Text: "\u5730\u56FE\u8BBE\u7F6E"
   - Name: map_options/random_map
@@ -853,6 +1002,18 @@ MonoBehaviour:
     Text: Enterprises
   - Name: trade
     Text: Trade
+  - Name: army_select/select_one
+    Text: 'Selected 1 army - '
+  - Name: army_select/select_more
+    Text: Selected {ArmiesCount}  armies (
+  - Name: army_select/send
+    Text: Send
+  - Name: army_select/merge
+    Text: Merge
+  - Name: army_select/split
+    Text: Split
+  - Name: army_select/demobilize
+    Text: Demobilize
   - Name: common/type
     Text: Type
   - Name: common/province
@@ -951,6 +1112,70 @@ MonoBehaviour:
     Text: Fibers
   - Name: product/fuel
     Text: Fuel
+  - Name: production/farm
+    Text: Farm
+  - Name: production/forestry
+    Text: Forestry
+  - Name: production/gold
+    Text: Gold pit
+  - Name: production/metal_pit
+    Text: Metal pit
+  - Name: production/quarry
+    Text: Quarry
+  - Name: production/tobacco
+    Text: Tobacco farm
+  - Name: production/oil_rig
+    Text: Oil rig
+  - Name: production/rubber
+    Text: Rubber plantation
+  - Name: production/barnyard
+    Text: Barnyard
+  - Name: production/furniture
+    Text: Furniture factory
+  - Name: production/sawmill
+    Text: Sawmill
+  - Name: production/metal_smelter
+    Text: Metal smelter
+  - Name: production/weaver
+    Text: Weaver factory
+  - Name: production/distillery
+    Text: Distillery
+  - Name: production/smithery
+    Text: Smithery
+  - Name: production/ammunition
+    Text: Ammunition factory
+  - Name: production/firearms
+    Text: Firearms factory
+  - Name: production/artillery
+    Text: Artillery factory
+  - Name: production/oil_refinery
+    Text: Oil refinery
+  - Name: production/machinery
+    Text: Machinery factory
+  - Name: production/car
+    Text: Car factory
+  - Name: production/tank
+    Text: Tank factory
+  - Name: production/airplane
+    Text: Airplane factory
+  - Name: production/electronics
+    Text: Electronics factory
+  - Name: production/university
+    Text: University
+  - Name: population/workers
+    Text: Workers
+  - Name: population/artisans
+    Text: Artisans
+  - Name: population/farmers
+    Text: Farmers
+  - Name: population/tribesmen
+    Text: Tribesmen
+  - Name: population/capitalists
+    Text: Capitalists
+  - Name: population/aristocrats
+    Text: Aristocrats
+  - Name: population/soldiers
+    Text: Soldiers
   - Name: ok
     Text: OK
   - Name: close
@@ -959,6 +1184,8 @@ MonoBehaviour:
     Text: Close window
   - Name: none
     Text: none
+  - Name: nothing
+    Text: nothing
   - Name: sell
     Text: Sell
   - Name: buy
@@ -1033,6 +1260,99 @@ MonoBehaviour:
     Text: Grant Independence
   - Name: goods_panel/title
     Text: Price history
+  - Name: pop_unit_panel/title
+    Text: 
+  - Name: pop_unit_panel/population
+    Text: 'Population: '
+  - Name: pop_unit_panel/unemployment
+    Text: ', Unemployment: '
+  - Name: pop_unit_panel/neet
+    Text: ', NEET: '
+  - Name: pop_unit_panel/producing
+    Text: ', Producing: '
+  - Name: pop_unit_panel/gained
+    Text: '
+
+      Gained: '
+  - Name: pop_unit_panel/produced
+    Text: '
+
+      Produced: '
+  - Name: pop_unit_panel/storage
+    Text: ', Storage: '
+  - Name: pop_unit_panel/unsold
+    Text: ', Unsold: '
+  - Name: pop_unit_panel/input_required
+    Text: '
+
+      Input required: '
+  - Name: pop_unit_panel/stockpile
+    Text: '
+
+      Stockpile:  '
+  - Name: pop_unit_panel/
+    Text: ', Resource availability: '
+  - Name: pop_unit_panel/to_market
+    Text: '
+
+      Sent to market: '
+  - Name: pop_unit_panel/consumed
+    Text: '
+
+      Consumed: '
+  - Name: pop_unit_panel/cash
+    Text: '
+
+
+      Cash: '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Loan: '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Deposit: '
+  - Name: pop_unit_panel/
+    Text: '
+
+
+      Needs fulfilled (total): '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Loyalty: '
+  - Name: pop_unit_panel/
+    Text: '
+
+      Member of '
+  - Name: pop_unit_panel/seek_job
+    Text: '
+
+
+      Seeks job: '
+  - Name: pop_unit_panel/education
+    Text: '
+
+      Education: '
+  - Name: pop_unit_panel/culture
+    Text: '
+
+      Culture: '
+  - Name: pop_unit_panel/
+    Text: ', minority'
+  - Name: pop_unit_panel/mobilized
+    Text: '
+
+      Mobilized: '
+  - Name: pop_unit_panel/life_needs
+    Text: 'Life needs: '
+  - Name: pop_unit_panel/day_need
+    Text: 'Everyday needs: '
+  - Name: pop_unit_panel/luxury_need
+    Text: 'Luxury needs: '
+  - Name: pop_unit_panel/balance
+    Text: 'Balance: '
   - Name: inventions_panel/title
     Text: Inventions
   - Name: inventions_panel/invention
@@ -1185,8 +1505,26 @@ MonoBehaviour:
     Text: Output
   - Name: build_panel/potential_margin
     Text: Potential margin
-  - Name: build_panel/
-    Text: 
+  - Name: top_panel/rule
+    Text: 'You rule: '
+  - Name: top_panel/tips
+    Text: ' (destroyed by enemies, but could rise again)'
+  - Name: top_panel/time
+    Text: '    Year: '
+  - Name: top_panel/population
+    Text: '   Population: '
+  - Name: top_panel/money
+    Text: '
+
+      Money: '
+  - Name: top_panel/tech_point
+    Text: '   Tech points: '
+  - Name: top_panel/loyalty
+    Text: '   Loyalty: '
+  - Name: top_panel/education
+    Text: '   Education: '
+  - Name: other/gold_suffix
+    Text: ' Gold'
   - Name: enterprises_panel/title
     Text: Enterprises list
   - Name: enterprises_panel/country_scope
@@ -1201,20 +1539,6 @@ MonoBehaviour:
     Text: Uninvestable
   - Name: population_panel/title
     Text: Population list
-  - Name: population_panel/workers
-    Text: Workers
-  - Name: population_panel/artisans
-    Text: Artisans
-  - Name: population_panel/farmers
-    Text: Farmers
-  - Name: population_panel/tribesmen
-    Text: Tribesmen
-  - Name: population_panel/capitalists
-    Text: Capitalists
-  - Name: population_panel/aristocrats
-    Text: Aristocrats
-  - Name: population_panel/soldiers
-    Text: Soldiers
   - Name: map_options/title
     Text: Map options
   - Name: map_options/random_map
@@ -7458,7 +7782,7 @@ PrefabInstance:
     - target: {fileID: 5836527701278567839, guid: 445ecfee92479eb49a4cdae1b7aa3b4d,
         type: 3}
       propertyPath: m_Text
-      value: Population
+      value: "\u4EBA\u53E3"
       objectReference: {fileID: 0}
     - target: {fileID: 5836527701284749573, guid: 445ecfee92479eb49a4cdae1b7aa3b4d,
         type: 3}

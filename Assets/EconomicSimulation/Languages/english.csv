@@ -8,6 +8,13 @@ politics,Politics
 inventions,Inventions
 enterprises,Enterprises
 trade,Trade
+army_select/select_one,"Selected 1 army - "
+army_select/select_more,"Selected {ArmiesCount}  armies ("
+army_select/send,Send
+army_select/send_choice,Pick province
+army_select/merge,Merge
+army_select/split,Split
+army_select/demobilize,Demobilize
 common/type,Type
 common/province,Province
 common/population,Population
@@ -57,10 +64,44 @@ product/food,Food
 product/sugar,Sugar
 product/fibers,Fibers
 product/fuel,Fuel
+production/farm,Farm
+production/forestry,Forestry
+production/gold,Gold pit
+production/metal_pit,Metal pit
+production/quarry,Quarry
+production/tobacco,Tobacco farm
+production/oil_rig,Oil rig
+production/rubber,Rubber plantation
+production/barnyard,Barnyard
+production/furniture,Furniture factory
+production/sawmill,Sawmill
+production/metal_smelter,Metal smelter
+production/weaver,Weaver factory
+production/distillery,Distillery
+production/smithery,Smithery
+production/ammunition,Ammunition factory
+production/firearms,Firearms factory
+production/artillery,Artillery factory
+production/oil_refinery,Oil refinery
+production/machinery,Machinery factory
+production/car,Car factory
+production/tank,Tank factory
+production/airplane,Airplane factory
+production/electronics,Electronics factory
+production/university,University
+population/workers,Workers
+population/artisans,Artisans
+population/farmers,Farmers
+population/tribesmen,Tribesmen
+population/capitalists,Capitalists
+population/aristocrats,Aristocrats
+population/soldiers,Soldiers
 ok,OK
+fine,Fine
 close,Close
 close_window,Close window
 none,none
+nothing,nothing
 sell,Sell
 buy,Buy
 show_all,Show all
@@ -98,6 +139,54 @@ province_panel/enterprises,Enterprises
 province_panel/build,Build
 province_panel/grant_independence,Grant Independence
 goods_panel/title,Price history
+pop_unit_panel/title,
+pop_unit_panel/population,"Population: "
+pop_unit_panel/unemployment,", Unemployment: "
+pop_unit_panel/neet,", NEET: "
+pop_unit_panel/producing,", Producing: "
+pop_unit_panel/gained,"
+Gained: "
+pop_unit_panel/produced,"
+Produced: "
+pop_unit_panel/storage,", Storage: "
+pop_unit_panel/unsold,", Unsold: "
+pop_unit_panel/input_required,"
+Input required: "
+pop_unit_panel/stockpile,"
+Stockpile:  "
+pop_unit_panel/,", Resource availability: "
+pop_unit_panel/to_market,"
+Sent to market: "
+pop_unit_panel/consumed,"
+Consumed: "
+pop_unit_panel/cash,"
+
+Cash: "
+pop_unit_panel/,"
+Loan: "
+pop_unit_panel/,"
+Deposit: "
+pop_unit_panel/,"
+
+Needs fulfilled (total): "
+pop_unit_panel/,"
+Loyalty: "
+pop_unit_panel/,"
+Member of "
+pop_unit_panel/seek_job,"
+
+Seeks job: "
+pop_unit_panel/education,"
+Education: "
+pop_unit_panel/culture,"
+Culture: "
+pop_unit_panel/,", minority"
+pop_unit_panel/mobilized,"
+Mobilized: "
+pop_unit_panel/life_needs,"Life needs: "
+pop_unit_panel/day_need,"Everyday needs: "
+pop_unit_panel/luxury_need,"Luxury needs: "
+pop_unit_panel/balance,"Balance: "
 inventions_panel/title,Inventions
 inventions_panel/invention,Invention
 inventions_panel/status,Status
@@ -173,7 +262,16 @@ build_panel/name,Name
 build_panel/cost,Cost
 build_panel/output,Output
 build_panel/potential_margin,Potential margin
-build_panel/,
+top_panel/rule,"You rule: "
+top_panel/tips," (destroyed by enemies, but could rise again)"
+top_panel/time,"    Year: "
+top_panel/population,"   Population: "
+top_panel/money,"
+Money: "
+top_panel/tech_point,"   Tech points: "
+top_panel/loyalty,"   Loyalty: "
+top_panel/education,"   Education: "
+other/gold_suffix," Gold"
 enterprises_panel/title,Enterprises list
 enterprises_panel/country_scope,Country scope
 enterprises_panel/entire_world,Entire world
@@ -181,13 +279,6 @@ enterprises_panel/private_owned,Private owned
 enterprises_panel/unsubsidized,Unsubsidized
 enterprises_panel/uninvestable,Uninvestable
 population_panel/title,Population list
-population_panel/workers,Workers
-population_panel/artisans,Artisans
-population_panel/farmers,Farmers
-population_panel/tribesmen,Tribesmen
-population_panel/capitalists,Capitalists
-population_panel/aristocrats,Aristocrats
-population_panel/soldiers,Soldiers
 map_options/title,Map options
 map_options/random_map,Random map
 map_options/map_from_file,Map from file (experimental)

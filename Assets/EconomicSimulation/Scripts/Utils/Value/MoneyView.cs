@@ -1,6 +1,7 @@
 ﻿using Nashet.EconomicSimulation;
 using Nashet.Utils;
 using System;
+using Lean.Localization;
 using UnityEngine;
 
 namespace Nashet.ValueSpace
@@ -93,7 +94,7 @@ namespace Nashet.ValueSpace
             if (data < 0.001m && data != 0m && data > -0.001m)
                 return (data * 1000m).ToString("N3") + " Gold bites";
             else
-                return data.ToString("N3") + " Gold";
+                return data.ToString("N3") + LeanLocalization.GetTranslationText("other/gold_suffix");
         }
         public override string ToString()
         {

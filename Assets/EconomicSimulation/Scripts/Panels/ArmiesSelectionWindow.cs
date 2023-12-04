@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,7 +48,7 @@ namespace Nashet.EconomicSimulation
                 Hide();
             else if (Game.selectedArmies.Count == 1)
             {
-                caption.text = "Selected 1 army - " + Game.selectedArmies[0].FullName;
+                caption.text = LeanLocalization.GetTranslationText("army_select/select_one") + Game.selectedArmies[0].FullName;
                 if (Game.selectedArmies[0].getCorps().Count() > 1)
                     split.interactable = true;
                 else
@@ -61,7 +62,9 @@ namespace Nashet.EconomicSimulation
                     merge.interactable = true;
                 else
                     merge.interactable = false;
-                caption.text = "Selected " + Game.selectedArmies.Count + " armies (" + Game.selectedArmies.Sum(x => x.getSize()) + ")";
+                
+                LeanLocalization.CurrentTokens["ArmiesCount"].SetValue(Game.selectedArmies.Count);
+                caption.text = LeanLocalization.GetTranslationText("army_select/select_more") + Game.selectedArmies.Sum(x => x.getSize()) + ")";
             }
         }
         public void OnMergeClick()
@@ -105,7 +108,7 @@ namespace Nashet.EconomicSimulation
 
         private void IsInSendArmyModeChangedHandler(bool newState)
         {
-            sendArmyButton.text = newState ? "Pick province":"Send";
+            sendArmyButton.text = newState ? LeanLocalization.GetTranslationText("army_select/send_choice") : LeanLocalization.GetTranslationText("army_select/send");
             //better use animator
             //animator.SetTrigger("ChangeState");
         }

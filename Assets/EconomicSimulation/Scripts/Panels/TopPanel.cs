@@ -7,6 +7,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -64,25 +65,25 @@ namespace Nashet.EconomicSimulation
         {
             var sb = new StringBuilder();
 
-            sb.Append("You rule: ").Append(Game.Player.FullName);
+            sb.Append(LeanLocalization.GetTranslationText("top_panel/rule")).Append(Game.Player.FullName);
 
             if (!Game.Player.IsAlive)
-                sb.Append(" (destroyed by enemies, but could rise again)");
-            sb.Append("    Year: ").Append(Date.Today);
+                sb.Append(LeanLocalization.GetTranslationText("top_panel/tips"));
+            sb.Append(LeanLocalization.GetTranslationText("top_panel/time")).Append(Date.Today);
 
             if (Game.Player.IsAlive)
-                sb.Append("   Population: ").Append(Game.Player.Provinces.getFamilyPopulation().ToString("N0"))
+                sb.Append(LeanLocalization.GetTranslationText("top_panel/population")).Append(Game.Player.Provinces.getFamilyPopulation().ToString("N0"))
                     .Append(" (")
                     .Append(Game.Player.Provinces.AllPopsChanges.Where(y => y.Key == null || y.Key is Staff || (y.Key is Province && (y.Key as Province).Country != Game.Player))
                     .Sum(x => x.Value).ToString("+0;-0;0"))
                     .Append(")");
 
-            sb.Append("\nMoney: ").Append(Game.Player.Cash)
-            .Append("   Tech points: ").Append(Game.Player.Science.Points.ToString("F0"));
+            sb.Append(LeanLocalization.GetTranslationText("top_panel/money")).Append(Game.Player.Cash)
+            .Append(LeanLocalization.GetTranslationText("top_panel/tech_point")).Append(Game.Player.Science.Points.ToString("F0"));
 
             if (Game.Player.IsAlive)
-                sb.Append("   Loyalty: ").Append(Game.Player.Provinces.AllPops.GetAverageProcent(x => x.loyalty))
-                .Append("   Education: ").Append(Game.Player.Provinces.AllPops.GetAverageProcent(x => x.Education));
+                sb.Append(LeanLocalization.GetTranslationText("top_panel/loyalty")).Append(Game.Player.Provinces.AllPops.GetAverageProcent(x => x.loyalty))
+                .Append(LeanLocalization.GetTranslationText("top_panel/education")).Append(Game.Player.Provinces.AllPops.GetAverageProcent(x => x.Education));
 
             if (Game.Player != null)
                 if (Game.Player.FailedPayments.Income.isNotZero())
