@@ -5,6 +5,7 @@ using Nashet.Utils;
 using System;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,26 +69,31 @@ namespace Nashet.UISystem
             //.Get().ToString("N3")
             //.ToString("F3")
             sb.Append("\n\nGDP: ").Append(SelectedCountry.getGDP()).Append("; rank: ").Append(SelectedCountry.getGDPRank()).Append("; world share: ").Append(SelectedCountry.getGDPShare());
-            sb.Append("\n\nGDP per thousand men: ").Append(SelectedCountry.getGDPPer1000()).Append("; rank: ").Append(SelectedCountry.getGDPPer1000Rank());
+            sb.AppendFormat(LeanLocalization.GetTranslationText("diplomacy_panel/gdp_thousand"), SelectedCountry.getGDPPer1000(), SelectedCountry.getGDPPer1000Rank());
             //sb.Append("\nAverage needs fulfilling: ").Append(selectedCountry.GetAveragePop(x=>x.needsFulfilled));
-            sb.Append("\n\nPops average needs fulfilling: ").Append(SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.needsFulfilled));
-            sb.Append(", loyalty: ").Append(SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.loyalty));
-            sb.Append(", education: ").Append(SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.Education));
-            sb.Append("\n\nReforms: ").Append(SelectedCountry.government).Append("; ")
-                .Append(SelectedCountry.economy).Append("; ")
-                .Append(SelectedCountry.minorityPolicy);
-            sb.AppendFormat("; {0}", SelectedCountry.unemploymentSubsidies);
-            sb.AppendFormat("; {0}", SelectedCountry.UBI);
-            sb.AppendFormat("; {0}", SelectedCountry.PovertyAid);
-            sb.AppendFormat("; {0}", SelectedCountry.minimalWage);
-            sb.AppendFormat("; {0}", SelectedCountry.taxationForPoor);
-            sb.AppendFormat("; {0}", SelectedCountry.taxationForRich);
+            sb.AppendFormat(LeanLocalization.GetTranslationText("diplomacy_panel/human_need")
+                    , SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.needsFulfilled)
+                    , SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.loyalty)
+                    , SelectedCountry.Provinces.AllPops.GetAverageProcent(x => x.Education)
+                    , SelectedCountry.government)
+                .AppendFormat("; {0}", SelectedCountry.economy)
+                .AppendFormat("; {0}", SelectedCountry.minorityPolicy)
+                .AppendFormat("; {0}", SelectedCountry.unemploymentSubsidies)
+                .AppendFormat("; {0}", SelectedCountry.UBI)
+                .AppendFormat("; {0}", SelectedCountry.PovertyAid)
+                .AppendFormat("; {0}", SelectedCountry.minimalWage)
+                .AppendFormat("; {0}", SelectedCountry.taxationForPoor)
+                .AppendFormat("; {0}", SelectedCountry.taxationForRich);
 
-            sb.Append("\n\nState culture: ").Append(SelectedCountry.Culture);
-            sb.Append("\nCultures: ").Append(SelectedCountry.Provinces.AllPops.Group(x => x.culture, y => y.population.Get())
-                .OrderByDescending(x => x.Value.get()).ToString(", ", 5));
-            sb.Append("\nClasses: ").Append(SelectedCountry.Provinces.AllPops.Group(x => x.Type, y => y.population.Get())
-                .OrderByDescending(x => x.Value.get()).ToString(", ", 0));
+            sb.AppendFormat(LeanLocalization.GetTranslationText("diplomacy_panel/culture"), SelectedCountry.Culture
+                , SelectedCountry.Provinces.AllPops
+                    .Group(x => x.culture, y => y.population.Get())
+                    .OrderByDescending(x => x.Value.get())
+                    .ToString(", ", 5)
+                , SelectedCountry.Provinces.AllPops
+                    .Group(x => x.Type, y => y.population.Get())
+                    .OrderByDescending(x => x.Value.get())
+                    .ToString(", ", 0));
             if (Game.devMode)
                 sb.Append("\n\nArmy: ").Append(SelectedCountry.getDefenceForces());
 

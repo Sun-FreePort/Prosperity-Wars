@@ -10,6 +10,7 @@ enterprises,企业
 trade,贸易
 ok,确定
 fine,好的
+not_fine,"好吧"
 close,关闭
 close_window,关闭窗口
 none,无
@@ -25,6 +26,33 @@ army_select/send_choice,选择省份
 army_select/merge,合并
 army_select/split,拆分
 army_select/demobilize,解散
+battle/player_won_title,"我们赢得了胜利!"
+battle/player_lost_title,"我们输掉了战斗!"
+battle/player_attack_won,"我们光荣的军队在{1}以{2}人的兵力袭击了{0}的军队。修饰词: {3}.
+
+而敌军有{4}人。修饰词：{5}: {5}
+
+我方获胜，敌方损失全部人员，我方损失{6}人。
+现在{7}省是我们的了！"
+battle/player_defend_won,"我们光荣的军队在{0}省遭到{1}的邪恶军队共{2}人的攻击。修饰词: {3}
+
+而我们有{4}人。修饰词: {5}
+
+我方获胜，敌方全军覆没，我方损失{6}人。"
+battle/player_attack_loss,"我们光荣的军队在{1}以{2}人的兵力进攻{0}的军队： {3}
+
+而敌人有{4}人。修饰词 {5}
+
+我们输了，我们的远征军被摧毁，而敌人损失了{6}人。"
+battle/player_defend_loss_1,"我们光荣的军队在 {0} 省被邪恶的 {1} 以 {2} 人的军队突袭。修饰词: {3}
+
+而我们有{4}人。修饰词: {5}
+
+我们输了，我方军队被彻底击溃，而敌方损失了 {6} 人。"
+battle/player_defend_loss_2,"
+我们失去了{0}省！"
+battle/player_defend_loss_3,"
+我们不得不退向 {0}"
 bottom_panel/statistics,统计
 bottom_panel/wiki,百科
 bottom_panel/credits,致谢
@@ -62,6 +90,19 @@ common/profit,利润
 common/profitability,盈利能力
 common/salary,薪资
 common/build,建设
+diplomacy_panel/gdp_thousand,"
+
+GDP/每千人: {0}; 等级: {1}"
+diplomacy_panel/human_need,"
+
+人均满足需求: {0}, 忠诚: {1}, 教育: {2}
+
+改革: {3}; "
+diplomacy_panel/culture,"
+
+国家文化: {0}
+文化: {1}
+类别/等级?: {2}"
 enterprises_panel/title,企业名录
 enterprises_panel/country_scope,国家范围
 enterprises_panel/entire_world,世界范围
@@ -72,9 +113,47 @@ factory_panel/title,企业信息
 factory_panel/nationalize,国有化
 factory_panel/upgrade,升级
 factory_panel/reopen,重新开放
+factory_panel/close,关闭企业
 factory_panel/destroy,摧毁
 factory_panel/subsidize,补贴
 factory_panel/no_hire_subsidies,不雇用补贴人员
+factory_panel/workforce,"劳动力：{0}，平均教育程度：{1}
+生产: {2}"
+factory_panel/cash,"
+现金: "
+factory_panel/input_required,"
+
+所需输入: "
+factory_panel/input_required_no,"
+
+无需输入 "
+factory_panel/upgrade,"
+升级需要: "
+factory_panel/construct,"
+施工天数: "
+factory_panel/stockpile_no,"
+储存: 无"
+factory_panel/bought,"
+已购买: "
+factory_panel/cost,", 成本: "
+factory_panel/salary,"
+
+工资 (每 1000 人): "
+factory_panel/unprofitable,"
+亏损天数: "
+factory_panel/general,"
+资产价值：{0}，市场价值：{1}
+盈利能力（红利/市值）：{2}
+销售总额：{3}"
+factory_panel/efficiency,"效率："
+factory_panel/ownership,"大股东：{0} {1}（鼠标悬停查看其余部分）"
+factory_panel/profit,"利润："
+factory_panel/priority,"优先权"
+factory_panel/nationalize_tip,"
+这会让股东们生气，并降低您的声誉"
+factory_panel/priority_tip,"
+
+优先级最高的企业首先获得劳动力"
 goods_panel/title,价格历史
 inventions_panel/title,科研面板
 inventions_panel/invention,发明
@@ -150,7 +229,12 @@ map_options/notes,"从文件生成地图的说明：
   - 图片尺寸为 200x200 像素 (average lags)，800x600 - huge lags，暂不支持更大的尺寸
   - 如果省份颜色为绿色 + 蓝色 >= 400 && 红色 < 96，则该省份将被视为海域"
 map_options/map_examples,点我查看地图文件样例
+modifier/conquered,"近期被征服"
+modifier/blockade,"被封锁"
+modifier/expire_year," 尚需 {0} 年失效"
+modifier/permanent," (永久)"
 other/gold_suffix," 黄金"
+other/unknown,"未知"
 product/grain,谷物
 product/cattle,牛
 product/liquor,酒类

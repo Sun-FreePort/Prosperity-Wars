@@ -5,6 +5,7 @@ using Nashet.ValueSpace;
 using System;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -54,22 +55,22 @@ namespace Nashet.EconomicSimulation
                 reopenButtonflag = reopenButtonStatus.reopen;
             if (reopenButtonflag == reopenButtonStatus.close)
             {
-                reopenButton.GetComponentInChildren<Text>().text = "Close enterprise";
+                reopenButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("factory_panel/close");
                 reopenButton.interactable = Factory.conditionsClose.isAllTrue(Game.Player, factory, out reopenButton.GetComponent<ToolTipHandler>().text);
             }
             else
             {
                 reopenButton.interactable = Factory.conditionsReopen.isAllTrue(Game.Player, factory, out reopenButton.GetComponent<ToolTipHandler>().text);
-                reopenButton.GetComponentInChildren<Text>().text = "Reopen";
+                reopenButton.GetComponentInChildren<Text>().text = LeanLocalization.GetTranslationText("factory_panel/reopen");
             }
 
             destroyButton.interactable = Factory.conditionsDestroy.isAllTrue(Game.Player, factory, out destroyButton.GetComponent<ToolTipHandler>().text);
 
             nationalizeButton.interactable = Factory.conditionsNatinalize.isAllTrue(Game.Player, factory, out nationalizeButton.GetComponent<ToolTipHandler>().text);
-            nationalizeButton.GetComponent<ToolTipHandler>().AddText("\nThat would make owners angry and would reduce your reputation");
+            nationalizeButton.GetComponent<ToolTipHandler>().AddText(LeanLocalization.GetTranslationText("factory_panel/nationalize_tip"));
 
             priority.interactable = Factory.conditionsChangePriority.isAllTrue(Game.Player, factory, out priority.GetComponent<ToolTipHandler>().text);
-            priority.GetComponent<ToolTipHandler>().text += "\n\nHighest priority enterprises get workforce first";
+            priority.GetComponent<ToolTipHandler>().text += LeanLocalization.GetTranslationText("factory_panel/priority_tip");
 
             subidize.interactable = Factory.conditionsSubsidize.isAllTrue(Game.Player, factory, out subidize.GetComponent<ToolTipHandler>().text);
             dontHireOnSubsidies.interactable = Factory.conditionsDontHireOnSubsidies.isAllTrue(Game.Player, factory, out dontHireOnSubsidies.GetComponent<ToolTipHandler>().text);
@@ -95,81 +96,83 @@ namespace Nashet.EconomicSimulation
 
                 var sb = new StringBuilder();
                 sb = new StringBuilder();
-                sb.Append("Workforce: ").Append(factory.getWorkForce()).Append(", average education: ").Append(factory.AverageWorkersEducation);
-                sb.Append("\nProduced: ").Append(factory.getGainGoodsThisTurn());
+
+                sb.AppendFormat(LeanLocalization.GetTranslationText("factory_panel/workforce"),
+                    factory.getWorkForce(), factory.AverageWorkersEducation, factory.getGainGoodsThisTurn());
                 if (factory.storage.isNotZero())
-                    sb.Append(", Unsold: ").Append(factory.storage);
+                    sb.Append(LeanLocalization.GetTranslationText("pop_unit_panel/unsold")).Append(factory.storage);
                 //sb.Append("\nBasic production: ").Append(factory.Type.basicProduction);
                 //sb.Append("\nSent to market: ").Append(factory.getSentToMarket());
                 //sb.Append("\n\nMoney income: ").Append(factory.moneyIncomeThisTurn);
                 //sb.Append("\n\n").Append(factory.Register.ToString());                
 
 
-                sb.Append("\nCash: ").Append(factory.Cash);
+                sb.Append(LeanLocalization.GetTranslationText("factory_panel/cash")).Append(factory.Cash);
                 //sb.Append(", Dividends: ").Append(factory.GetDividends());
                 if (factory.Type.hasInput())
                 {
-                    sb.Append("\n\nInput required: ");
+                    sb.Append(LeanLocalization.GetTranslationText("factory_panel/input_required"));
                     foreach (Storage next in factory.Type.resourceInput)
                         sb.Append(next.get() * factory.getLevel() * factory.GetWorkForceFulFilling().get()).Append(" ").Append(next.Product).Append(";");
                 }
                 else
-                    sb.Append("\n\nNo input required");
+                    sb.Append(LeanLocalization.GetTranslationText("factory_panel/input_required_no"));
 
                 if (factory.constructionNeeds.Count() > 0)
-                    sb.Append("\nUpgrade needs: ").Append(factory.constructionNeeds);
+                    sb.Append(LeanLocalization.GetTranslationText("factory_panel/upgrade")).Append(factory.constructionNeeds);
 
                 if (factory.getDaysInConstruction() > 0)
-                    sb.Append("\nDays in construction: ").Append(factory.getDaysInConstruction());
+                    sb.Append(LeanLocalization.GetTranslationText("factory_panel/construct")).Append(factory.getDaysInConstruction());
                 if (factory.Type.hasInput() || factory.isBuilding() || factory.isUpgrading())
                 {
                     if (factory.getInputProductsReserve().Count() > 0)
-                        sb.Append("\nStockpile: ").Append(factory.getInputProductsReserve());
+                        sb.Append(LeanLocalization.GetTranslationText("pop_unit_panel/stockpile")).Append(factory.getInputProductsReserve());
                     else
-                        sb.Append("\nStockpile: nothing");
+                        sb.Append(LeanLocalization.GetTranslationText("factory_panel/stockpile_no"));
 
                     if (factory.getConsumed().Count() > 0)
-                        sb.Append("\nBought: ").Append(factory.getConsumed().ToString(", ")).Append(", Cost: ").Append(Game.Player.market.getCost(factory.getConsumed()));
+                        sb.Append(LeanLocalization.GetTranslationText("factory_panel/bought")).Append(factory.getConsumed().ToString(", "))
+                            .Append(LeanLocalization.GetTranslationText("factory_panel/cost")).Append(Game.Player.market.getCost(factory.getConsumed()));
                 }
                 if (factory.Type.hasInput())
-                    sb.Append("\nResource availability: ").Append(factory.getInputFactor());
+                    sb.Append("\n").Append(LeanLocalization.GetTranslationText("pop_unit_panel/resource_able")).Append(factory.getInputFactor());
 
                 //if (Game.devMode)
                 //    sb.Append("\nConsumed LT: ").Append(factory.getConsumedLastTurn());
-                sb.Append("\n\nSalary (per 1000 men): ").Append(factory.getSalary());
+                sb.Append(LeanLocalization.GetTranslationText("factory_panel/salary")).Append(factory.getSalary());
                 //sb.Append(", Total: ").Append(factory.getSalaryCost());
 
 
                 if (factory.getDaysUnprofitable() > 0)
-                    sb.Append("\nDays unprofitable: ").Append(factory.getDaysUnprofitable());
+                    sb.Append(LeanLocalization.GetTranslationText("factory_panel/unprofitable")).Append(factory.getDaysUnprofitable());
 
                 if (factory.getDaysClosed() > 0)
                     sb.Append("\nDays closed: ").Append(factory.getDaysClosed());
 
                 if (factory.loans.isNotZero())
                     sb.Append("\nLoan: ").Append(factory.loans);
-                sb.Append("\nAssets value: ").Append(factory.ownership.GetAssetsValue());
-                sb.Append(", Market value: ").Append(factory.ownership.GetMarketValue());
-                sb.Append("\nProfitability (dividends/market value): ").Append(factory.GetMargin());
-                sb.Append("\nTotal on sale: ").Append(factory.ownership.GetTotalOnSale());
+                sb.AppendFormat(LeanLocalization.GetTranslationText("factory_panel/general"),
+                    factory.ownership.GetAssetsValue(), factory.ownership.GetMarketValue(), factory.GetMargin(),
+                    factory.ownership.GetTotalOnSale());
                 //if (Game.devMode)
                 //    sb.Append("\nHowMuchHiredLastTurn ").Append(shownFactory.getHowMuchHiredLastTurn());
                 generaltext.text = sb.ToString();
                 //+"\nExpenses:"
 
-                efficiencyText.text = "Efficiency: " + Factory.modifierEfficiency.getModifier(factory);
-                efficiencyText.GetComponent<ToolTipHandler>().SetTextDynamic(() => "Efficiency: " + Factory.modifierEfficiency.GetDescription(factory));
+                var s = LeanLocalization.GetTranslationText("factory_panel/efficiency");
+                efficiencyText.text = s + Factory.modifierEfficiency.getModifier(factory);
+                efficiencyText.GetComponent<ToolTipHandler>().SetTextDynamic(() => s + Factory.modifierEfficiency.GetDescription(factory));
 
                 var owners = factory.ownership.GetAllShares().OrderByDescending(x => x.Value.get()).ToList();//.getString(" ", "\n");
-                ownership.text = "Biggest owner: " + owners[0].Key + " " + owners[0].Value + " (hover mouse for rest)";
+                ownership.text = string.Format(LeanLocalization.GetTranslationText("factory_panel/ownership"), owners[0].Key, owners[0].Value);
                 ownership.GetComponent<ToolTipHandler>().SetTextDynamic(() => "Owners:\n" + owners.ToString(" ", "\n"));
 
                 sb.Clear();
-                sb.Append("Profit: ");
+                sb.Append(LeanLocalization.GetTranslationText("factory_panel/profit"));
                 if (Game.Player.economy != Economy.PlannedEconomy)
-                    sb.Append(factory.getProfit().ToString("N3")).Append(" Gold");
+                    sb.Append(factory.getProfit().ToString("N3")).Append(LeanLocalization.GetTranslationText("other/gold_suffix"));
                 else
-                    sb.Append("unknown");
+                    sb.Append(LeanLocalization.GetTranslationText("other/unknown"));
                 profitText.text = sb.ToString();
                 profitText.GetComponent<ToolTipHandler>().SetTextDynamic(() => factory.Register.ToString());
 

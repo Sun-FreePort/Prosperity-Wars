@@ -280,18 +280,105 @@ MonoBehaviour:
     Text: "\u4F01\u4E1A"
   - Name: trade
     Text: "\u8D38\u6613"
+  - Name: ok
+    Text: "\u786E\u5B9A"
+  - Name: fine
+    Text: "\u597D\u7684"
+  - Name: not_fine
+    Text: "\u597D\u5427"
+  - Name: close
+    Text: "\u5173\u95ED"
+  - Name: close_window
+    Text: "\u5173\u95ED\u7A97\u53E3"
+  - Name: none
+    Text: "\u65E0"
+  - Name: nothing
+    Text: "\u65E0"
+  - Name: sell
+    Text: "\u51FA\u552E"
+  - Name: buy
+    Text: "\u8D2D\u4E70"
+  - Name: show_all
+    Text: "\u5C55\u793A\u6240\u6709"
+  - Name: hide_all
+    Text: "\u9690\u85CF\u6240\u6709"
   - Name: army_select/select_one
     Text: "\u9009\u62E9 1 \u652F\u519B\u961F - "
   - Name: army_select/select_more
     Text: "\u9009\u62E9 {ArmiesCount} \u652F\u519B\u961F ("
   - Name: army_select/send
-    Text: "\u53D1\u9001"
+    Text: "\u884C\u519B"
+  - Name: army_select/send_choice
+    Text: "\u9009\u62E9\u7701\u4EFD"
   - Name: army_select/merge
     Text: "\u5408\u5E76"
   - Name: army_select/split
     Text: "\u62C6\u5206"
   - Name: army_select/demobilize
     Text: "\u89E3\u6563"
+  - Name: battle/player_won_title
+    Text: "\u6211\u4EEC\u8D62\u5F97\u4E86\u80DC\u5229!"
+  - Name: battle/player_lost_title
+    Text: "\u6211\u4EEC\u8F93\u6389\u4E86\u6218\u6597!"
+  - Name: battle/player_attack_won
+    Text: "\u6211\u4EEC\u5149\u8363\u7684\u519B\u961F\u5728{1}\u4EE5{2}\u4EBA\u7684\u5175\u529B\u88AD\u51FB\u4E86{0}\u7684\u519B\u961F\u3002\u4FEE\u9970\u8BCD:
+      {3}.\n\n\u800C\u654C\u519B\u6709{4}\u4EBA\u3002\u4FEE\u9970\u8BCD\uFF1A{5}:
+      {5}\n\n\u6211\u65B9\u83B7\u80DC\uFF0C\u654C\u65B9\u635F\u5931\u5168\u90E8\u4EBA\u5458\uFF0C\u6211\u65B9\u635F\u5931{6}\u4EBA\u3002\n\u73B0\u5728{7}\u7701\u662F\u6211\u4EEC\u7684\u4E86\uFF01"
+  - Name: battle/player_defend_won
+    Text: "\u6211\u4EEC\u5149\u8363\u7684\u519B\u961F\u5728{0}\u7701\u906D\u5230{1}\u7684\u90AA\u6076\u519B\u961F\u5171{2}\u4EBA\u7684\u653B\u51FB\u3002\u4FEE\u9970\u8BCD:
+      {3}\n\n\u800C\u6211\u4EEC\u6709{4}\u4EBA\u3002\u4FEE\u9970\u8BCD: {5}\n\n\u6211\u65B9\u83B7\u80DC\uFF0C\u654C\u65B9\u5168\u519B\u8986\u6CA1\uFF0C\u6211\u65B9\u635F\u5931{6}\u4EBA\u3002"
+  - Name: battle/player_attack_loss
+    Text: "\u6211\u4EEC\u5149\u8363\u7684\u519B\u961F\u5728{1}\u4EE5{2}\u4EBA\u7684\u5175\u529B\u8FDB\u653B{0}\u7684\u519B\u961F\uFF1A
+      {3}\n\n\u800C\u654C\u4EBA\u6709{4}\u4EBA\u3002\u4FEE\u9970\u8BCD {5}\n\n\u6211\u4EEC\u8F93\u4E86\uFF0C\u6211\u4EEC\u7684\u8FDC\u5F81\u519B\u88AB\u6467\u6BC1\uFF0C\u800C\u654C\u4EBA\u635F\u5931\u4E86{6}\u4EBA\u3002"
+  - Name: battle/player_defend_loss_1
+    Text: "\u6211\u4EEC\u5149\u8363\u7684\u519B\u961F\u5728 {0} \u7701\u88AB\u90AA\u6076\u7684
+      {1} \u4EE5 {2} \u4EBA\u7684\u519B\u961F\u7A81\u88AD\u3002\u4FEE\u9970\u8BCD:
+      {3}\n\n\u800C\u6211\u4EEC\u6709{4}\u4EBA\u3002\u4FEE\u9970\u8BCD: {5}\n\n\u6211\u4EEC\u8F93\u4E86\uFF0C\u6211\u65B9\u519B\u961F\u88AB\u5F7B\u5E95\u51FB\u6E83\uFF0C\u800C\u654C\u65B9\u635F\u5931\u4E86
+      {6} \u4EBA\u3002"
+  - Name: battle/player_defend_loss_2
+    Text: "\n\u6211\u4EEC\u5931\u53BB\u4E86{0}\u7701\uFF01"
+  - Name: battle/player_defend_loss_3
+    Text: "\n\u6211\u4EEC\u4E0D\u5F97\u4E0D\u9000\u5411 {0}"
+  - Name: bottom_panel/statistics
+    Text: "\u7EDF\u8BA1"
+  - Name: bottom_panel/wiki
+    Text: "\u767E\u79D1"
+  - Name: bottom_panel/credits
+    Text: "\u81F4\u8C22"
+  - Name: bottom_panel/exit
+    Text: "\u9000\u51FA"
+  - Name: bottom_panel/political_map
+    Text: "\u653F\u6CBB\u5730\u56FE"
+  - Name: bottom_panel/culture_map
+    Text: "\u6587\u5316\u5730\u56FE"
+  - Name: bottom_panel/core_map
+    Text: "\u6838\u5FC3\u5730\u56FE"
+  - Name: bottom_panel/resource_map
+    Text: "\u8D44\u6E90\u5730\u56FE"
+  - Name: bottom_panel/population_changes
+    Text: "\u4EBA\u53E3\u53D8\u5316"
+  - Name: bottom_panel/population_density
+    Text: "\u4EBA\u53E3\u5BC6\u5EA6"
+  - Name: bottom_panel/prosperity
+    Text: "\u7E41\u8363"
+  - Name: build_panel/title
+    Text: "\u5EFA\u7ACB\u65B0\u4F01\u4E1A"
+  - Name: build_panel/no_build_now
+    Text: "\u76EE\u524D\u65E0\u5EFA\u8BBE\u9879\u76EE"
+  - Name: build_panel/select_province
+    Text: "\u9009\u62E9\u5EFA\u8BBE\u7701\u4EFD"
+  - Name: build_panel/select_building
+    Text: "\u9009\u62E9\u5EFA\u7B51"
+  - Name: build_panel/select_left_building
+    Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9\u5EFA\u7B51"
+  - Name: build_panel/name
+    Text: "\u540D\u79F0"
+  - Name: build_panel/cost
+    Text: "\u6210\u672C"
+  - Name: build_panel/output
+    Text: "\u4EA7\u51FA"
+  - Name: build_panel/potential_margin
+    Text: "\u6F5C\u5728\u5229\u6DA6\u7387"
   - Name: common/type
     Text: "\u7C7B\u578B"
   - Name: common/province
@@ -326,6 +413,216 @@ MonoBehaviour:
     Text: "\u85AA\u8D44"
   - Name: common/build
     Text: "\u5EFA\u8BBE"
+  - Name: enterprises_panel/title
+    Text: "\u4F01\u4E1A\u540D\u5F55"
+  - Name: enterprises_panel/country_scope
+    Text: "\u56FD\u5BB6\u8303\u56F4"
+  - Name: enterprises_panel/entire_world
+    Text: "\u4E16\u754C\u8303\u56F4"
+  - Name: enterprises_panel/private_owned
+    Text: "\u79C1\u4EBA\u62E5\u6709"
+  - Name: enterprises_panel/unsubsidized
+    Text: "\u65E0\u8865\u8D34"
+  - Name: enterprises_panel/uninvestable
+    Text: "\u4E0D\u53EF\u6295\u8D44"
+  - Name: factory_panel/title
+    Text: "\u4F01\u4E1A\u4FE1\u606F"
+  - Name: factory_panel/nationalize
+    Text: "\u56FD\u6709\u5316"
+  - Name: factory_panel/upgrade
+    Text: "\u5347\u7EA7"
+  - Name: factory_panel/reopen
+    Text: "\u91CD\u65B0\u5F00\u653E"
+  - Name: factory_panel/close
+    Text: "\u5173\u95ED\u4F01\u4E1A"
+  - Name: factory_panel/destroy
+    Text: "\u6467\u6BC1"
+  - Name: factory_panel/subsidize
+    Text: "\u8865\u8D34"
+  - Name: factory_panel/no_hire_subsidies
+    Text: "\u4E0D\u96C7\u7528\u8865\u8D34\u4EBA\u5458"
+  - Name: factory_panel/workforce
+    Text: "\u52B3\u52A8\u529B\uFF1A{0}\uFF0C\u5E73\u5747\u6559\u80B2\u7A0B\u5EA6\uFF1A{1}\n\u751F\u4EA7:
+      {2}"
+  - Name: factory_panel/cash
+    Text: "\n\u73B0\u91D1: "
+  - Name: factory_panel/input_required
+    Text: "\n\n\u6240\u9700\u8F93\u5165: "
+  - Name: factory_panel/input_required_no
+    Text: "\n\n\u65E0\u9700\u8F93\u5165 "
+  - Name: factory_panel/upgrade
+    Text: "\n\u5347\u7EA7\u9700\u8981: "
+  - Name: factory_panel/construct
+    Text: "\n\u65BD\u5DE5\u5929\u6570: "
+  - Name: factory_panel/stockpile_no
+    Text: "\n\u50A8\u5B58: \u65E0"
+  - Name: factory_panel/bought
+    Text: "\n\u5DF2\u8D2D\u4E70: "
+  - Name: factory_panel/cost
+    Text: ", \u6210\u672C: "
+  - Name: factory_panel/salary
+    Text: "\n\n\u5DE5\u8D44 (\u6BCF 1000 \u4EBA): "
+  - Name: factory_panel/unprofitable
+    Text: "\n\u4E8F\u635F\u5929\u6570: "
+  - Name: factory_panel/general
+    Text: "\n\u8D44\u4EA7\u4EF7\u503C\uFF1A{0}\uFF0C\u5E02\u573A\u4EF7\u503C\uFF1A{1}\n\u76C8\u5229\u80FD\u529B\uFF08\u7EA2\u5229/\u5E02\u503C\uFF09\uFF1A{2}\n\u9500\u552E\u603B\u989D\uFF1A{3}"
+  - Name: factory_panel/efficiency
+    Text: "\u6548\u7387\uFF1A"
+  - Name: factory_panel/ownership
+    Text: "\u5927\u80A1\u4E1C\uFF1A{0} {1}\uFF08\u9F20\u6807\u60AC\u505C\u67E5\u770B\u5176\u4F59\u90E8\u5206\uFF09"
+  - Name: factory_panel/profit
+    Text: "\u5229\u6DA6\uFF1A"
+  - Name: factory_panel/priority
+    Text: "\u4F18\u5148\u6743"
+  - Name: factory_panel/nationalize_tip
+    Text: "\n\u8FD9\u4F1A\u8BA9\u80A1\u4E1C\u4EEC\u751F\u6C14\uFF0C\u5E76\u964D\u4F4E\u60A8\u7684\u58F0\u8A89"
+  - Name: factory_panel/priority_tip
+    Text: "\n\n\u4F18\u5148\u7EA7\u6700\u9AD8\u7684\u4F01\u4E1A\u9996\u5148\u83B7\u5F97\u52B3\u52A8\u529B"
+  - Name: goods_panel/title
+    Text: "\u4EF7\u683C\u5386\u53F2"
+  - Name: inventions_panel/title
+    Text: "\u79D1\u7814\u9762\u677F"
+  - Name: inventions_panel/invention
+    Text: "\u53D1\u660E"
+  - Name: inventions_panel/status
+    Text: "\u72B6\u6001"
+  - Name: inventions_panel/science_points
+    Text: "\u79D1\u5B66\u70B9\u6570"
+  - Name: inventions_panel/already_invented
+    Text: "\u5DF2\u7ECF\u7814\u53D1"
+  - Name: inventions_panel/invented
+    Text: "\u5DF2\u7814\u53D1"
+  - Name: inventions_panel/uninvented
+    Text: "\u672A\u7814\u53D1"
+  - Name: inventions_panel/not_enough_point
+    Text: "\u79D1\u5B66\u70B9\u6570\u4E0D\u8DB3\u4EE5\u7814\u53D1"
+  - Name: inventions_panel/invent
+    Text: "\u7814\u53D1"
+  - Name: inventions_panel/points
+    Text: "\u79D1\u5B66\u70B9\u6570\uFF1A"
+  - Name: inventions_panel/select_left_invention
+    Text: "\n\n\u4ECE\u5DE6\u4FA7\u9009\u62E9\u53D1\u660E"
+  - Name: inventions_panel/select_left
+    Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9"
+  - Name: inventions/farming
+    Text: "\u519C\u4E1A"
+  - Name: inventions/farming_tips
+    Text: "\u5141\u8BB8\u519C\u4E1A\u548C\u519C\u6C11"
+  - Name: inventions/banking
+    Text: "\u94F6\u884C\u4E1A"
+  - Name: inventions/banking_tips
+    Text: "\u5141\u8BB8\u56FD\u5BB6\u94F6\u884C\u3001\u4FE1\u8D37\u548C\u5B58\u6B3E\u3002\u8FD8\u5141\u8BB8\u5E9F\u9664\u519C\u5974\u5236\uFF0C\u5E76\u5BF9\u8D35\u65CF\u7ED9\u4E88\u8865\u507F"
+  - Name: inventions/manufactures
+    Text: "\u5236\u9020\u4E1A"
+  - Name: inventions/manufactures_tips
+    Text: "\u5141\u8BB8\u5EFA\u7B51\u5236\u9020\u4E1A\u52A0\u5DE5\u539F\u6750\u6599\u4EA7\u54C1"
+  - Name: inventions/flying_shuttle
+    Text: "\u7EA6\u7FF0\xB7\u51EF\u4F0A\u7684\u98DE\u68AD"
+  - Name: inventions/flying_shuttle_tips
+    Text: "\u5141\u8BB8\u5EFA\u7ACB\u7EC7\u5E03\u5382"
+  - Name: inventions/mining
+    Text: "\u91C7\u77FF"
+  - Name: inventions/mining_tips
+    Text: "\u5141\u8BB8\u4ECE\u5730\u6D1E\u4E2D\u91C7\u96C6\u8D44\u6E90\uFF0C\u589E\u5F3A\u5176
+      50% \u7684\u6548\u7387"
+  - Name: inventions/metal
+    Text: "\u51B6\u91D1"
+  - Name: inventions/metal_tips
+    Text: "\u5141\u8BB8\u91D1\u5C5E\u77FF\u77F3\u548C\u51B6\u70BC\u3002\u5141\u8BB8\u51B7\u5175\u5668\u3002"
+  - Name: inventions/classical_liberalism
+    Text: "\u53E4\u5178\u81EA\u7531\u4E3B\u4E49"
+  - Name: inventions/classical_liberalism_tips
+    Text: "\u5141\u8BB8\u81EA\u7531\u653E\u4EFB\u653F\u7B56\u3001\u8D44\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u63A8\u884C\u666E\u904D\u6C11\u4E3B\u3002"
+  - Name: inventions/keynesianism
+    Text: "\u51EF\u6069\u65AF\u4E3B\u4E49"
+  - Name: inventions/keynesianism_tips
+    Text: "\u5141\u8BB8\u5BF9\u7ECF\u6D4E\u8FDB\u884C\u6709\u9650\u5E72\u9884"
+  - Name: inventions/collectivism
+    Text: "\u96C6\u4F53\u4E3B\u4E49"
+  - Name: inventions/collectivism_tips
+    Text: "\u5141\u8BB8\u65E0\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u8BA1\u5212\u7ECF\u6D4E"
+  - Name: inventions/steam_power
+    Text: "\u84B8\u6C7D\u52A8\u529B"
+  - Name: inventions/steam_power_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u673A\u68B0\u548C\u6C34\u6CE5\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
+      25%"
+  - Name: inventions/welfare
+    Text: "\u798F\u5229"
+  - Name: inventions/welfare_tips
+    Text: "\u5141\u8BB8\u5931\u4E1A\u6551\u6D4E\u548C\u5168\u6C11\u8865\u8D34"
+  - Name: inventions/gunpowder
+    Text: "\u706B\u836F"
+  - Name: inventions/gunpowder_tips
+    Text: "\u5141\u8BB8\u70AE\u5175\u4F7F\u7528\u706B\u70AE"
+  - Name: inventions/hand_cannons
+    Text: "\u4FBF\u643A\u706B\u5668"
+  - Name: inventions/hand_cannons_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u706B\u5668\uFF0C\u5728\u6218\u6597\u4E2D\u975E\u5E38\u6709\u6548"
+  - Name: inventions/combustion_engine
+    Text: "\u5185\u71C3\u673A"
+  - Name: inventions/combustion_engine_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u77F3\u6CB9\u3001\u71C3\u6599\u3001\u6C7D\u8F66\u3001\u6A61\u80F6\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
+      25%"
+  - Name: inventions/tanks
+    Text: "\u5766\u514B"
+  - Name: inventions/tanks_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u5766\u514B"
+  - Name: inventions/airplanes
+    Text: "\u98DE\u673A"
+  - Name: inventions/airplanes_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u98DE\u673A"
+  - Name: inventions/professional_army
+    Text: "\u804C\u4E1A\u519B\u961F"
+  - Name: inventions/professional_army_tips
+    Text: "\u5141\u8BB8\u58EB\u5175"
+  - Name: inventions/domestication
+    Text: "\u755C\u7267\u4E1A"
+  - Name: inventions/domestication_tips
+    Text: "\u5141\u8BB8\u5728\u755C\u680F\u4E2D\u517B\u725B\u3002\u8FD8\u5141\u8BB8\u5728\u519B\u961F\u4E2D\u4F7F\u7528\u9A6C\u5339"
+  - Name: inventions/electronics
+    Text: "\u7535\u5B50\u5316"
+  - Name: inventions/electronics_tips
+    Text: "\u5141\u8BB8\u4F7F\u7528\u7535\u5B50\u4EA7\u54C1"
+  - Name: inventions/tobacco
+    Text: "\u70DF\u8349"
+  - Name: inventions/tobacco_tips
+    Text: "\u5141\u8BB8\u79CD\u690D\u70DF\u8349"
+  - Name: inventions/coal
+    Text: "\u7164\u70AD"
+  - Name: inventions/coal_tips
+    Text: "\u5141\u8BB8\u7164\u70AD"
+  - Name: inventions/universities
+    Text: "\u5927\u5B66"
+  - Name: inventions/universities_tips
+    Text: "\u5141\u8BB8\u5EFA\u7ACB\u5927\u5B66"
+  - Name: map_options/title
+    Text: "\u5730\u56FE\u8BBE\u7F6E"
+  - Name: map_options/random_map
+    Text: "\u968F\u673A\u5730\u56FE"
+  - Name: map_options/map_from_file
+    Text: "\u4ECE\u6587\u4EF6\u751F\u6210\u5730\u56FE (\u5B9E\u9A8C\u6027)"
+  - Name: map_options/industrial_start
+    Text: "\u5DE5\u4E1A\u5F00\u5C40"
+  - Name: map_options/industrial_tips
+    Text: "\u4E3A\u6BCF\u4E2A\u56FD\u5BB6\u589E\u52A0\u5DE5\u5382\u3001\u6280\u672F\u548C\u66F4\u591A\u52B3\u52A8\u529B\uFF0C\u4EE5\u52A0\u5FEB\u8D44\u672C\u5E02\u573A\u7684\u5F62\u6210\u3002"
+  - Name: map_options/load_image_png
+    Text: "\u52A0\u8F7D PNG \u56FE\u7247"
+  - Name: map_options/generate_map
+    Text: "\u751F\u6210\u56FE\u7247"
+  - Name: map_options/notes
+    Text: "\u4ECE\u6587\u4EF6\u751F\u6210\u5730\u56FE\u7684\u8BF4\u660E\uFF1A\n \n 
+      - \u6BCF\u5757\u989C\u8272\u533A\u57DF\u90FD\u88AB\u662F\u4E3A\u4E00\u5757\u7701\u4EFD\n 
+      - \u5E94\u4E3A png \u683C\u5F0F\n  - not exactly compatible with Vic 2 map
+      format\n  - \u4E0D\u4F7F\u7528\u6297\u952F\u9F7F\n  - \u56FE\u7247\u5C3A\u5BF8\u4E3A
+      200x200 \u50CF\u7D20 (average lags)\uFF0C800x600 - huge lags\uFF0C\u6682\u4E0D\u652F\u6301\u66F4\u5927\u7684\u5C3A\u5BF8\n 
+      - \u5982\u679C\u7701\u4EFD\u989C\u8272\u4E3A\u7EFF\u8272 + \u84DD\u8272 >=
+      400 && \u7EA2\u8272 < 96\uFF0C\u5219\u8BE5\u7701\u4EFD\u5C06\u88AB\u89C6\u4E3A\u6D77\u57DF"
+  - Name: map_options/map_examples
+    Text: "\u70B9\u6211\u67E5\u770B\u5730\u56FE\u6587\u4EF6\u6837\u4F8B"
+  - Name: other/gold_suffix
+    Text: " \u9EC4\u91D1"
+  - Name: other/unknown
+    Text: "\u672A\u77E5"
   - Name: product/grain
     Text: "\u8C37\u7269"
   - Name: product/cattle
@@ -454,46 +751,8 @@ MonoBehaviour:
     Text: "\u8D35\u65CF"
   - Name: population/soldiers
     Text: "\u58EB\u5175"
-  - Name: ok
-    Text: "\u786E\u5B9A"
-  - Name: close
-    Text: "\u5173\u95ED"
-  - Name: close_window
-    Text: "\u5173\u95ED\u7A97\u53E3"
-  - Name: none
-    Text: "\u65E0"
-  - Name: nothing
-    Text: "\u65E0"
-  - Name: sell
-    Text: "\u51FA\u552E"
-  - Name: buy
-    Text: "\u8D2D\u4E70"
-  - Name: show_all
-    Text: "\u5C55\u793A\u6240\u6709"
-  - Name: hide_all
-    Text: "\u9690\u85CF\u6240\u6709"
-  - Name: bottom_panel/statistics
-    Text: "\u7EDF\u8BA1"
-  - Name: bottom_panel/wiki
-    Text: "\u767E\u79D1"
-  - Name: bottom_panel/credits
-    Text: "\u81F4\u8C22"
-  - Name: bottom_panel/exit
-    Text: "\u9000\u51FA"
-  - Name: bottom_panel/political_map
-    Text: "\u653F\u6CBB\u5730\u56FE"
-  - Name: bottom_panel/culture_map
-    Text: "\u6587\u5316\u5730\u56FE"
-  - Name: bottom_panel/core_map
-    Text: "\u6838\u5FC3\u5730\u56FE"
-  - Name: bottom_panel/resource_map
-    Text: "\u8D44\u6E90\u5730\u56FE"
-  - Name: bottom_panel/population_changes
-    Text: "\u4EBA\u53E3\u53D8\u5316"
-  - Name: bottom_panel/population_density
-    Text: "\u4EBA\u53E3\u5BC6\u5EA6"
-  - Name: bottom_panel/prosperity
-    Text: "\u7E41\u8363"
+  - Name: population_panel/title
+    Text: "\u793E\u4F1A\u7FA4\u4F53"
   - Name: province_panel/detail_province
     Text: "\u7701\u4EFD\uFF1A"
   - Name: province_panel/detail_population
@@ -522,8 +781,6 @@ MonoBehaviour:
     Text: "\u5EFA\u8BBE"
   - Name: province_panel/grant_independence
     Text: "\u7ED9\u4E88\u72EC\u7ACB"
-  - Name: goods_panel/title
-    Text: "\u4EF7\u683C\u5386\u53F2"
   - Name: pop_unit_panel/title
     Text: 
   - Name: pop_unit_panel/
@@ -593,155 +850,6 @@ MonoBehaviour:
     Text: "\u5962\u4F88\u54C1\u9700\u6C42: "
   - Name: pop_unit_panel/balance
     Text: "\u4F59\u989D: "
-  - Name: inventions_panel/title
-    Text: "\u79D1\u7814\u9762\u677F"
-  - Name: inventions_panel/invention
-    Text: "\u53D1\u660E"
-  - Name: inventions_panel/status
-    Text: "\u72B6\u6001"
-  - Name: inventions_panel/science_points
-    Text: "\u79D1\u5B66\u70B9\u6570"
-  - Name: inventions_panel/already_invented
-    Text: "\u5DF2\u7ECF\u7814\u53D1"
-  - Name: inventions_panel/invented
-    Text: "\u5DF2\u7814\u53D1"
-  - Name: inventions_panel/uninvented
-    Text: "\u672A\u7814\u53D1"
-  - Name: inventions_panel/not_enough_point
-    Text: "\u79D1\u5B66\u70B9\u6570\u4E0D\u8DB3\u4EE5\u7814\u53D1"
-  - Name: inventions_panel/invent
-    Text: "\u7814\u53D1"
-  - Name: inventions_panel/points
-    Text: "\u79D1\u5B66\u70B9\u6570\uFF1A"
-  - Name: inventions_panel/select_left_invention
-    Text: "\n\n\u4ECE\u5DE6\u4FA7\u9009\u62E9\u53D1\u660E"
-  - Name: inventions_panel/select_left
-    Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9"
-  - Name: inventions/farming
-    Text: "\u519C\u4E1A"
-  - Name: inventions/farming_tips
-    Text: "\u5141\u8BB8\u519C\u4E1A\u548C\u519C\u6C11"
-  - Name: inventions/banking
-    Text: "\u94F6\u884C\u4E1A"
-  - Name: inventions/banking_tips
-    Text: "\u5141\u8BB8\u56FD\u5BB6\u94F6\u884C\u3001\u4FE1\u8D37\u548C\u5B58\u6B3E\u3002\u8FD8\u5141\u8BB8\u5E9F\u9664\u519C\u5974\u5236\uFF0C\u5E76\u5BF9\u8D35\u65CF\u7ED9\u4E88\u8865\u507F"
-  - Name: inventions/manufactures
-    Text: "\u5236\u9020\u4E1A"
-  - Name: inventions/manufactures_tips
-    Text: "\u5141\u8BB8\u5EFA\u7B51\u5236\u9020\u4E1A\u52A0\u5DE5\u539F\u6750\u6599\u4EA7\u54C1"
-  - Name: inventions/flying_shuttle
-    Text: "\u7EA6\u7FF0\xB7\u51EF\u4F0A\u7684\u98DE\u68AD"
-  - Name: inventions/flying_shuttle_tips
-    Text: "\u5141\u8BB8\u5EFA\u7ACB\u7EC7\u5E03\u5382"
-  - Name: inventions/mining
-    Text: "\u91C7\u77FF"
-  - Name: inventions/mining_tips
-    Text: "\u5141\u8BB8\u4ECE\u5730\u6D1E\u4E2D\u91C7\u96C6\u8D44\u6E90\uFF0C\u589E\u5F3A\u5176
-      50% \u7684\u6548\u7387"
-  - Name: inventions/metal
-    Text: "\u51B6\u91D1"
-  - Name: inventions/metal_tips
-    Text: "\u5141\u8BB8\u91D1\u5C5E\u77FF\u77F3\u548C\u51B6\u70BC\u3002\u5141\u8BB8\u51B7\u5175\u5668\u3002"
-  - Name: inventions/classical_liberalism
-    Text: "\u53E4\u5178\u81EA\u7531\u4E3B\u4E49"
-  - Name: inventions/classical_liberalism_tips
-    Text: "\u5141\u8BB8\u81EA\u7531\u653E\u4EFB\u653F\u7B56\u3001\u8D44\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u63A8\u884C\u666E\u904D\u6C11\u4E3B\u3002"
-  - Name: inventions/keynesianism
-    Text: "\u51EF\u6069\u65AF\u4E3B\u4E49"
-  - Name: inventions/keynesianism_tips
-    Text: "\u5141\u8BB8\u5BF9\u7ECF\u6D4E\u8FDB\u884C\u6709\u9650\u5E72\u9884"
-  - Name: inventions/collectivism
-    Text: "\u96C6\u4F53\u4E3B\u4E49"
-  - Name: inventions/collectivism_tips
-    Text: "\u5141\u8BB8\u65E0\u4EA7\u9636\u7EA7\u4E13\u653F\u3001\u8BA1\u5212\u7ECF\u6D4E"
-  - Name: inventions/steam_power
-    Text: "\u84B8\u6C7D\u52A8\u529B"
-  - Name: inventions/steam_power_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u673A\u68B0\u548C\u6C34\u6CE5\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
-      25%"
-  - Name: inventions/welfare
-    Text: "\u798F\u5229"
-  - Name: inventions/welfare_tips
-    Text: "\u5141\u8BB8\u5931\u4E1A\u6551\u6D4E\u548C\u5168\u6C11\u8865\u8D34"
-  - Name: inventions/gunpowder
-    Text: "\u706B\u836F"
-  - Name: inventions/gunpowder_tips
-    Text: "\u5141\u8BB8\u70AE\u5175\u4F7F\u7528\u706B\u70AE"
-  - Name: inventions/hand_cannons
-    Text: "\u4FBF\u643A\u706B\u5668"
-  - Name: inventions/hand_cannons_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u706B\u5668\uFF0C\u5728\u6218\u6597\u4E2D\u975E\u5E38\u6709\u6548"
-  - Name: inventions/combustion_engine
-    Text: "\u5185\u71C3\u673A"
-  - Name: inventions/combustion_engine_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u77F3\u6CB9\u3001\u71C3\u6599\u3001\u6C7D\u8F66\u3001\u6A61\u80F6\uFF0C\u5C06\u6240\u6709\u4F01\u4E1A\u7684\u6548\u7387\u63D0\u9AD8
-      25%"
-  - Name: inventions/tanks
-    Text: "\u5766\u514B"
-  - Name: inventions/tanks_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u5766\u514B"
-  - Name: inventions/airplanes
-    Text: "\u98DE\u673A"
-  - Name: inventions/airplanes_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u98DE\u673A"
-  - Name: inventions/professional_army
-    Text: "\u804C\u4E1A\u519B\u961F"
-  - Name: inventions/professional_army_tips
-    Text: "\u5141\u8BB8\u58EB\u5175"
-  - Name: inventions/domestication
-    Text: "\u755C\u7267\u4E1A"
-  - Name: inventions/domestication_tips
-    Text: "\u5141\u8BB8\u5728\u755C\u680F\u4E2D\u517B\u725B\u3002\u8FD8\u5141\u8BB8\u5728\u519B\u961F\u4E2D\u4F7F\u7528\u9A6C\u5339"
-  - Name: inventions/electronics
-    Text: "\u7535\u5B50\u5316"
-  - Name: inventions/electronics_tips
-    Text: "\u5141\u8BB8\u4F7F\u7528\u7535\u5B50\u4EA7\u54C1"
-  - Name: inventions/tobacco
-    Text: "\u70DF\u8349"
-  - Name: inventions/tobacco_tips
-    Text: "\u5141\u8BB8\u79CD\u690D\u70DF\u8349"
-  - Name: inventions/coal
-    Text: "\u7164\u70AD"
-  - Name: inventions/coal_tips
-    Text: "\u5141\u8BB8\u7164\u70AD"
-  - Name: inventions/universities
-    Text: "\u5927\u5B66"
-  - Name: inventions/universities_tips
-    Text: "\u5141\u8BB8\u5EFA\u7ACB\u5927\u5B66"
-  - Name: factory_panel/title
-    Text: "\u4F01\u4E1A\u4FE1\u606F"
-  - Name: factory_panel/nationalize
-    Text: "\u56FD\u6709\u5316"
-  - Name: factory_panel/upgrade
-    Text: "\u5347\u7EA7"
-  - Name: factory_panel/reopen
-    Text: "\u91CD\u65B0\u5F00\u653E"
-  - Name: factory_panel/destroy
-    Text: "\u6467\u6BC1"
-  - Name: factory_panel/subsidize
-    Text: "\u8865\u8D34"
-  - Name: factory_panel/no_hire_subsidies
-    Text: "\u4E0D\u96C7\u7528\u8865\u8D34\u4EBA\u5458"
-  - Name: statistics_panel/title
-    Text: "\u7EDF\u8BA1"
-  - Name: build_panel/title
-    Text: "\u5EFA\u7ACB\u65B0\u4F01\u4E1A"
-  - Name: build_panel/no_build_now
-    Text: "\u76EE\u524D\u65E0\u5EFA\u8BBE\u9879\u76EE"
-  - Name: build_panel/select_province
-    Text: "\u9009\u62E9\u5EFA\u8BBE\u7701\u4EFD"
-  - Name: build_panel/select_building
-    Text: "\u9009\u62E9\u5EFA\u7B51"
-  - Name: build_panel/select_left_building
-    Text: "\u4ECE\u5DE6\u4FA7\u9009\u62E9\u5EFA\u7B51"
-  - Name: build_panel/name
-    Text: "\u540D\u79F0"
-  - Name: build_panel/cost
-    Text: "\u6210\u672C"
-  - Name: build_panel/output
-    Text: "\u4EA7\u51FA"
-  - Name: build_panel/potential_margin
-    Text: "\u6F5C\u5728\u5229\u6DA6\u7387"
   - Name: top_panel/rule
     Text: "\u4F60\u638C\u63A7\u7740: "
   - Name: top_panel/tips
@@ -758,46 +866,8 @@ MonoBehaviour:
     Text: "   \u5FE0\u8BDA: "
   - Name: top_panel/education
     Text: "   \u6559\u80B2: "
-  - Name: other/gold_suffix
-    Text: " \u9EC4\u91D1"
-  - Name: enterprises_panel/title
-    Text: "\u4F01\u4E1A\u540D\u5F55"
-  - Name: enterprises_panel/country_scope
-    Text: "\u56FD\u5BB6\u8303\u56F4"
-  - Name: enterprises_panel/entire_world
-    Text: "\u4E16\u754C\u8303\u56F4"
-  - Name: enterprises_panel/private_owned
-    Text: "\u79C1\u4EBA\u62E5\u6709"
-  - Name: enterprises_panel/unsubsidized
-    Text: "\u65E0\u8865\u8D34"
-  - Name: enterprises_panel/uninvestable
-    Text: "\u4E0D\u53EF\u6295\u8D44"
-  - Name: population_panel/title
-    Text: "\u793E\u4F1A\u7FA4\u4F53"
-  - Name: map_options/title
-    Text: "\u5730\u56FE\u8BBE\u7F6E"
-  - Name: map_options/random_map
-    Text: "\u968F\u673A\u5730\u56FE"
-  - Name: map_options/map_from_file
-    Text: "\u4ECE\u6587\u4EF6\u751F\u6210\u5730\u56FE (\u5B9E\u9A8C\u6027)"
-  - Name: map_options/industrial_start
-    Text: "\u5DE5\u4E1A\u5F00\u5C40"
-  - Name: map_options/industrial_tips
-    Text: "\u4E3A\u6BCF\u4E2A\u56FD\u5BB6\u589E\u52A0\u5DE5\u5382\u3001\u6280\u672F\u548C\u66F4\u591A\u52B3\u52A8\u529B\uFF0C\u4EE5\u52A0\u5FEB\u8D44\u672C\u5E02\u573A\u7684\u5F62\u6210\u3002"
-  - Name: map_options/load_image_png
-    Text: "\u52A0\u8F7D PNG \u56FE\u7247"
-  - Name: map_options/generate_map
-    Text: "\u751F\u6210\u56FE\u7247"
-  - Name: map_options/notes
-    Text: "\u4ECE\u6587\u4EF6\u751F\u6210\u5730\u56FE\u7684\u8BF4\u660E\uFF1A\n \n 
-      - \u6BCF\u5757\u989C\u8272\u533A\u57DF\u90FD\u88AB\u662F\u4E3A\u4E00\u5757\u7701\u4EFD\n 
-      - \u5E94\u4E3A png \u683C\u5F0F\n  - not exactly compatible with Vic 2 map
-      format\n  - \u4E0D\u4F7F\u7528\u6297\u952F\u9F7F\n  - \u56FE\u7247\u5C3A\u5BF8\u4E3A
-      200x200 \u50CF\u7D20 (average lags)\uFF0C800x600 - huge lags\uFF0C\u6682\u4E0D\u652F\u6301\u66F4\u5927\u7684\u5C3A\u5BF8\n 
-      - \u5982\u679C\u7701\u4EFD\u989C\u8272\u4E3A\u7EFF\u8272 + \u84DD\u8272 >=
-      400 && \u7EA2\u8272 < 96\uFF0C\u5219\u8BE5\u7701\u4EFD\u5C06\u88AB\u89C6\u4E3A\u6D77\u57DF"
-  - Name: map_options/map_examples
-    Text: "\u70B9\u6211\u67E5\u770B\u5730\u56FE\u6587\u4EF6\u6837\u4F8B"
+  - Name: statistics_panel/title
+    Text: "\u7EDF\u8BA1"
   - Name: tutorial/title
     Text: "\u6559\u7A0B"
   - Name: tutorial/content
@@ -1002,18 +1072,136 @@ MonoBehaviour:
     Text: Enterprises
   - Name: trade
     Text: Trade
+  - Name: ok
+    Text: OK
+  - Name: fine
+    Text: Fine
+  - Name: not_fine
+    Text: Not fine really
+  - Name: close
+    Text: Close
+  - Name: close_window
+    Text: Close window
+  - Name: none
+    Text: none
+  - Name: nothing
+    Text: nothing
+  - Name: sell
+    Text: Sell
+  - Name: buy
+    Text: Buy
+  - Name: show_all
+    Text: Show all
+  - Name: hide_all
+    Text: Hide all
   - Name: army_select/select_one
     Text: 'Selected 1 army - '
   - Name: army_select/select_more
     Text: Selected {ArmiesCount}  armies (
   - Name: army_select/send
     Text: Send
+  - Name: army_select/send_choice
+    Text: Pick province
   - Name: army_select/merge
     Text: Merge
   - Name: army_select/split
     Text: Split
   - Name: army_select/demobilize
     Text: Demobilize
+  - Name: battle/player_won_title
+    Text: We won a battle!
+  - Name: battle/player_lost_title
+    Text: We lost a battle!
+  - Name: battle/player_attack_won
+    Text: 'Our glorious army attacked {0}''s army in {1} with army of {2} men. Modifiers:
+      {3}.
+
+
+      While enemy had {4} men. Modifiers: {5}
+
+
+      We won, enemy
+      lost all men and we lost {6} men.
+
+      Province {7} is our now!'
+  - Name: battle/player_defend_won
+    Text: 'Our glorious army attacked in province {0} by evil {1} with army of {2}
+      men. Modifiers: {3}
+
+
+      While we had {4} men. Modifiers: {5}
+
+
+      We
+      won, enemy lost all men and we lost {6} men.'
+  - Name: battle/player_attack_loss
+    Text: 'Our glorious army attacked {0}''s army in {1} with army of {2} men. Modifiers:
+      {3}
+
+
+      While enemy had {4} men. Modifiers: {5}
+
+
+      We lost, our invasion
+      army is destroyed, while enemy lost {6} men.'
+  - Name: battle/player_defend_loss_1
+    Text: 'Our glorious army attacked in province {0} by evil {1} with army of {2}
+      men. Modifiers: {3}
+
+
+      While we had {4} men. Modifiers: {5}
+
+
+      We
+      lost, our home army is destroyed, while enemy lost {6} men.'
+  - Name: battle/player_defend_loss_2
+    Text: '
+
+      Province {0} is not our anymore!'
+  - Name: battle/player_defend_loss_3
+    Text: '
+
+      We had to enact {0}'
+  - Name: bottom_panel/statistics
+    Text: Statistics
+  - Name: bottom_panel/wiki
+    Text: Wiki
+  - Name: bottom_panel/credits
+    Text: Credits
+  - Name: bottom_panel/exit
+    Text: Exit
+  - Name: bottom_panel/political_map
+    Text: Political map
+  - Name: bottom_panel/culture_map
+    Text: Culture map
+  - Name: bottom_panel/core_map
+    Text: Core map
+  - Name: bottom_panel/resource_map
+    Text: Resource map
+  - Name: bottom_panel/population_changes
+    Text: Population changes
+  - Name: bottom_panel/population_density
+    Text: Population density
+  - Name: bottom_panel/prosperity
+    Text: Prosperity
+  - Name: build_panel/title
+    Text: Build new enterprise
+  - Name: build_panel/no_build_now
+    Text: Nothing to build now
+  - Name: build_panel/select_province
+    Text: Select province where to build
+  - Name: build_panel/select_building
+    Text: Select building
+  - Name: build_panel/select_left_building
+    Text: Select building from left
+  - Name: build_panel/name
+    Text: Name
+  - Name: build_panel/cost
+    Text: Cost
+  - Name: build_panel/output
+    Text: Output
+  - Name: build_panel/potential_margin
+    Text: Potential margin
   - Name: common/type
     Text: Type
   - Name: common/province
@@ -1048,6 +1236,252 @@ MonoBehaviour:
     Text: Salary
   - Name: common/build
     Text: Build
+  - Name: enterprises_panel/title
+    Text: Enterprises list
+  - Name: enterprises_panel/country_scope
+    Text: Country scope
+  - Name: enterprises_panel/entire_world
+    Text: Entire world
+  - Name: enterprises_panel/private_owned
+    Text: Private owned
+  - Name: enterprises_panel/unsubsidized
+    Text: Unsubsidized
+  - Name: enterprises_panel/uninvestable
+    Text: Uninvestable
+  - Name: factory_panel/title
+    Text: Enterprise info
+  - Name: factory_panel/nationalize
+    Text: Nationalize
+  - Name: factory_panel/upgrade
+    Text: Upgrade
+  - Name: factory_panel/reopen
+    Text: Reopen
+  - Name: factory_panel/close
+    Text: Close enterprise
+  - Name: factory_panel/destroy
+    Text: Destroy
+  - Name: factory_panel/subsidize
+    Text: Subsidize
+  - Name: factory_panel/no_hire_subsidies
+    Text: Don't hire on subsidies
+  - Name: factory_panel/workforce
+    Text: 'Workforce: {0}, average education: {1}
+
+      Produced: {2}'
+  - Name: factory_panel/cash
+    Text: '
+
+      Cash: '
+  - Name: factory_panel/input_required
+    Text: '
+
+
+      Input required: '
+  - Name: factory_panel/input_required_no
+    Text: '
+
+
+      No input required '
+  - Name: factory_panel/upgrade
+    Text: '
+
+      Upgrade needs: '
+  - Name: factory_panel/construct
+    Text: '
+
+      Days in construction: '
+  - Name: factory_panel/stockpile_no
+    Text: '
+
+      Stockpile: nothing'
+  - Name: factory_panel/bought
+    Text: '
+
+      Bought: '
+  - Name: factory_panel/cost
+    Text: ', Cost: '
+  - Name: factory_panel/salary
+    Text: '
+
+
+      Salary (per 1000 men): '
+  - Name: factory_panel/unprofitable
+    Text: '
+
+      Days unprofitable: '
+  - Name: factory_panel/general
+    Text: '
+
+      Assets value: {0}, Market value: {1}
+
+      Profitability (dividends/market
+      value): {2}
+
+      Total on sale: {3}'
+  - Name: factory_panel/efficiency
+    Text: 'Efficiency: '
+  - Name: factory_panel/ownership
+    Text: 'Biggest owner: {0} {1} (hover mouse for rest)'
+  - Name: factory_panel/profit
+    Text: 'Profit: '
+  - Name: factory_panel/priority
+    Text: Priority
+  - Name: factory_panel/nationalize_tip
+    Text: '
+
+      That would make owners angry and would reduce your reputation'
+  - Name: factory_panel/priority_tip
+    Text: '
+
+
+      Highest priority enterprises get workforce first'
+  - Name: goods_panel/title
+    Text: Price history
+  - Name: inventions_panel/title
+    Text: Inventions
+  - Name: inventions_panel/invention
+    Text: Invention
+  - Name: inventions_panel/status
+    Text: Status
+  - Name: inventions_panel/science_points
+    Text: Science points
+  - Name: inventions_panel/already_invented
+    Text: 'Already invented '
+  - Name: inventions_panel/invented
+    Text: Invented
+  - Name: inventions_panel/uninvented
+    Text: Uninvented
+  - Name: inventions_panel/not_enough_point
+    Text: 'Not enough Science points to invent '
+  - Name: inventions_panel/invent
+    Text: 'Invent '
+  - Name: inventions_panel/points
+    Text: 'Science points: '
+  - Name: inventions_panel/select_left_invention
+    Text: '
+
+
+      Select invention from left panel'
+  - Name: inventions_panel/select_left
+    Text: Select from left
+  - Name: inventions/farming
+    Text: Farming
+  - Name: inventions/farming_tips
+    Text: Allows farming and farmers
+  - Name: inventions/banking
+    Text: Banking
+  - Name: inventions/banking_tips
+    Text: Allows national bank, credits and deposits. Also allows serfdom abolishment
+      with compensation for aristocrats
+  - Name: inventions/manufactures
+    Text: Manufactures
+  - Name: inventions/manufactures_tips
+    Text: Allows building manufactures to process raw product
+  - Name: inventions/flying_shuttle
+    Text: John Kay's Flying shuttle
+  - Name: inventions/flying_shuttle_tips
+    Text: Allows Weaver factory
+  - Name: inventions/mining
+    Text: Mining
+  - Name: inventions/mining_tips
+    Text: Allows resource gathering from holes in ground, increasing it's efficiency
+      by 50%
+  - Name: inventions/metal
+    Text: Metal
+  - Name: inventions/metal_tips
+    Text: Allows metal ore and smelting. Allows Cold arms
+  - Name: inventions/classical_liberalism
+    Text: Classical liberalism
+  - Name: inventions/classical_liberalism_tips
+    Text: Allows Laissez faire policy, Universal Democracy, Bourgeois dictatorship
+  - Name: inventions/keynesianism
+    Text: Keynesianism
+  - Name: inventions/keynesianism_tips
+    Text: Allows Limited Interventionism in economy
+  - Name: inventions/collectivism
+    Text: Collectivism
+  - Name: inventions/collectivism_tips
+    Text: Allows Proletarian dictatorship & Planned Economy
+  - Name: inventions/steam_power
+    Text: Steam Power
+  - Name: inventions/steam_power_tips
+    Text: Allows Machinery & Cement, Increases efficiency of all enterprises by 25%
+  - Name: inventions/welfare
+    Text: Welfare
+  - Name: inventions/welfare_tips
+    Text: Allows Unemployment Benefits and UBI
+  - Name: inventions/gunpowder
+    Text: Gunpowder
+  - Name: inventions/gunpowder_tips
+    Text: Allows Artillery & Ammunition
+  - Name: inventions/hand_cannons
+    Text: Hand-held cannons
+  - Name: inventions/hand_cannons_tips
+    Text: Allows Firearms, very efficient in battles
+  - Name: inventions/combustion_engine
+    Text: Combustion engine
+  - Name: inventions/combustion_engine_tips
+    Text: Allows Oil, Fuel, Cars, Rubber, Increases efficiency of all enterprises
+      by 25%
+  - Name: inventions/tanks
+    Text: Tanks
+  - Name: inventions/tanks_tips
+    Text: Allows Tanks
+  - Name: inventions/airplanes
+    Text: Airplanes
+  - Name: inventions/airplanes_tips
+    Text: Allows Airplanes
+  - Name: inventions/professional_army
+    Text: Professional Army
+  - Name: inventions/professional_army_tips
+    Text: Allows soldiers
+  - Name: inventions/domestication
+    Text: Domestication
+  - Name: inventions/domestication_tips
+    Text: Allows barnyard producing cattle. Also allows using horses in army
+  - Name: inventions/electronics
+    Text: Electronics
+  - Name: inventions/electronics_tips
+    Text: Allows Electronics
+  - Name: inventions/tobacco
+    Text: Tobacco
+  - Name: inventions/tobacco_tips
+    Text: Allows Tobacco
+  - Name: inventions/coal
+    Text: Coal
+  - Name: inventions/coal_tips
+    Text: Allows coal
+  - Name: inventions/universities
+    Text: Universities
+  - Name: inventions/universities_tips
+    Text: Allows building of Universities
+  - Name: map_options/title
+    Text: Map options
+  - Name: map_options/random_map
+    Text: Random map
+  - Name: map_options/map_from_file
+    Text: Map from file (experimental)
+  - Name: map_options/industrial_start
+    Text: Industrial start
+  - Name: map_options/industrial_tips
+    Text: Adds factories to each country, techs and more workforce. Gives faster
+      market formation.
+  - Name: map_options/load_image_png
+    Text: Load png image
+  - Name: map_options/generate_map
+    Text: Generate map
+  - Name: map_options/notes
+    Text: "Notes for generating map from a file:\n \n  - each province is coded with
+      unique color\n  - should be in png format\n  - not exactly compatible with
+      Vic 2 map format\n  - don't use antialiasing\n  - size 200x200 pixels (average
+      lags), 800x600 - huge lags, more - wouldn't work\n  - province will count as
+      sea if province color is green + blue >= 400 && red < 96"
+  - Name: map_options/map_examples
+    Text: Click here to see map examples
+  - Name: other/gold_suffix
+    Text: ' Gold'
+  - Name: other/unknown
+    Text: unknown
   - Name: product/grain
     Text: Grain
   - Name: product/cattle
@@ -1176,46 +1610,8 @@ MonoBehaviour:
     Text: Aristocrats
   - Name: population/soldiers
     Text: Soldiers
-  - Name: ok
-    Text: OK
-  - Name: close
-    Text: Close
-  - Name: close_window
-    Text: Close window
-  - Name: none
-    Text: none
-  - Name: nothing
-    Text: nothing
-  - Name: sell
-    Text: Sell
-  - Name: buy
-    Text: Buy
-  - Name: show_all
-    Text: Show all
-  - Name: hide_all
-    Text: Hide all
-  - Name: bottom_panel/statistics
-    Text: Statistics
-  - Name: bottom_panel/wiki
-    Text: Wiki
-  - Name: bottom_panel/credits
-    Text: Credits
-  - Name: bottom_panel/exit
-    Text: Exit
-  - Name: bottom_panel/political_map
-    Text: Political map
-  - Name: bottom_panel/culture_map
-    Text: Culture map
-  - Name: bottom_panel/core_map
-    Text: Core map
-  - Name: bottom_panel/resource_map
-    Text: Resource map
-  - Name: bottom_panel/population_changes
-    Text: Population changes
-  - Name: bottom_panel/population_density
-    Text: Population density
-  - Name: bottom_panel/prosperity
-    Text: Prosperity
+  - Name: population_panel/title
+    Text: Population list
   - Name: province_panel/detail_province
     Text: 'Province name: '
   - Name: province_panel/detail_population
@@ -1258,8 +1654,6 @@ MonoBehaviour:
     Text: Build
   - Name: province_panel/grant_independence
     Text: Grant Independence
-  - Name: goods_panel/title
-    Text: Price history
   - Name: pop_unit_panel/title
     Text: 
   - Name: pop_unit_panel/population
@@ -1290,7 +1684,7 @@ MonoBehaviour:
     Text: '
 
       Stockpile:  '
-  - Name: pop_unit_panel/
+  - Name: pop_unit_panel/resource_able
     Text: ', Resource availability: '
   - Name: pop_unit_panel/to_market
     Text: '
@@ -1353,158 +1747,6 @@ MonoBehaviour:
     Text: 'Luxury needs: '
   - Name: pop_unit_panel/balance
     Text: 'Balance: '
-  - Name: inventions_panel/title
-    Text: Inventions
-  - Name: inventions_panel/invention
-    Text: Invention
-  - Name: inventions_panel/status
-    Text: Status
-  - Name: inventions_panel/science_points
-    Text: Science points
-  - Name: inventions_panel/already_invented
-    Text: 'Already invented '
-  - Name: inventions_panel/invented
-    Text: Invented
-  - Name: inventions_panel/uninvented
-    Text: Uninvented
-  - Name: inventions_panel/not_enough_point
-    Text: 'Not enough Science points to invent '
-  - Name: inventions_panel/invent
-    Text: 'Invent '
-  - Name: inventions_panel/points
-    Text: 'Science points: '
-  - Name: inventions_panel/select_left_invention
-    Text: '
-
-
-      Select invention from left panel'
-  - Name: inventions_panel/select_left
-    Text: Select from left
-  - Name: inventions/farming
-    Text: Farming
-  - Name: inventions/farming_tips
-    Text: Allows farming and farmers
-  - Name: inventions/banking
-    Text: Banking
-  - Name: inventions/banking_tips
-    Text: Allows national bank, credits and deposits. Also allows serfdom abolishment
-      with compensation for aristocrats
-  - Name: inventions/manufactures
-    Text: Manufactures
-  - Name: inventions/manufactures_tips
-    Text: Allows building manufactures to process raw product
-  - Name: inventions/flying_shuttle
-    Text: John Kay's Flying shuttle
-  - Name: inventions/flying_shuttle_tips
-    Text: Allows Weaver factory
-  - Name: inventions/mining
-    Text: Mining
-  - Name: inventions/mining_tips
-    Text: Allows resource gathering from holes in ground, increasing it's efficiency
-      by 50%
-  - Name: inventions/metal
-    Text: Metal
-  - Name: inventions/metal_tips
-    Text: Allows metal ore and smelting. Allows Cold arms
-  - Name: inventions/classical_liberalism
-    Text: Classical liberalism
-  - Name: inventions/classical_liberalism_tips
-    Text: Allows Laissez faire policy, Universal Democracy, Bourgeois dictatorship
-  - Name: inventions/keynesianism
-    Text: Keynesianism
-  - Name: inventions/keynesianism_tips
-    Text: Allows Limited Interventionism in economy
-  - Name: inventions/collectivism
-    Text: Collectivism
-  - Name: inventions/collectivism_tips
-    Text: Allows Proletarian dictatorship & Planned Economy
-  - Name: inventions/steam_power
-    Text: Steam Power
-  - Name: inventions/steam_power_tips
-    Text: Allows Machinery & Cement, Increases efficiency of all enterprises by 25%
-  - Name: inventions/welfare
-    Text: Welfare
-  - Name: inventions/welfare_tips
-    Text: Allows Unemployment Benefits and UBI
-  - Name: inventions/gunpowder
-    Text: Gunpowder
-  - Name: inventions/gunpowder_tips
-    Text: Allows Artillery & Ammunition
-  - Name: inventions/hand_cannons
-    Text: Hand-held cannons
-  - Name: inventions/hand_cannons_tips
-    Text: Allows Firearms, very efficient in battles
-  - Name: inventions/combustion_engine
-    Text: Combustion engine
-  - Name: inventions/combustion_engine_tips
-    Text: Allows Oil, Fuel, Cars, Rubber, Increases efficiency of all enterprises
-      by 25%
-  - Name: inventions/tanks
-    Text: Tanks
-  - Name: inventions/tanks_tips
-    Text: Allows Tanks
-  - Name: inventions/airplanes
-    Text: Airplanes
-  - Name: inventions/airplanes_tips
-    Text: Allows Airplanes
-  - Name: inventions/professional_army
-    Text: Professional Army
-  - Name: inventions/professional_army_tips
-    Text: Allows soldiers
-  - Name: inventions/domestication
-    Text: Domestication
-  - Name: inventions/domestication_tips
-    Text: Allows barnyard producing cattle. Also allows using horses in army
-  - Name: inventions/electronics
-    Text: Electronics
-  - Name: inventions/electronics_tips
-    Text: Allows Electronics
-  - Name: inventions/tobacco
-    Text: Tobacco
-  - Name: inventions/tobacco_tips
-    Text: Allows Tobacco
-  - Name: inventions/coal
-    Text: Coal
-  - Name: inventions/coal_tips
-    Text: Allows coal
-  - Name: inventions/universities
-    Text: Universities
-  - Name: inventions/universities_tips
-    Text: Allows building of Universities
-  - Name: factory_panel/title
-    Text: Enterprise info
-  - Name: factory_panel/nationalize
-    Text: Nationalize
-  - Name: factory_panel/upgrade
-    Text: Upgrade
-  - Name: factory_panel/reopen
-    Text: Reopen
-  - Name: factory_panel/destroy
-    Text: Destroy
-  - Name: factory_panel/subsidize
-    Text: Subsidize
-  - Name: factory_panel/no_hire_subsidies
-    Text: Don't hire on subsidies
-  - Name: statistics_panel/title
-    Text: Statistics
-  - Name: build_panel/title
-    Text: Build new enterprise
-  - Name: build_panel/no_build_now
-    Text: Nothing to build now
-  - Name: build_panel/select_province
-    Text: Select province where to build
-  - Name: build_panel/select_building
-    Text: Select building
-  - Name: build_panel/select_left_building
-    Text: Select building from left
-  - Name: build_panel/name
-    Text: Name
-  - Name: build_panel/cost
-    Text: Cost
-  - Name: build_panel/output
-    Text: Output
-  - Name: build_panel/potential_margin
-    Text: Potential margin
   - Name: top_panel/rule
     Text: 'You rule: '
   - Name: top_panel/tips
@@ -1523,45 +1765,8 @@ MonoBehaviour:
     Text: '   Loyalty: '
   - Name: top_panel/education
     Text: '   Education: '
-  - Name: other/gold_suffix
-    Text: ' Gold'
-  - Name: enterprises_panel/title
-    Text: Enterprises list
-  - Name: enterprises_panel/country_scope
-    Text: Country scope
-  - Name: enterprises_panel/entire_world
-    Text: Entire world
-  - Name: enterprises_panel/private_owned
-    Text: Private owned
-  - Name: enterprises_panel/unsubsidized
-    Text: Unsubsidized
-  - Name: enterprises_panel/uninvestable
-    Text: Uninvestable
-  - Name: population_panel/title
-    Text: Population list
-  - Name: map_options/title
-    Text: Map options
-  - Name: map_options/random_map
-    Text: Random map
-  - Name: map_options/map_from_file
-    Text: Map from file (experimental)
-  - Name: map_options/industrial_start
-    Text: Industrial start
-  - Name: map_options/industrial_tips
-    Text: Adds factories to each country, techs and more workforce. Gives faster
-      market formation.
-  - Name: map_options/load_image_png
-    Text: Load png image
-  - Name: map_options/generate_map
-    Text: Generate map
-  - Name: map_options/notes
-    Text: "Notes for generating map from a file:\n \n  - each province is coded with
-      unique color\n  - should be in png format\n  - not exactly compatible with
-      Vic 2 map format\n  - don't use antialiasing\n  - size 200x200 pixels (average
-      lags), 800x600 - huge lags, more - wouldn't work\n  - province will count as
-      sea if province color is green + blue >= 400 && red < 96"
-  - Name: map_options/map_examples
-    Text: Click here to see map examples
+  - Name: statistics_panel/title
+    Text: Statistics
   - Name: tutorial/title
     Text: Tutorial
   - Name: tutorial/content
@@ -5048,6 +5253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836527700491350177, guid: 445ecfee92479eb49a4cdae1b7aa3b4d,
+        type: 3}
+      propertyPath: m_Text
+      value: "\u6280\u5DE5"
       objectReference: {fileID: 0}
     - target: {fileID: 5836527700492018901, guid: 445ecfee92479eb49a4cdae1b7aa3b4d,
         type: 3}

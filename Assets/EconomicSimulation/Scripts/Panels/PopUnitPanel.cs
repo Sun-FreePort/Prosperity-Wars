@@ -73,7 +73,7 @@ namespace Nashet.EconomicSimulation
                     foreach (Storage next in isArtisan.GetResurceInput())
                         sb.Append(next.get() * isArtisan.population.Get() / Population.PopulationMultiplier).Append(" ").Append(next.Product).Append(";");
 
-                    sb.Append(LeanLocalization.GetTranslationText("pop_unit_panel/stockpile")).Append(isArtisan.getInputProducts()).Append(", Resource availability: ").Append(isArtisan.getInputFactor());
+                    sb.Append(LeanLocalization.GetTranslationText("pop_unit_panel/stockpile")).Append(isArtisan.getInputProducts()).Append(LeanLocalization.GetTranslationText("pop_unit_panel/resource_able")).Append(isArtisan.getInputFactor());
                 }
 
                 //sb.Append(LeanLocalization.GetTranslationText("pop_unit_panel/to_market")).Append(pop.getSentToMarket());  // hide it

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Lean.Localization;
 using Nashet.EconomicSimulation;
 using Nashet.ValueSpace;
 using UnityEngine;
@@ -310,9 +311,9 @@ namespace Nashet.Utils
                 }
                 isFirstRow = false;
                 if (item.Value == null)
-                    sb.Append(item.Key).Append(" (permanent)");
+                    sb.Append(item.Key).Append(LeanLocalization.GetTranslationText("modifier/permanent"));
                 else
-                    sb.Append(item.Key).Append(" expires in ").Append(item.Value.getYearsUntill()).Append(" years");
+                    sb.Append(item.Key).AppendFormat(LeanLocalization.GetTranslationText("modifier/expire_year"), item.Value.getYearsUntill());
             }
             return sb.ToString();
         }

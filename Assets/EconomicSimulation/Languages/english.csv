@@ -10,6 +10,7 @@ enterprises,Enterprises
 trade,Trade
 ok,OK
 fine,Fine
+not_fine,"Not fine really"
 close,Close
 close_window,Close window
 none,none
@@ -25,6 +26,33 @@ army_select/send_choice,Pick province
 army_select/merge,Merge
 army_select/split,Split
 army_select/demobilize,Demobilize
+battle/player_won_title,"We won a battle!"
+battle/player_lost_title,"We lost a battle!"
+battle/player_attack_won,"Our glorious army attacked {0}'s army in {1} with army of {2} men. Modifiers: {3}.
+
+While enemy had {4} men. Modifiers: {5}
+
+We won, enemy lost all men and we lost {6} men.
+Province {7} is our now!"
+battle/player_defend_won,"Our glorious army attacked in province {0} by evil {1} with army of {2} men. Modifiers: {3}
+
+While we had {4} men. Modifiers: {5}
+
+We won, enemy lost all men and we lost {6} men."
+battle/player_attack_loss,"Our glorious army attacked {0}'s army in {1} with army of {2} men. Modifiers: {3}
+
+While enemy had {4} men. Modifiers: {5}
+
+We lost, our invasion army is destroyed, while enemy lost {6} men."
+battle/player_defend_loss_1,"Our glorious army attacked in province {0} by evil {1} with army of {2} men. Modifiers: {3}
+
+While we had {4} men. Modifiers: {5}
+
+We lost, our home army is destroyed, while enemy lost {6} men."
+battle/player_defend_loss_2,"
+Province {0} is not our anymore!"
+battle/player_defend_loss_3,"
+We had to enact {0}"
 bottom_panel/statistics,Statistics
 bottom_panel/wiki,Wiki
 bottom_panel/credits,Credits
@@ -62,6 +90,19 @@ common/profit,Profit
 common/profitability,Profitability
 common/salary,Salary
 common/build,Build
+diplomacy_panel/gdp_thousand,"
+
+GDP per thousand men: {0}; rank: {1}"
+diplomacy_panel/human_need,"
+
+Pops average needs fulfilling: {0}, loyalty: {1}, education: {2}
+
+Reforms: {3}; "
+diplomacy_panel/culture,"
+
+State culture: {0}
+Cultures: {1}
+Classes: {2}"
 enterprises_panel/title,Enterprises list
 enterprises_panel/country_scope,Country scope
 enterprises_panel/entire_world,Entire world
@@ -72,9 +113,47 @@ factory_panel/title,Enterprise info
 factory_panel/nationalize,Nationalize
 factory_panel/upgrade,Upgrade
 factory_panel/reopen,Reopen
+factory_panel/close,Close enterprise
 factory_panel/destroy,Destroy
 factory_panel/subsidize,Subsidize
 factory_panel/no_hire_subsidies,Don't hire on subsidies
+factory_panel/workforce,"Workforce: {0}, average education: {1}
+Produced: {2}"
+factory_panel/cash,"
+Cash: "
+factory_panel/input_required,"
+
+Input required: "
+factory_panel/input_required_no,"
+
+No input required "
+factory_panel/upgrade,"
+Upgrade needs: "
+factory_panel/construct,"
+Days in construction: "
+factory_panel/stockpile_no,"
+Stockpile: nothing"
+factory_panel/bought,"
+Bought: "
+factory_panel/cost,", Cost: "
+factory_panel/salary,"
+
+Salary (per 1000 men): "
+factory_panel/unprofitable,"
+Days unprofitable: "
+factory_panel/general,"
+Assets value: {0}, Market value: {1}
+Profitability (dividends/market value): {2}
+Total on sale: {3}"
+factory_panel/efficiency,"Efficiency: "
+factory_panel/ownership,"Biggest owner: {0} {1} (hover mouse for rest)"
+factory_panel/profit,"Profit: "
+factory_panel/priority,"Priority"
+factory_panel/nationalize_tip,"
+That would make owners angry and would reduce your reputation"
+factory_panel/priority_tip,"
+
+Highest priority enterprises get workforce first"
 goods_panel/title,Price history
 inventions_panel/title,Inventions
 inventions_panel/invention,Invention
@@ -150,7 +229,12 @@ map_options/notes,"Notes for generating map from a file:
   - size 200x200 pixels (average lags), 800x600 - huge lags, more - wouldn't work
   - province will count as sea if province color is green + blue >= 400 && red < 96"
 map_options/map_examples,Click here to see map examples
+modifier/conquered,"Recently conquered"
+modifier/blockade,"Blockade"
+modifier/expire_year," expires in {0} years"
+modifier/permanent," (permanent)"
 other/gold_suffix," Gold"
+other/unknown,"unknown"
 product/grain,Grain
 product/cattle,Cattle
 product/liquor,Liquor
@@ -252,7 +336,7 @@ pop_unit_panel/input_required,"
 Input required: "
 pop_unit_panel/stockpile,"
 Stockpile:  "
-pop_unit_panel/,", Resource availability: "
+pop_unit_panel/resource_able,", Resource availability: "
 pop_unit_panel/to_market,"
 Sent to market: "
 pop_unit_panel/consumed,"
